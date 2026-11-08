@@ -1,9 +1,45 @@
 const translation = {
   home: "صفحه اصلی",
   teachers: "استادان",
+  teachersIntro:
+    "با استادان، تخصص‌ها، تجربهٔ تدریس و دوره‌هایی که تدریس می‌کنند آشنا شوید.",
+  teachersLoading: "در حال بارگذاری استادان…",
+  teachersError: "دریافت فهرست استادان ممکن نشد.",
+  teachersEmpty: "استادی برای نمایش موجود نیست.",
+  teacherExperience: "تجربهٔ تدریس (سال)",
+  teachersCourseFilter: "فیلتر بر اساس دوره",
+  teachersAllCourses: "همهٔ دوره‌ها",
   courses: "دوره‌ها",
   courseDetails: "جزئیات دوره",
   classSchedule: "تقویم درسی",
+  scheduleIntro: "ساعت‌های برگزاری صنف‌های حضوری و آنلاین سال جاری را ببینید.",
+  scheduleTeacherLabel: "استاد",
+  scheduleDayLabel: "روز",
+  scheduleStatusLabel: "وضعیت",
+  scheduleToBeAnnounced: "بعداً اعلام می‌شود",
+  scheduleDays: {
+    saturday: "شنبه",
+    sunday: "یکشنبه",
+    monday: "دوشنبه",
+    tuesday: "سه‌شنبه",
+    wednesday: "چهارشنبه",
+    thursday: "پنج‌شنبه",
+    friday: "جمعه",
+  },
+  scheduleLoading: "در حال بارگذاری برنامهٔ صنف‌ها…",
+  scheduleError: "دریافت برنامهٔ صنف‌ها ممکن نشد.",
+  scheduleEmpty: "برای سال جاری هنوز صنفی در برنامه درج نشده است.",
+  scheduleModeFilter: "شیوهٔ برگزاری",
+  scheduleAllModes: "همهٔ صنف‌ها",
+  scheduleNoMatches: "صنفی با این شیوهٔ برگزاری در برنامه نیست.",
+  scheduleStatuses: {
+    scheduled: "برنامه‌ریزی‌شده",
+    draft: "پیش‌نویس",
+  },
+  scheduleDeliveryModes: {
+    online: "آنلاین",
+    "in-person": "حضوری",
+  },
   registration: "ثبت‌نام",
   contact: "تماس با ما",
   achievements: "دستاوردها",
@@ -13,6 +49,6 @@ const translation = {
   events: "رویدادها",
   blog: "بلاگ",
   resources: "منابع آموزشی",
-}
+};
 
-export default translation
+export default translation;

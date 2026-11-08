@@ -1,9 +1,45 @@
 const translation = {
   home: "Home",
   teachers: "Teachers",
+  teachersIntro:
+    "Meet our teachers and explore their expertise, teaching experience, and courses.",
+  teachersLoading: "Loading teachers…",
+  teachersError: "Could not load the teacher list.",
+  teachersEmpty: "No teachers to display.",
+  teacherExperience: "Teaching experience (years)",
+  teachersCourseFilter: "Filter by course",
+  teachersAllCourses: "All courses",
   courses: "Courses",
   courseDetails: "Course Details",
   classSchedule: "Class Schedule",
+  scheduleIntro: "Explore this year’s online and in-person class times.",
+  scheduleTeacherLabel: "Teacher",
+  scheduleDayLabel: "Day",
+  scheduleStatusLabel: "Status",
+  scheduleToBeAnnounced: "To be announced",
+  scheduleDays: {
+    saturday: "Saturday",
+    sunday: "Sunday",
+    monday: "Monday",
+    tuesday: "Tuesday",
+    wednesday: "Wednesday",
+    thursday: "Thursday",
+    friday: "Friday",
+  },
+  scheduleLoading: "Loading the class schedule…",
+  scheduleError: "Could not load the class schedule.",
+  scheduleEmpty: "No classes are listed for the current year.",
+  scheduleModeFilter: "Class format",
+  scheduleAllModes: "All classes",
+  scheduleNoMatches: "No classes match this format.",
+  scheduleStatuses: {
+    scheduled: "Scheduled",
+    draft: "Draft",
+  },
+  scheduleDeliveryModes: {
+    online: "Online",
+    "in-person": "In person",
+  },
   registration: "Registration",
   contact: "Contact",
   achievements: "Achievements",
@@ -13,6 +49,6 @@ const translation = {
   events: "Events",
   blog: "Blog",
   resources: "Resources",
-}
+};
 
-export default translation
+export default translation;
