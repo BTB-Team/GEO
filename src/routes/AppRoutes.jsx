@@ -1,4 +1,7 @@
+
 import { Routes, Route } from "react-router-dom"
+
+import MainLayout from "../components/layout/MainLayout"
 
 import Home from "../pages/Home/Home"
 import Teachers from "../pages/Teachers/Teachers"
@@ -18,20 +21,22 @@ import Resources from "../pages/Resources/Resources"
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/teachers" element={<Teachers />} />
-      <Route path="/courses" element={<Courses />} />
-      <Route path="/courses/:courseId" element={<CourseDetails />} />
-      <Route path="/schedule" element={<ClassSchedule />} />
-      <Route path="/registration" element={<Registration />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/achievements" element={<Achievements />} />
-      <Route path="/announcements" element={<Announcements />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/resources" element={<Resources />} />
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:courseId" element={<CourseDetails />} />
+        <Route path="/schedule" element={<ClassSchedule />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/announcements" element={<Announcements />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/resources" element={<Resources />} />
+      </Route>
     </Routes>
   )
 }
