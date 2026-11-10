@@ -14,6 +14,7 @@ import Gallery from "../pages/Gallery/Gallery"
 import Events from "../pages/Events/Events"
 import Blog from "../pages/Blog/Blog"
 import Resources from "../pages/Resources/Resources"
+import Saved from "../pages/Saved/Saved";
 
 const AppRoutes = () => {
   return (
@@ -32,6 +33,7 @@ const AppRoutes = () => {
       <Route path="/events" element={<Events />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/resources" element={<Resources />} />
+      <Route path="/saved" element={<Saved />} />
     </Routes>
   )
 }
