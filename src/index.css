@@ -357,3 +357,163 @@
     color: #055F9F;
   }
 }
+
+
+
+/* 3D Animation  */
+
+/* =====================================
+   STATS SECTION — 2.5D MOTION SYSTEM
+===================================== */
+
+.stats-illustration {
+  perspective: 900px;
+  transform-style: preserve-3d;
+}
+
+.stats-illustration svg {
+  transform-style: preserve-3d;
+  overflow: visible;
+}
+
+.stats-illustration__float {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: stats-character-float 5s ease-in-out infinite;
+}
+
+.stats-illustration__head {
+  transform-box: fill-box;
+  transform-origin: 50% 75%;
+  animation: stats-head-sway 6s ease-in-out infinite;
+}
+
+.stats-illustration__prop {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: stats-prop-float 4.2s ease-in-out infinite;
+}
+
+.stats-illustration__cap {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: stats-cap-bounce 4s ease-in-out infinite;
+}
+
+.stats-illustration__orbit {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: stats-orbit-rotate 24s linear infinite;
+}
+
+.stats-illustration__sparkle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: stats-sparkle 3s ease-in-out infinite;
+}
+
+.stats-illustration__head,
+.stats-illustration__prop,
+.stats-illustration__cap {
+  transform-style: preserve-3d;
+}
+
+@keyframes stats-character-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-1deg);
+  }
+
+  50% {
+    transform: translate3d(0, -7px, 8px) rotate(1deg);
+  }
+}
+
+@keyframes stats-head-sway {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(2deg) translateY(-2px);
+  }
+}
+
+@keyframes stats-prop-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(0, -5px, 5px) rotate(-2deg);
+  }
+}
+
+@keyframes stats-cap-bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-7px) rotate(3deg);
+  }
+}
+
+@keyframes stats-orbit-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes stats-sparkle {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.8) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(18deg);
+  }
+}
+
+/* HOVER INTERACTION */
+
+.group:hover .stats-illustration__float {
+  animation-duration: 3.2s;
+}
+
+.group:hover .stats-illustration__prop {
+  animation-duration: 2.5s;
+}
+
+.group:hover .stats-illustration__head {
+  animation-duration: 3.5s;
+}
+
+.stats-illustration--graduates .stats-illustration__cap {
+  animation: stats-graduate-cap-bounce 3.5s ease-in-out infinite;
+}
+
+@keyframes stats-graduate-cap-bounce {
+  0%, 100% {
+    transform: translateY(-20px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-27px) rotate(3deg);
+  }
+}
+
+.stats-illustration--courses .stats-illustration__prop:nth-child(2) {
+  animation-delay: -1s;
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .stats-illustration *,
+  .stats-illustration {
+    animation: none !important;
+    transition: none !important;
+  }
+}

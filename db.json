@@ -2413,6 +2413,22 @@
       "en": "Loading Programs...",
       "fa": "در حال بارگذاری برنامه‌ها..."
     },
+    "pathwayLabel": {
+      "en": "LEARNING PATH",
+      "fa": "مسیر آموزشی"
+    },
+    "courseLabel": {
+      "en": "course",
+      "fa": "دوره"
+    },
+    "coursesLabel": {
+      "en": "courses",
+      "fa": "دوره‌ها"
+    },
+    "availablePathsLabel": {
+      "en": "AVAILABLE LEARNING PATHS",
+      "fa": "مسیرهای آموزشی موجود"
+    },
     "limit": 5
   },
 
@@ -2428,6 +2444,30 @@
     "description": {
       "en": "Every number represents a step toward a brighter future through learning.",
       "fa": "هر عدد نشان‌دهنده گامی به سوی آینده‌ای روشن‌تر از طریق آموزش است."
+    },
+    "loadingLabel": {
+      "en": "Loading academy statistics...",
+      "fa": "در حال بارگذاری آمار آکادمی..."
+    },
+    "errorTitle": {
+      "en": "Unable to Load Statistics",
+      "fa": "بارگذاری آمار ممکن نشد"
+    },
+    "errorDescription": {
+      "en": "Something went wrong while loading academy statistics.",
+      "fa": "هنگام بارگذاری آمار آکادمی مشکلی رخ داد."
+    },
+    "retryLabel": {
+      "en": "Try Again",
+      "fa": "تلاش دوباره"
+    },
+    "emptyTitle": {
+      "en": "Our Impact Is Growing",
+      "fa": "دستاوردهای ما در حال گسترش است"
+    },
+    "emptyDescription": {
+      "en": "Academy statistics will be available soon.",
+      "fa": "آمار آکادمی به‌زودی در دسترس قرار می‌گیرد."
     },
     "limit": 4
   },
