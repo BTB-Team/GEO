@@ -40,31 +40,22 @@ jobs:
       - name: Run ESLint
         run: pnpm lint
 
-      # بیلد برای برنچ main (آدرس اصلی: username.github.io/GEO/)
-      - name: Build for Production (main)
-        if: github.ref == 'refs/heads/main'
+      # بیلد یکسان برای هر دو برنچ (مستقیماً در مسیر اصلی /GEO/)
+      - name: Build project
         env:
           VITE_BASE_PATH: /GEO/
         run: pnpm build
 
-      # بیلد برای برنچ develop (آدرس تست: username.github.io/GEO/dev/)
-      - name: Build for Staging (develop)
-        if: github.ref == 'refs/heads/develop'
-        env:
-          VITE_BASE_PATH: /GEO/dev/
-        run: pnpm build
-
-      # ساخت 404.html برای جلوگیری از خطا هنگام رفرش صفحات داخلی
+      # ساخت فایل 404.html برای جلوگیری از خطا هنگام رفرش صفحات توسط مشتری
       - name: Create 404.html for SPA Routing
         if: github.event_name == 'push'
         run: cp dist/index.html dist/404.html
 
-      # دیپلوی روی برنچ gh-pages
+      # انتشار مستقیم در ریشه اصلی سایت
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          destination_dir: ${{ github.ref == 'refs/heads/develop' && 'dev' || '' }}
-          keep_files: true
+
