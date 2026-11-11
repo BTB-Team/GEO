@@ -143,7 +143,7 @@ export default function CourseDetailsPage() {
                 {labels.whatYouLearn}
               </h2>
 
-              {course.learningPoints.map((point, index) => (
+              {course.learningPoints.map((point) => (
                 <div
                   key={point}
                   className="mb-4 flex items-center gap-3"
