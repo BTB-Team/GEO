@@ -1,76 +1,107 @@
 {
   "courseCategories": [
     {
-      "id": "category-academic-support",
-      "slug": "academic-support",
-      "name": {
-        "en": "Academic Support",
-        "fa": "تقویت درسی"
-      },
-      "description": {
-        "en": "Courses that strengthen school subjects and learning foundations.",
-        "fa": "دوره‌هایی برای تقویت مضامین مکتب و پایه‌های یادگیری."
-      },
-      "sortOrder": 1,
-      "status": "active"
+    "id": "category-academic-support",
+    "slug": "academic-support",
+    "name": {
+      "en": "Academic Support",
+      "fa": "تقویت درسی"
     },
-    {
-      "id": "category-test-preparation",
-      "slug": "test-preparation",
-      "name": {
-        "en": "Test Preparation",
-        "fa": "آمادگی آزمون"
-      },
-      "description": {
-        "en": "Structured preparation for school and standardized examinations.",
-        "fa": "آمادگی منظم برای امتحانات مکتب و آزمون‌های معیارشده."
-      },
-      "sortOrder": 2,
-      "status": "active"
+    "description": {
+      "en": "Courses that strengthen school subjects and learning foundations.",
+      "fa": "دوره‌هایی برای تقویت مضامین مکتب و پایه‌های یادگیری."
     },
-    {
-      "id": "category-languages",
-      "slug": "languages",
-      "name": {
-        "en": "Languages",
-        "fa": "زبان‌ها"
-      },
-      "description": {
-        "en": "Language learning and communication skills.",
-        "fa": "یادگیری زبان و مهارت‌های ارتباطی."
-      },
-      "sortOrder": 3,
-      "status": "active"
-    },
-    {
-      "id": "category-technology",
-      "slug": "technology",
-      "name": {
-        "en": "Technology and STEM",
-        "fa": "تکنالوژی و STEM"
-      },
-      "description": {
-        "en": "Digital literacy, technology, and practical STEM learning.",
-        "fa": "سواد دیجیتال، تکنالوژی و یادگیری عملی STEM."
-      },
-      "sortOrder": 4,
-      "status": "active"
-    },
-    {
-      "id": "category-scholarship-guidance",
-      "slug": "scholarship-guidance",
-      "name": {
-        "en": "Scholarship Guidance",
-        "fa": "راهنمایی بورسیه"
-      },
-      "description": {
-        "en": "Guidance for researching and preparing education applications.",
-        "fa": "راهنمایی برای جست‌وجو و آماده‌سازی درخواست‌های تحصیلی."
-      },
-      "sortOrder": 5,
-      "status": "active"
+    "sortOrder": 1,
+    "status": "active",
+    "presentation": {
+      "featured": true,
+      "accent": "blue",
+      "icon": "graduation-cap",
+      "artwork": "academic"
     }
-  ],
+  },
+  {
+    "id": "category-test-preparation",
+    "slug": "test-preparation",
+    "name": {
+      "en": "Test Preparation",
+      "fa": "آمادگی آزمون"
+    },
+    "description": {
+      "en": "Structured preparation for school and standardized examinations.",
+      "fa": "آمادگی منظم برای امتحانات مکتب و آزمون‌های معیارشده."
+    },
+    "sortOrder": 2,
+    "status": "active",
+    "presentation": {
+      "featured": false,
+      "accent": "orange",
+      "icon": "target",
+      "artwork": "examination"
+    }
+  },
+  {
+    "id": "category-languages",
+    "slug": "languages",
+    "name": {
+      "en": "Languages",
+      "fa": "زبان‌ها"
+    },
+    "description": {
+      "en": "Language learning and communication skills.",
+      "fa": "یادگیری زبان و مهارت‌های ارتباطی."
+    },
+    "sortOrder": 3,
+    "status": "active",
+    "presentation": {
+      "featured": false,
+      "accent": "green",
+      "icon": "languages",
+      "artwork": "language"
+    }
+  },
+  {
+    "id": "category-technology",
+    "slug": "technology",
+    "name": {
+      "en": "Technology and STEM",
+      "fa": "تکنالوژی و STEM"
+    },
+    "description": {
+      "en": "Digital literacy, technology, and practical STEM learning.",
+      "fa": "سواد دیجیتال، تکنالوژی و یادگیری عملی STEM."
+    },
+    "sortOrder": 4,
+    "status": "active",
+    "presentation": {
+      "featured": false,
+      "accent": "blue",
+      "icon": "cpu",
+      "artwork": "technology"
+    }
+  },
+  {
+    "id": "category-scholarship-guidance",
+    "slug": "scholarship-guidance",
+    "name": {
+      "en": "Scholarship Guidance",
+      "fa": "راهنمایی بورسیه"
+    },
+    "description": {
+      "en": "Guidance for researching and preparing education applications.",
+      "fa": "راهنمایی برای جست‌وجو و آماده‌سازی درخواست‌های تحصیلی."
+    },
+    "sortOrder": 5,
+    "status": "active",
+    "presentation": {
+      "featured": false,
+      "accent": "green",
+      "icon": "award",
+      "artwork": "scholarship"
+    }
+  }
+],
+
   "courses": [
     {
       "id": "course-math-001",
@@ -1538,174 +1569,211 @@
       "status": "draft"
     }
   ],
-  "siteStats": [
-    {
-      "id": "homepage-stats",
-      "items": [
-        {
-          "id": "stat-students",
-          "key": "students",
-          "label": {
-            "en": "Students",
-            "fa": "دانش‌آموزان"
-          },
-          "value": 250,
-          "suffix": "+",
-          "sortOrder": 1
+"siteStats": [
+  {
+    "id": "homepage-stats",
+    "eyebrow": {
+      "en": "OUR IMPACT IN NUMBERS",
+      "fa": "دستاوردهای ما به روایت آمار"
+    },
+    "title": {
+      "en": "Making a Difference Through Education",
+      "fa": "ایجاد تفاوت از مسیر آموزش"
+    },
+    "description": {
+      "en": "Every number represents a learning opportunity and a step toward a brighter future.",
+      "fa": "هر عدد نمایانگر یک فرصت یادگیری و گامی به سوی آینده‌ای روشن‌تر است."
+    },
+    "items": [
+      {
+        "id": "stat-students",
+        "key": "students",
+        "label": {
+          "en": "Students",
+          "fa": "دانش‌آموزان"
         },
-        {
-          "id": "stat-courses",
-          "key": "courses",
-          "label": {
-            "en": "Courses",
-            "fa": "دوره‌ها"
-          },
-          "value": 10,
-          "suffix": "",
-          "sortOrder": 2
+        "value": 250,
+        "suffix": "+",
+        "sortOrder": 1
+      },
+      {
+        "id": "stat-courses",
+        "key": "courses",
+        "label": {
+          "en": "Courses",
+          "fa": "دوره‌ها"
         },
-        {
-          "id": "stat-teachers",
-          "key": "teachers",
-          "label": {
-            "en": "Teachers",
-            "fa": "استادان"
-          },
-          "value": 12,
-          "suffix": "+",
-          "sortOrder": 3
+        "value": 10,
+        "suffix": "",
+        "sortOrder": 2
+      },
+      {
+        "id": "stat-teachers",
+        "key": "teachers",
+        "label": {
+          "en": "Teachers",
+          "fa": "استادان"
         },
-        {
-          "id": "stat-graduates",
-          "key": "graduates",
-          "label": {
-            "en": "Graduates",
-            "fa": "فارغ‌التحصیلان"
-          },
-          "value": 180,
-          "suffix": "+",
-          "sortOrder": 4
-        }
-      ],
-      "isVisible": true,
-      "note": "All values are fictional demo data and must be replaced with verified academy statistics before publication."
-    }
-  ],
-  "testimonials": [
-    {
-      "id": "testimonial-001",
-      "studentName": {
-        "en": "Demo Student 01",
-        "fa": "دانش‌آموز نمونه ۱"
+        "value": 12,
+        "suffix": "+",
+        "sortOrder": 3
       },
-      "courseId": "course-english-001",
-      "quote": {
-        "en": "The lessons helped me practice regularly and feel more confident.",
-        "fa": "درس‌ها به من کمک کرد منظم تمرین کنم و اعتمادبه‌نفس بیشتری داشته باشم."
-      },
-      "rating": 5,
-      "photo": null,
-      "isFeatured": true,
-      "status": "published"
+      {
+        "id": "stat-graduates",
+        "key": "graduates",
+        "label": {
+          "en": "Graduates",
+          "fa": "فارغ‌التحصیلان"
+        },
+        "value": 180,
+        "suffix": "+",
+        "sortOrder": 4
+      }
+    ],
+    "isVisible": true,
+    "note": "All values are fictional demo data and must be replaced with verified academy statistics before publication."
+  }
+],
+"testimonials": [
+  {
+    "id": "testimonial-001",
+    "studentName": {
+      "en": "Demo Student 01",
+      "fa": "دانش‌آموز نمونه ۱"
     },
-    {
-      "id": "testimonial-002",
-      "studentName": {
-        "en": "Demo Student 02",
-        "fa": "دانش‌آموز نمونه ۲"
-      },
-      "courseId": "course-math-001",
-      "quote": {
-        "en": "Step-by-step explanations made difficult topics easier to understand.",
-        "fa": "توضیح‌های مرحله‌به‌مرحله فهم موضوعات دشوار را آسان‌تر کرد."
-      },
-      "rating": 5,
-      "photo": null,
-      "isFeatured": true,
-      "status": "published"
+    "courseId": "course-english-001",
+    "quote": {
+      "en": "The lessons helped me practice regularly and feel more confident.",
+      "fa": "درس‌ها به من کمک کرد منظم تمرین کنم و اعتمادبه‌نفس بیشتری داشته باشم."
     },
-    {
-      "id": "testimonial-003",
-      "studentName": {
-        "en": "Demo Student 03",
-        "fa": "دانش‌آموز نمونه ۳"
-      },
-      "courseId": "course-computer-001",
-      "quote": {
-        "en": "I learned practical digital skills that I can use in my studies.",
-        "fa": "مهارت‌های عملی دیجیتال آموختم که می‌توانم در درس‌هایم استفاده کنم."
-      },
-      "rating": 4,
-      "photo": null,
-      "isFeatured": false,
-      "status": "published"
-    }
-  ],
-  "announcements": [
-    {
-      "id": "announcement-001",
-      "slug": "sample-registration-announcement",
-      "title": {
-        "en": "Sample: New Course Registration",
-        "fa": "نمونه: ثبت‌نام دوره‌های جدید"
-      },
-      "summary": {
-        "en": "A demo announcement showing how new course registration updates may appear.",
-        "fa": "اطلاعیه آزمایشی برای نمایش نحوه نشر خبر آغاز ثبت‌نام دوره‌های جدید."
-      },
-      "content": {
-        "en": "This is sample content only. Replace it with an announcement approved by the academy.",
-        "fa": "این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."
-      },
-      "type": "admissions",
-      "publishedAt": "2026-11-01T08:00:00.000Z",
-      "expiresAt": null,
-      "isPinned": true,
-      "status": "published"
+    "rating": 5,
+    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "role": {
+      "en": "English Language Student",
+      "fa": "دانش‌آموز زبان انگلیسی"
     },
-    {
-      "id": "announcement-002",
-      "slug": "sample-information-session",
-      "title": {
-        "en": "Sample: Online Information Session",
-        "fa": "نمونه: نشست آنلاین معرفی برنامه‌ها"
-      },
-      "summary": {
-        "en": "A placeholder for an upcoming information session.",
-        "fa": "نمونه‌ای برای معرفی یک نشست آگاهی‌دهی پیش‌رو."
-      },
-      "content": {
-        "en": "Date, time, and joining details will be added after confirmation.",
-        "fa": "تاریخ، زمان و جزئیات اشتراک پس از تأیید اضافه خواهد شد."
-      },
-      "type": "webinar",
-      "publishedAt": "2026-10-29T08:00:00.000Z",
-      "expiresAt": null,
-      "isPinned": false,
-      "status": "published"
+    "isFeatured": true,
+    "sortOrder": 1,
+    "status": "published"
+  },
+  {
+    "id": "testimonial-002",
+    "studentName": {
+      "en": "Demo Student 02",
+      "fa": "دانش‌آموز نمونه ۲"
     },
-    {
-      "id": "announcement-003",
-      "slug": "sample-schedule-update",
-      "title": {
-        "en": "Sample: Class Schedule Update",
-        "fa": "نمونه: تغییر در برنامه کلاس‌ها"
-      },
-      "summary": {
-        "en": "A demo notice for schedule changes and class reminders.",
-        "fa": "اطلاعیه آزمایشی برای تغییر برنامه و یادآوری کلاس‌ها."
-      },
-      "content": {
-        "en": "Please check the class calendar for the latest confirmed schedule.",
-        "fa": "برای مشاهده برنامه تأییدشده، تقویم کلاس‌ها را بررسی کنید."
-      },
-      "type": "schedule",
-      "publishedAt": "2026-10-25T08:00:00.000Z",
-      "expiresAt": null,
-      "isPinned": false,
-      "status": "published"
-    }
-  ],
+    "courseId": "course-math-001",
+    "quote": {
+      "en": "Step-by-step explanations made difficult topics easier to understand.",
+      "fa": "توضیح‌های مرحله‌به‌مرحله فهم موضوعات دشوار را آسان‌تر کرد."
+    },
+    "rating": 5,
+    "photo": "https://plus.unsplash.com/premium_photo-1763734758145-5febca8035c9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "role": {
+      "en": "Mathematics Student",
+      "fa": "دانش‌آموز ریاضیات"
+    },
+    "isFeatured": true,
+    "sortOrder": 2,
+    "status": "published"
+  },
+  {
+    "id": "testimonial-003",
+    "studentName": {
+      "en": "Demo Student 03",
+      "fa": "دانش‌آموز نمونه ۳"
+    },
+    "courseId": "course-computer-001",
+    "quote": {
+      "en": "I learned practical digital skills that I can use in my studies.",
+      "fa": "مهارت‌های عملی دیجیتال آموختم که می‌توانم در درس‌هایم استفاده کنم."
+    },
+    "rating": 4,
+    "photo": "https://plus.unsplash.com/premium_photo-1670884441862-ddb29ed1f25e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "role": {
+      "en": "Computer Skills Student",
+      "fa": "دانش‌آموز مهارت‌های کمپیوتر"
+    },
+    "isFeatured": false,
+    "sortOrder": 3,
+    "status": "published"
+  }
+],
+"announcements": [
+  {
+    "id": "announcement-001",
+    "slug": "sample-registration-announcement",
+    "title": {
+      "en": "Sample: New Course Registration",
+      "fa": "نمونه: ثبت‌نام دوره‌های جدید"
+    },
+    "summary": {
+      "en": "A demo announcement showing how new course registration updates may appear.",
+      "fa": "اطلاعیه آزمایشی برای نمایش نحوه نشر خبر آغاز ثبت‌نام دوره‌های جدید."
+    },
+    "content": {
+      "en": "This is sample content only. Replace it with an announcement approved by the academy.",
+      "fa": "این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."
+    },
+    "type": "admissions",
+    "image": null,
+    "publishedAt": "2026-11-01T08:00:00.000Z",
+    "updatedAt": null,
+    "expiresAt": null,
+    "isPinned": true,
+    "sortOrder": 1,
+    "status": "published"
+  },
+  {
+    "id": "announcement-002",
+    "slug": "sample-information-session",
+    "title": {
+      "en": "Sample: Online Information Session",
+      "fa": "نمونه: نشست آنلاین معرفی برنامه‌ها"
+    },
+    "summary": {
+      "en": "A placeholder for an upcoming information session.",
+      "fa": "نمونه‌ای برای معرفی یک نشست آگاهی‌دهی پیش‌رو."
+    },
+    "content": {
+      "en": "Date, time, and joining details will be added after confirmation.",
+      "fa": "تاریخ، زمان و جزئیات اشتراک پس از تأیید اضافه خواهد شد."
+    },
+    "type": "webinar",
+    "image": null,
+    "publishedAt": "2026-10-29T08:00:00.000Z",
+    "updatedAt": null,
+    "expiresAt": null,
+    "isPinned": false,
+    "sortOrder": 2,
+    "status": "published"
+  },
+  {
+    "id": "announcement-003",
+    "slug": "sample-schedule-update",
+    "title": {
+      "en": "Sample: Class Schedule Update",
+      "fa": "نمونه: تغییر در برنامه کلاس‌ها"
+    },
+    "summary": {
+      "en": "A demo notice for schedule changes and class reminders.",
+      "fa": "اطلاعیه آزمایشی برای تغییر برنامه و یادآوری کلاس‌ها."
+    },
+    "content": {
+      "en": "Please check the class calendar for the latest confirmed schedule.",
+      "fa": "برای مشاهده برنامه تأییدشده، تقویم کلاس‌ها را بررسی کنید."
+    },
+    "type": "schedule",
+    "image": null,
+    "publishedAt": "2026-10-25T08:00:00.000Z",
+    "updatedAt": null,
+    "expiresAt": null,
+    "isPinned": false,
+    "sortOrder": 3,
+    "status": "published"
+  }
+],
+
   "events": [
     {
       "id": "event-001",
@@ -2188,5 +2256,377 @@
       "sortOrder": 4,
       "status": "draft"
     }
-  ]
+  ],
+  "navigation": [
+    {
+      "id": "nav-home",
+      "label": {
+        "en": "Home",
+        "fa": "صفحه اصلی"
+      },
+      "path": "/",
+      "sortOrder": 1,
+      "isVisible": true
+    },
+    {
+      "id": "nav-about",
+      "label": {
+        "en": "About Us",
+        "fa": "درباره ما"
+      },
+      "path": "/about",
+      "sortOrder": 2,
+      "isVisible": true
+    },
+    {
+      "id": "nav-courses",
+      "label": {
+        "en": "Courses",
+        "fa": "دوره‌ها"
+      },
+      "path": "/courses",
+      "sortOrder": 3,
+      "isVisible": true
+    },
+    {
+      "id": "nav-teachers",
+      "label": {
+        "en": "Teachers",
+        "fa": "استادان"
+      },
+      "path": "/teachers",
+      "sortOrder": 4,
+      "isVisible": true
+    },
+    {
+      "id": "nav-schedule",
+      "label": {
+        "en": "Class Schedule",
+        "fa": "برنامه درسی"
+      },
+      "path": "/schedule",
+      "sortOrder": 5,
+      "isVisible": true
+    },
+    {
+      "id": "nav-announcements",
+      "label": {
+        "en": "Announcements",
+        "fa": "اطلاعیه‌ها"
+      },
+      "path": "/announcements",
+      "sortOrder": 6,
+      "isVisible": true
+    },
+    {
+      "id": "nav-contact",
+      "label": {
+        "en": "Contact",
+        "fa": "تماس با ما"
+      },
+      "path": "/contact",
+      "sortOrder": 7,
+      "isVisible": true
+    }
+  ],
+"homepageContent": {
+  "hero": {
+    "eyebrow": {
+      "en": "LEARN • GROW • SUCCEED",
+      "fa": "یاد بگیر • رشد کن • موفق شو"
+    },
+    "title": {
+      "en": "Empowering Girls Through Quality Education",
+      "fa": "توانمندسازی دختران از مسیر آموزش باکیفیت"
+    },
+    "description": {
+      "en": "Discover opportunities to learn, develop your skills, and build a brighter future through accessible and supportive education.",
+      "fa": "فرصت‌های تازه‌ای برای یادگیری، رشد مهارت‌ها و ساختن آینده‌ای روشن‌تر از طریق آموزش قابل‌دسترس و حمایت‌گر کشف کنید."
+    },
+    "primaryAction": {
+      "label": {
+        "en": "Explore Courses",
+        "fa": "مشاهده دوره‌ها"
+      },
+      "path": "/courses"
+    },
+    "secondaryAction": {
+      "label": {
+        "en": "Join Our Academy",
+        "fa": "به آکادمی ما بپیوندید"
+      },
+      "path": "/registration"
+    },
+    "image": null
+  },
+
+  "coursesSection": {
+    "eyebrow": {
+      "en": "OUR PROGRAMS",
+      "fa": "برنامه‌های آموزشی ما"
+    },
+    "title": {
+      "en": "Discover Your Path to a Brighter Future",
+      "fa": "مسیر خود را به سوی آینده‌ای روشن‌تر پیدا کنید"
+    },
+    "description": {
+      "en": "Explore our educational programs designed to build knowledge, develop practical skills, and create new opportunities for every learner.",
+      "fa": "برنامه‌های آموزشی ما را کشف کنید؛ برنامه‌هایی که برای افزایش دانش، توسعه مهارت‌های کاربردی و ایجاد فرصت‌های تازه برای هر دانش‌آموز طراحی شده‌اند."
+    },
+    "actionLabel": {
+      "en": "Explore All Programs",
+      "fa": "مشاهده تمام برنامه‌ها"
+    },
+    "cardAction": {
+      "en": "Explore Program",
+      "fa": "مشاهده برنامه"
+    },
+    "courseCountLabel": {
+      "en": "Available Courses",
+      "fa": "دوره‌های موجود"
+    },
+    "featuredLabel": {
+      "en": "Featured Program",
+      "fa": "برنامه ویژه"
+    },
+    "emptyTitle": {
+      "en": "Learning Opportunities Are Coming",
+      "fa": "فرصت‌های آموزشی به‌زودی اضافه می‌شوند"
+    },
+    "emptyDescription": {
+      "en": "We are preparing valuable learning opportunities for you. Please check back soon.",
+      "fa": "ما در حال آماده‌سازی فرصت‌های ارزشمند آموزشی برای شما هستیم. لطفاً به‌زودی دوباره مراجعه کنید."
+    },
+    "errorTitle": {
+      "en": "Unable to Load Programs",
+      "fa": "بارگذاری برنامه‌ها ممکن نشد"
+    },
+    "errorDescription": {
+      "en": "Something went wrong while loading the programs. Please try again.",
+      "fa": "هنگام بارگذاری برنامه‌ها مشکلی رخ داد. لطفاً دوباره تلاش کنید."
+    },
+    "retryLabel": {
+      "en": "Try Again",
+      "fa": "تلاش دوباره"
+    },
+    "loadingLabel": {
+      "en": "Loading Programs...",
+      "fa": "در حال بارگذاری برنامه‌ها..."
+    },
+    "pathwayLabel": {
+      "en": "LEARNING PATH",
+      "fa": "مسیر آموزشی"
+    },
+    "courseLabel": {
+      "en": "course",
+      "fa": "دوره"
+    },
+    "coursesLabel": {
+      "en": "courses",
+      "fa": "دوره‌ها"
+    },
+    "availablePathsLabel": {
+      "en": "AVAILABLE LEARNING PATHS",
+      "fa": "مسیرهای آموزشی موجود"
+    },
+    "limit": 5
+  },
+
+  "statsSection": {
+    "eyebrow": {
+      "en": "OUR IMPACT",
+      "fa": "دستاوردهای ما"
+    },
+    "title": {
+      "en": "Creating Opportunities Through Education",
+      "fa": "ایجاد فرصت‌ها از مسیر آموزش"
+    },
+    "description": {
+      "en": "Every number represents a step toward a brighter future through learning.",
+      "fa": "هر عدد نشان‌دهنده گامی به سوی آینده‌ای روشن‌تر از طریق آموزش است."
+    },
+    "loadingLabel": {
+      "en": "Loading academy statistics...",
+      "fa": "در حال بارگذاری آمار آکادمی..."
+    },
+    "errorTitle": {
+      "en": "Unable to Load Statistics",
+      "fa": "بارگذاری آمار ممکن نشد"
+    },
+    "errorDescription": {
+      "en": "Something went wrong while loading academy statistics.",
+      "fa": "هنگام بارگذاری آمار آکادمی مشکلی رخ داد."
+    },
+    "retryLabel": {
+      "en": "Try Again",
+      "fa": "تلاش دوباره"
+    },
+    "emptyTitle": {
+      "en": "Our Impact Is Growing",
+      "fa": "دستاوردهای ما در حال گسترش است"
+    },
+    "emptyDescription": {
+      "en": "Academy statistics will be available soon.",
+      "fa": "آمار آکادمی به‌زودی در دسترس قرار می‌گیرد."
+    },
+    "limit": 4
+  },
+
+  "teachersSection": {
+    "eyebrow": {
+      "en": "MEET OUR EDUCATORS",
+      "fa": "آشنایی با آموزگاران ما"
+    },
+    "title": {
+      "en": "Learn with Dedicated Educators",
+      "fa": "با آموزگاران متعهد یاد بگیرید"
+    },
+    "description": {
+      "en": "Discover the educators behind our learning programs.",
+      "fa": "با آموزگارانی آشنا شوید که برنامه‌های آموزشی ما را همراهی می‌کنند."
+    },
+    "actionLabel": {
+      "en": "Meet All Teachers",
+      "fa": "مشاهده تمام استادان"
+    },
+    "limit": 4
+  },
+
+  "testimonialsSection": {
+    "eyebrow": {
+      "en": "STUDENT STORIES",
+      "fa": "تجربه دانش‌آموزان"
+    },
+    "title": {
+      "en": "Stories of Learning and Growth",
+      "fa": "داستان‌هایی از یادگیری و پیشرفت"
+    },
+    "description": {
+      "en": "Hear how learning experiences are making a difference in students' lives.",
+      "fa": "بشنوید که تجربه‌های آموزشی چگونه در زندگی دانش‌آموزان تفاوت ایجاد می‌کنند."
+    },
+    "visualImages": [
+  {
+    "id": "learning-together",
+    "src": "https://images.openai.com/static-rsc-4/wqXPoBhv-fq_hVkzRGtvsVfkA4GQPfyo_FF6YGtd5O-TqMVqnYEGLRsYeTyDmZYN-RuS2pIiNQUIiJ2ohr6DZZstfWKb8pabbH6XABojPjcZyPZE5zWMFX1mwLuegAKVBHmj81onZq9ol-K6zjMDS0XnexV6zw8jLCLQvgaeaA3lduTViPFH9LaEsbnV6pmn?purpose=fullsize",
+    "alt": {
+      "en": "Students studying together in a modern library",
+      "fa": "دانش‌آموزان در حال مطالعه در کتابخانه مدرن"
+    }
+  },
+  {
+    "id": "guided-learning",
+    "src": "https://images.pexels.com/photos/6550403/pexels-photo-6550403.jpeg?auto=compress&dpr=1&h=750&w=1260",
+    "alt": {
+      "en": "Students learning together with books and notes",
+      "fa": "دانش‌آموزان در حال یادگیری با کتاب و یادداشت‌ها"
+    }
+  }
+],
+"featuredLabel": {
+  "en": "FEATURED STORY",
+  "fa": "داستان برجسته"
+},
+"loadingLabel": {
+  "en": "Loading student stories...",
+  "fa": "در حال بارگذاری داستان‌های دانش‌آموزان..."
+},
+"errorTitle": {
+  "en": "Unable to Load Stories",
+  "fa": "بارگذاری نظرات ممکن نشد"
+},
+"errorDescription": {
+  "en": "Something went wrong while loading student stories.",
+  "fa": "هنگام بارگذاری نظرات دانش‌آموزان مشکلی رخ داد."
+},
+"retryLabel": {
+  "en": "Try Again",
+  "fa": "تلاش دوباره"
+},
+"emptyTitle": {
+  "en": "Every Learning Journey Matters",
+  "fa": "هر مسیر یادگیری ارزشمند است"
+},
+"emptyDescription": {
+  "en": "Student stories will be available soon.",
+  "fa": "داستان‌های دانش‌آموزان به‌زودی منتشر می‌شوند."
+},
+"previousLabel": {
+  "en": "Previous story",
+  "fa": "داستان قبلی"
+},
+"nextLabel": {
+  "en": "Next story",
+  "fa": "داستان بعدی"
+},
+    "limit": 6
+  },
+
+  "announcementsSection": {
+    "eyebrow": {
+      "en": "LATEST UPDATES",
+      "fa": "تازه‌ترین خبرها"
+    },
+    "title": {
+      "en": "News and Announcements",
+      "fa": "خبرها و اطلاعیه‌ها"
+    },
+    "description": {
+      "en": "Stay informed about academy news, programs, and important updates.",
+      "fa": "از خبرها، برنامه‌ها و اطلاعیه‌های مهم آکادمی باخبر بمانید."
+    },
+    "actionLabel": {
+      "en": "All Announcements",
+      "fa": "تمام اطلاعیه‌ها"
+    },
+    "limit": 3
+  }
+},
+"footerContent": {
+  "description": {
+    "en": "Supporting girls through accessible education, meaningful learning opportunities, and skills development.",
+    "fa": "حمایت از دختران از طریق آموزش قابل‌دسترس، فرصت‌های ارزشمند یادگیری و توسعه مهارت‌ها."
+  },
+  "quickLinksTitle": {
+    "en": "Quick Links",
+    "fa": "دسترسی سریع"
+  },
+  "contactTitle": {
+    "en": "Contact Us",
+    "fa": "ارتباط با ما"
+  },
+  "copyright": {
+    "en": "© 2026 Gam-e-Buland Online Academy. All rights reserved.",
+    "fa": "© ۲۰۲۶ آکادمی آنلاین گام بُلند. تمامی حقوق محفوظ است."
+  },
+  "email": "info@example.com",
+  "phone": "+93 000 000 000",
+  "address": {
+    "en": "Kabul, Afghanistan (Demo Address)",
+    "fa": "کابل، افغانستان (آدرس نمونه)"
+  },
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/",
+    "instagram": "https://www.instagram.com/",
+    "linkedin": "https://www.linkedin.com/",
+    "whatsapp": "https://wa.me/?text=Hello%20Gam-e-Buland%20Online%20Academy",
+    "telegram": "https://t.me/share/url?url=https%3A%2F%2Fexample.com&text=Hello%20Gam-e-Buland%20Online%20Academy",
+    "googleMeet": "https://meet.google.com/"
+  }
+ },
+ "siteSettings": {
+  "academyName": {
+    "en": "Gam-e-Buland Online Academy",
+    "fa": "آکادمی آنلاین گام بُلند"
+  },
+  "tagline": {
+    "en": "Learn Today, Lead Tomorrow",
+    "fa": "امروز بیاموز، فردا پیشگام باش"
+  },
+  "logo": null,
+  "registrationButton": {
+    "en": "Register Now",
+    "fa": "ثبت‌ نام"
+  }
+}
 }
