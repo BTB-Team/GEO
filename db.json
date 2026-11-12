@@ -1647,7 +1647,7 @@
       "fa": "درس‌ها به من کمک کرد منظم تمرین کنم و اعتمادبه‌نفس بیشتری داشته باشم."
     },
     "rating": 5,
-    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_1",
     "role": {
       "en": "English Language Student",
       "fa": "دانش‌آموز زبان انگلیسی"
@@ -1668,7 +1668,7 @@
       "fa": "توضیح‌های مرحله‌به‌مرحله فهم موضوعات دشوار را آسان‌تر کرد."
     },
     "rating": 5,
-    "photo": "https://plus.unsplash.com/premium_photo-1763734758145-5febca8035c9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_2",
     "role": {
       "en": "Mathematics Student",
       "fa": "دانش‌آموز ریاضیات"
@@ -1689,7 +1689,7 @@
       "fa": "مهارت‌های عملی دیجیتال آموختم که می‌توانم در درس‌هایم استفاده کنم."
     },
     "rating": 4,
-    "photo": "https://plus.unsplash.com/premium_photo-1670884441862-ddb29ed1f25e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_3",
     "role": {
       "en": "Computer Skills Student",
       "fa": "دانش‌آموز مهارت‌های کمپیوتر"
@@ -2508,7 +2508,7 @@
     "visualImages": [
   {
     "id": "learning-together",
-    "src": "https://images.openai.com/static-rsc-4/wqXPoBhv-fq_hVkzRGtvsVfkA4GQPfyo_FF6YGtd5O-TqMVqnYEGLRsYeTyDmZYN-RuS2pIiNQUIiJ2ohr6DZZstfWKb8pabbH6XABojPjcZyPZE5zWMFX1mwLuegAKVBHmj81onZq9ol-K6zjMDS0XnexV6zw8jLCLQvgaeaA3lduTViPFH9LaEsbnV6pmn?purpose=fullsize",
+    "assetId": "groupWork_1",
     "alt": {
       "en": "Students studying together in a modern library",
       "fa": "دانش‌آموزان در حال مطالعه در کتابخانه مدرن"
@@ -2516,7 +2516,7 @@
   },
   {
     "id": "guided-learning",
-    "src": "https://images.pexels.com/photos/6550403/pexels-photo-6550403.jpeg?auto=compress&dpr=1&h=750&w=1260",
+    "assetId": "groupWork_2",
     "alt": {
       "en": "Students learning together with books and notes",
       "fa": "دانش‌آموزان در حال یادگیری با کتاب و یادداشت‌ها"
