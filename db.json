@@ -2563,24 +2563,69 @@
   },
 
   "announcementsSection": {
-    "eyebrow": {
-      "en": "LATEST UPDATES",
-      "fa": "تازه‌ترین خبرها"
+  "eyebrow": {
+    "en": "LATEST UPDATES",
+    "fa": "تازه‌ترین خبرها"
+  },
+  "title": {
+    "en": "News and Announcements",
+    "fa": "خبرها و اطلاعیه‌ها"
+  },
+  "description": {
+    "en": "Stay informed about academy news, programs, and important updates.",
+    "fa": "از خبرها، برنامه‌ها و اطلاعیه‌های مهم آکادمی باخبر بمانید."
+  },
+  "actionLabel": {
+    "en": "All Announcements",
+    "fa": "تمام اطلاعیه‌ها"
+  },
+  "actionPath": "/announcements",
+
+  "pinnedLabel": {
+    "en": "IMPORTANT UPDATE",
+    "fa": "اطلاعیه مهم"
+  },
+  "typeLabels": {
+    "admissions": {
+      "en": "Admissions",
+      "fa": "ثبت‌نام"
     },
-    "title": {
-      "en": "News and Announcements",
-      "fa": "خبرها و اطلاعیه‌ها"
+    "webinar": {
+      "en": "Webinar",
+      "fa": "ویبینار"
     },
-    "description": {
-      "en": "Stay informed about academy news, programs, and important updates.",
-      "fa": "از خبرها، برنامه‌ها و اطلاعیه‌های مهم آکادمی باخبر بمانید."
-    },
-    "actionLabel": {
-      "en": "All Announcements",
-      "fa": "تمام اطلاعیه‌ها"
-    },
-    "limit": 3
-  }
+    "schedule": {
+      "en": "Schedule Update",
+      "fa": "تغییر برنامه"
+    }
+  },
+
+  "loadingLabel": {
+    "en": "Loading announcements...",
+    "fa": "در حال بارگذاری اطلاعیه‌ها..."
+  },
+  "errorTitle": {
+    "en": "Unable to Load Announcements",
+    "fa": "بارگذاری اطلاعیه‌ها ممکن نشد"
+  },
+  "errorDescription": {
+    "en": "Something went wrong while loading announcements. Please try again.",
+    "fa": "هنگام بارگذاری اطلاعیه‌ها مشکلی رخ داد. لطفاً دوباره تلاش کنید."
+  },
+  "retryLabel": {
+    "en": "Try Again",
+    "fa": "تلاش دوباره"
+  },
+  "emptyTitle": {
+    "en": "No Announcements Yet",
+    "fa": "هنوز اطلاعیه‌ای منتشر نشده است"
+  },
+  "emptyDescription": {
+    "en": "There are no published announcements at the moment. Please check back soon.",
+    "fa": "در حال حاضر اطلاعیه منتشرشده‌ای وجود ندارد. لطفاً بعداً دوباره مراجعه کنید."
+  },
+  "limit": 3
+}
 },
 "footerContent": {
   "description": {
