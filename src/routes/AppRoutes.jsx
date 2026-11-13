@@ -1,5 +1,5 @@
-
 import { Routes, Route } from "react-router-dom"
+import MainLayout from "../components/layout/MainLayout"
 import Home from "../pages/Home/Home"
 import Teachers from "../pages/Teachers/Teachers"
 import Courses from "../pages/Courses/Courses"
@@ -14,26 +14,28 @@ import Gallery from "../pages/Gallery/Gallery"
 import Events from "../pages/Events/Events"
 import Blog from "../pages/Blog/Blog"
 import Resources from "../pages/Resources/Resources"
-import Saved from "../pages/Saved/Saved";
+import Saved from "../pages/Saved/Saved"
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/teachers" element={<Teachers />} />
-      <Route path="/courses" element={<Courses />} />
-      <Route path="/courses/:courseId" element={<CourseDetails />} />
-      <Route path="/schedule" element={<ClassSchedule />} />
-      <Route path="/registration" element={<Registration />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/achievements" element={<Achievements />} />
-      <Route path="/announcements" element={<Announcements />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/resources" element={<Resources />} />
-      <Route path="/saved" element={<Saved />} />
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:courseId" element={<CourseDetails />} />
+        <Route path="/schedule" element={<ClassSchedule />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/announcements" element={<Announcements />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/saved" element={<Saved />} />
+      </Route>
     </Routes>
   )
 }
