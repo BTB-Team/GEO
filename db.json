@@ -2641,8 +2641,8 @@
     "fa": "ارتباط با ما"
   },
   "copyright": {
-    "en": "© 2026 Gam-e-Buland Online Academy. All rights reserved.",
-    "fa": "© ۲۰۲۶ آکادمی آنلاین گام بُلند. تمامی حقوق محفوظ است."
+    "en": "© 2026 Girls Education Organization. All rights reserved.",
+    "fa": "© ۲۰۲۶ سازمان آموزش دختران. تمامی حقوق محفوظ است."
   },
   "email": "info@example.com",
   "phone": "+93 000 000 000",
@@ -2654,15 +2654,15 @@
     "facebook": "https://www.facebook.com/",
     "instagram": "https://www.instagram.com/",
     "linkedin": "https://www.linkedin.com/",
-    "whatsapp": "https://wa.me/?text=Hello%20Gam-e-Buland%20Online%20Academy",
-    "telegram": "https://t.me/share/url?url=https%3A%2F%2Fexample.com&text=Hello%20Gam-e-Buland%20Online%20Academy",
+    "whatsapp": "https://wa.me/?text=Hello%20Girls%20Education%20Organization",
+    "telegram": "https://t.me/share/url?url=https%3A%2F%2Fexample.com&text=Hello%20Girls%20Education%20Organization",
     "googleMeet": "https://meet.google.com/"
   }
  },
  "siteSettings": {
   "academyName": {
-    "en": "Gam-e-Buland Online Academy",
-    "fa": "آکادمی آنلاین گام بُلند"
+    "en": "Girls Education Organization",
+    "fa": "سازمان آموزش دختران"
   },
   "tagline": {
     "en": "Learn Today, Lead Tomorrow",
