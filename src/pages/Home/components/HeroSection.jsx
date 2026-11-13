@@ -11,7 +11,7 @@ import {
   Sparkles,
 } from "lucide-react"
 
-import heroStudentImage from "../../../assets/image/home/hero-student.png"
+import heroStudentImage from "../../../assets/image/home/hero-student.webp"
 import useLanguageStore from "../../../store/languageStore"
 
 // ============================================

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { Menu, X, Globe } from "lucide-react"
 import useLanguageStore from "../../store/languageStore"
-import academyLogo from "../../assets/image/logo/logo_header.png"
+import academyLogo from "../../assets/image/logo/logo_header.webp"
 
 const Header = () => {
   const [navigation, setNavigation] = useState([])
