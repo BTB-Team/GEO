@@ -1,18 +1,29 @@
-// ذخیره تابع اصلی fetch مرورگر
 const originalFetch = window.fetch;
 
-// آدرس لوکال و آدرس سرور آنلاین
 const LOCAL_API = 'http://localhost:5000';
-const PROD_API = 'https://typicode.com';
+const GITHUB_DB_URL = 'https://githubusercontent.com';
 
-// بازنویسی تابع fetch به صورت سراسری
+let cachedDb = null;
+
 window.fetch = async (url, options) => {
-  // اگر در محیط آنلاین (Production) هستیم و آدرس با localhost:5000 شروع می‌شود
+  // فقط در نسخه آنلاین (GitHub Pages) درخواست‌های پورت ۵۰۰۰ را رهگیری می‌کنیم
   if (import.meta.env.PROD && typeof url === 'string' && url.startsWith(LOCAL_API)) {
-    const onlineUrl = url.replace(LOCAL_API, PROD_API);
-    return originalFetch(onlineUrl, options);
+    // اگر فایل db.json هنوز دانلود نشده، یک بار از گیت‌هاب می‌گیریم
+    if (!cachedDb) {
+      const response = await originalFetch(GITHUB_DB_URL);
+      cachedDb = await response.json();
+    }
+
+    // استخراج نام بخش درخواستی از آدرس (مثلاً homepageContent از http://localhost:5000/homepageContent)
+    const endpoint = url.replace(`${LOCAL_API}/`, '').split('?')[0];
+    const data = cachedDb[endpoint] || {};
+
+    // ساخت یک پاسخ شبیه‌سازی‌شده دقیقاً شبیه json-server
+    return new Response(JSON.stringify(data), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
 
-  // در محیط لوکال (Development) بدون تغییر اجرا می‌شود
   return originalFetch(url, options);
 };
