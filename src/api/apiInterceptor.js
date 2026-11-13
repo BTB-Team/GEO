@@ -10,13 +10,14 @@ window.fetch = async (url, options) => {
       cachedDb = await response.json();
     }
 
-    const path = url.replace(`${LOCAL_API}/`, '').split('?');
+    // اضافه شدن [0] و [1] برای دسترسی دقیق به نام بخش و شناسه
+    const path = url.replace(`${LOCAL_API}/`, '').split('?')[0];
     const parts = path.split('/');
     
-    let data = cachedDb[parts];
+    let data = cachedDb[parts[0]];
 
-    if (Array.isArray(data) && parts) {
-      data = data.find((item) => String(item.id) === String(parts)) || {};
+    if (Array.isArray(data) && parts[1]) {
+      data = data.find((item) => String(item.id) === String(parts[1])) || {};
     }
 
     return new Response(JSON.stringify(data || {}), {
