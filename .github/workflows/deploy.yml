@@ -15,9 +15,8 @@ permissions:
   contents: write
 
 jobs:
-  # باکس اول: بررسی کد و بیلد گرفتن
-  build:
-    name: Lint and Build
+  build-and-deploy:
+    name: Lint, Build and Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -42,36 +41,17 @@ jobs:
         run: pnpm lint
 
       - name: Build project
-        env:
-          VITE_BASE_PATH: /GEO/
         run: pnpm build
 
-      - name: Create 404.html for SPA Routing
-        run: cp dist/index.html dist/404.html
+      - name: Copy db.json and create 404.html
+        if: github.event_name == 'push'
+        run: |
+          cp db.json dist/db.json
+          cp dist/index.html dist/404.html
 
-      # ذخیره پوشه dist برای انتقال به باکس دوم
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist-files
-          path: ./dist
-
-  # باکس دوم: انتشار روی سایت (فقط هنگام پوش اجرا می‌شود)
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-
-    steps:
-      # دریافت پوشه dist از باکس اول
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: dist-files
-          path: ./dist
 
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
