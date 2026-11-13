@@ -2119,17 +2119,17 @@
         "fa": "فعالیت‌های آموزشی"
       },
       "altText": {
-        "en": "Placeholder image for academy learning activities",
-        "fa": "تصویر نمونه برای فعالیت‌های آموزشی آکادمی"
+        "en": "Learning activities at the academy",
+        "fa": "فعالیت‌های آموزشی در آکادمی"
       },
       "description": {
-        "en": "Replace this item with a real, approved academy photograph.",
-        "fa": "این مورد را با عکس واقعی و تأییدشده آکادمی جایگزین کنید."
+        "en": "Learning activities at the academy.",
+        "fa": "فعالیت‌های آموزشی در آکادمی."
       },
-      "imageUrl": null,
+      "imageUrl": "/images/academy/school.webp",
       "category": "learning",
       "sortOrder": 1,
-      "status": "draft"
+      "status": "published"
     },
     {
       "id": "gallery-002",
@@ -2138,17 +2138,17 @@
         "fa": "فعالیت‌های STEM"
       },
       "altText": {
-        "en": "Placeholder image for STEM activities",
-        "fa": "تصویر نمونه برای فعالیت‌های STEM"
+        "en": "STEM activities at the academy",
+        "fa": "فعالیت‌های STEM در آکادمی"
       },
       "description": {
-        "en": "Replace this item with a real, approved academy photograph.",
-        "fa": "این مورد را با عکس واقعی و تأییدشده آکادمی جایگزین کنید."
+        "en": "STEM learning activities.",
+        "fa": "فعالیت‌های آموزشی STEM."
       },
-      "imageUrl": null,
+      "imageUrl": "/images/academy/school.webp",
       "category": "stem",
       "sortOrder": 2,
-      "status": "draft"
+      "status": "published"
     },
     {
       "id": "gallery-003",
@@ -2157,17 +2157,17 @@
         "fa": "کلاس‌های آنلاین"
       },
       "altText": {
-        "en": "Placeholder image for online classes",
-        "fa": "تصویر نمونه برای کلاس‌های آنلاین"
+        "en": "Online classes at the academy",
+        "fa": "کلاس‌های آنلاین آکادمی"
       },
       "description": {
-        "en": "Replace this item with a real, approved academy photograph.",
-        "fa": "این مورد را با عکس واقعی و تأییدشده آکادمی جایگزین کنید."
+        "en": "Online learning activities.",
+        "fa": "فعالیت‌های یادگیری آنلاین."
       },
-      "imageUrl": null,
+      "imageUrl": "/images/academy/school.webp",
       "category": "classes",
       "sortOrder": 3,
-      "status": "draft"
+      "status": "published"
     },
     {
       "id": "gallery-004",
@@ -2176,17 +2176,145 @@
         "fa": "پروژه‌های دانش‌آموزان"
       },
       "altText": {
-        "en": "Placeholder image for student projects",
-        "fa": "تصویر نمونه برای پروژه‌های دانش‌آموزان"
+        "en": "Student projects",
+        "fa": "پروژه‌های دانش‌آموزان"
       },
       "description": {
-        "en": "Replace this item with a real, approved academy photograph.",
-        "fa": "این مورد را با عکس واقعی و تأییدشده آکادمی جایگزین کنید."
+        "en": "Projects created by students.",
+        "fa": "پروژه‌های ساخته‌شده توسط دانش‌آموزان."
       },
-      "imageUrl": null,
+      "imageUrl": "/images/academy/school.webp",
       "category": "projects",
       "sortOrder": 4,
-      "status": "draft"
+      "status": "published"
+    }
+  ],
+  "homepageGallery": [
+    {
+      "id": "1",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "یادگیری در کنار هم",
+        "en": "Learning together"
+      },
+      "category": "classes",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "2",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "امید در نگاه دختران",
+        "en": "Hope in every girl"
+      },
+      "category": "classes",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "3",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "یادگیری فراتر از صنف",
+        "en": "Learning beyond the classroom"
+      },
+      "category": "activities",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "4",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "لحظه‌های به‌یادماندنی",
+        "en": "Memorable moments"
+      },
+      "category": "events",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "5",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "جشن تلاش و موفقیت",
+        "en": "Celebrating achievement"
+      },
+      "category": "achievements",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "6",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "هر روز، یک گام به پیش",
+        "en": "A step forward every day"
+      },
+      "category": "activities",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "7",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "فرصتی برای یادگیری",
+        "en": "An opportunity to learn"
+      },
+      "category": "classes",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "8",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "آموزش برای آینده",
+        "en": "Education for the future"
+      },
+      "category": "classes",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "9",
+      "imageUrl": "/images/academy/school.webp",
+      "status": "published",
+      "title": {
+        "fa": "همراهی داوطلبانه",
+        "en": "Volunteering together"
+      },
+      "category": "activities",
+      "description": {
+        "fa": "",
+        "en": ""
+      }
     }
   ]
 }

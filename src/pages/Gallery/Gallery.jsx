@@ -1,23 +1,17 @@
 ﻿import { Images } from "lucide-react";
 import useLanguageStore from "../../store/languageStore";
 import AcademyShell from "../../components/academy/AcademyShell";
-import galleryItems from "../../data/gallery.json";
-
 import { categories, labels } from "./galleryLabels";
 import useGallery from "./useGallery";
+
 import GalleryCard from "./components/GalleryCard";
 import Lightbox from "./components/Lightbox";
 
-import "../academy-pages.css";
 
 export default function Gallery() {
   const language = useLanguageStore((state) => state.language);
-  const lang = language === "en" ? "en" : "fa";
-  const en = lang === "en";
-  const t = labels[lang];
-
-  const text = (value) =>
-    typeof value === "string" ? value : value?.[lang] || value?.fa || "";
+  const en = language === "en";
+  const t = labels[en ? "en" : "fa"];
 
   const {
     category,
@@ -26,121 +20,139 @@ export default function Gallery() {
     visible,
     hasMore,
     isLightboxOpen,
+    loading,
+    error,
     changeCategory,
     loadMore,
     openPhoto,
     closePhoto,
-  } = useGallery(galleryItems);
+  } = useGallery();
+  console.log("Gallery Debug:", {
+    loading,
+    error,
+    filteredItems,
+    visible,
+  });
 
-  const progressText = en
-    ? `${visible.length} of ${filteredItems.length} photos`
-    : `${visible.length} از ${filteredItems.length} عکس`;
+  // بررسی وضعیت اطلاعات گالری
+  console.log("Gallery Debug:", {
+    loading,
+    error,
+    filteredItems,
+    visible,
+  });
+
+  function text(value) {
+    if (!value) return "";
+    if (typeof value === "string") return value;
+    return value[en ? "en" : "fa"] || value.en || value.fa || "";
+  }
 
   return (
     <AcademyShell>
-      <main>
-        <header className="gallery-hero">
-          <span className="gb-kicker">
-            {en ? "Moments of hope and learning" : "قاب‌هایی از امید و یادگیری"}
-          </span>
+      <main className="gb-soft section-padding">
+        <div className="container-custom">
+          {/* Gallery Hero */}
+          <div className="gallery-hero">
+            <img
+              src="/images/academy/school.webp"
+              alt={
+                en ? "Academy learning moments" : "لحظه‌های یادگیری در آکادمی"
+              }
+              className="gallery-hero-image"
+            />
 
-          <h1>
-            {en ? (
-              <>
-                Our <span>moments gallery</span>
-              </>
-            ) : (
-              <>
-                گالری <span>لحظه‌های ما</span>
-              </>
-            )}
-          </h1>
+            <div className="gallery-hero-overlay">
+              <span className="gallery-hero-label">
+                {en ? "GIRLS EDUCATION ORGANIZATION" : "سازمان آموزش دختران"}
+              </span>
 
-          <p>
-            {en
-              ? "Every picture tells a story of learning, talent, and a brighter future."
-              : "هر تصویر، روایتی از تلاش، لبخند و یک گام بزرگ آموزشی. توانمندی‌ها و لحظات الهام‌بخش دختران را در اینجا ببینید."}
-          </p>
-        </header>
+              <h1>
+                {en ? "Moments of Hope & Learning" : "قاب‌های امید و یادگیری"}
+              </h1>
 
-        <section className="geo-gallery container-custom" aria-label={t.title}>
-          <div
-            className="geo-filters"
-            role="group"
-            aria-label={en ? "Photo categories" : "دسته‌بندی تصاویر"}
-          >
-            {categories.map((key) => (
+              <p>
+                {en
+                  ? "Every picture tells a story of learning, growth, and inspiration."
+                  : "هر تصویر، داستانی از یادگیری، رشد و الهام‌بخشی را روایت می‌کند."}
+              </p>
+            </div>
+          </div>
+
+          {/* Gallery Categories */}
+          <div className="flex flex-wrap justify-center gap-3 my-8">
+            {categories.map((item) => (
               <button
+                key={item}
                 type="button"
-                key={key}
-                aria-pressed={category === key}
-                onClick={() => changeCategory(key)}
+                onClick={() => changeCategory(item)}
+                className={`px-5 py-2 rounded-full border transition ${
+                  category === item
+                    ? "bg-blue-700 text-white border-blue-700"
+                    : "bg-white text-gray-700 border-gray-200"
+                }`}
               >
-                {t[key]}
+                {t[item]}
               </button>
             ))}
           </div>
 
-          <p className="sr-only" aria-live="polite">
-            {progressText}
-          </p>
+          {/* Loading */}
+          {loading && <p className="text-center body-base">Loading...</p>}
 
-          {visible.length === 0 ? (
-            <div className="geo-state">
-              <Images size={32} aria-hidden="true" />
-              <h2 className="heading-3">{t.empty}</h2>
-            </div>
-          ) : (
-            <div className="geo-grid" id="gallery-photos">
-              {visible.map((item) => (
-                <GalleryCard
-                  key={item.id}
-                  item={item}
-                  text={text}
-                  t={t}
-                  onOpen={openPhoto}
-                />
-              ))}
-            </div>
-          )}
-
-          {hasMore && (
-            <div className="geo-load-more">
-              <button
-                type="button"
-                onClick={loadMore}
-                aria-controls="gallery-photos"
-              >
-                {t.loadMore}
-              </button>
-
-              <p>{progressText}</p>
-            </div>
-          )}
-
-          <div className="gallery-more">
-            <Images size={28} aria-hidden="true" />
-            <h2>{t.moreStories}</h2>
-
-            <p>
-              {en
-                ? "New learning activities and events will bring more stories to our gallery."
-                : "گالری ما همراه با فعالیت‌های تازه دختران و رویدادهای آموزشی به‌روز می‌شود."}
+          {/* Error */}
+          {error && (
+            <p className="text-center text-red-600 body-base">
+              Could not load gallery images. Please try again.
             </p>
-          </div>
-        </section>
+          )}
 
-        {isLightboxOpen && (
-          <Lightbox
-            key={`${category}-${selectedId}`}
-            items={visible}
-            initialId={selectedId}
-            text={text}
-            t={t}
-            onClose={closePhoto}
-          />
-        )}
+          {/* Empty Gallery */}
+          {!loading && !error && filteredItems.length === 0 && (
+            <p className="text-center body-base">{t.empty}</p>
+          )}
+
+          {/* Gallery Images */}
+          {!loading && !error && visible.length > 0 && (
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {visible.map((item) => (
+                  <GalleryCard
+                    key={item.id}
+                    item={item}
+                    text={text}
+                    onOpen={openPhoto}
+                  />
+                ))}
+              </div>
+
+              {/* Load More */}
+              {hasMore && (
+                <div className="flex justify-center mt-10">
+                  <button
+                    type="button"
+                    onClick={loadMore}
+                    className="px-7 py-3 rounded-full bg-blue-700 text-white hover:bg-blue-800 transition"
+                  >
+                    {t.loadMore}
+                  </button>
+                </div>
+              )}
+            </>
+          )}
+        </div>
       </main>
+
+      {/* Lightbox */}
+      {isLightboxOpen && (
+        <Lightbox
+          items={filteredItems}
+          initialId={selectedId}
+          text={text}
+          t={t}
+          onClose={closePhoto}
+        />
+      )}
     </AcademyShell>
   );
 }

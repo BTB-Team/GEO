@@ -1,52 +1,55 @@
 import { Eye, Target } from "lucide-react";
+import useLanguageStore from "../../../store/languageStore";
+import enTranslation from "../../../locales/en/translation";
+import faTranslation from "../../../locales/fa/translation";
 
 const purposeCards = [
   {
     id: "vision",
     Icon: Eye,
-    fa: "جامعه‌ای که همه دختران فرصت دارند",
-    en: "A society where every girl has opportunity",
   },
   {
     id: "mission",
     Icon: Target,
-    fa: "یادگیری فراگیر و متناسب با نیازها",
-    en: "Inclusive learning that responds to real needs",
   },
 ];
 
-export default function AboutPurpose({ en, text, section }) {
+export default function AboutPurpose() {
+  const language = useLanguageStore((state) => state.language);
+  const en = language === "en";
+
+  const translation = en ? enTranslation : faTranslation;
+  const purpose = translation.aboutPage.introduction.purpose;
+
   return (
     <section className="gb-soft section-padding">
       <div className="container-custom">
         <div className="gb-section-intro">
           <span className="gb-title-line" />
 
-          <h2 className="heading-2">
-            {en ? "Our vision and mission" : "چشم‌انداز و مأموریت ما"}
-          </h2>
+          <h2 className="heading-2">{purpose.title}</h2>
 
-          <p className="body-base">
-            {en
-              ? "Working for an equal, bright future full of opportunity."
-              : "برای ساختن آینده‌ای برابر، روشن و سرشار از فرصت تلاش می‌کنیم."}
-          </p>
+          <p className="body-base">{purpose.description}</p>
         </div>
 
         <div className="gb-two-column gb-purpose-grid">
-          {purposeCards.map(({ id, Icon, fa, en: english }, index) => (
-            <article className="card-custom gb-purpose" key={id}>
-              <span className={`geo-icon geo-accent-${index}`}>
-                <Icon size={25} />
-              </span>
+          {purposeCards.map(({ id, Icon }, index) => {
+            const card = purpose[id];
 
-              <span className="gb-kicker">{text(section(id).title)}</span>
+            return (
+              <article className="card-custom gb-purpose" key={id}>
+                <span className={`geo-icon geo-accent-${index}`}>
+                  <Icon size={25} />
+                </span>
 
-              <h3 className="heading-3">{en ? english : fa}</h3>
+                <span className="gb-kicker">{card.title}</span>
 
-              <p className="body-base">{text(section(id).body)}</p>
-            </article>
-          ))}
+                <h3 className="heading-3">{card.heading}</h3>
+
+                <p className="body-base">{card.body}</p>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

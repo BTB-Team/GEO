@@ -1,6 +1,10 @@
 ﻿import AcademyShell from "../../components/academy/AcademyShell";
 import useAboutContent from "./useAboutContent";
 
+import useLanguageStore from "../../store/languageStore";
+import enTranslation from "../../locales/en/translation";
+import faTranslation from "../../locales/fa/translation";
+
 import AboutHero from "./components/AboutHero";
 import AboutSlogan from "./components/AboutSlogan";
 import AboutStory from "./components/AboutStory";
@@ -9,21 +13,26 @@ import AboutValues from "./components/AboutValues";
 import AboutApproach from "./components/AboutApproach";
 import AboutCommitment from "./components/AboutCommitment";
 
-import "../academy-pages.css";
+
 
 export default function About() {
-  const { en, text, section, values, approaches } = useAboutContent();
+  const language = useLanguageStore((state) => state.language);
+
+  const t = language === "en" ? enTranslation : faTranslation;
+  const en = language === "en";
+
+  const { text, section, values, approaches } = useAboutContent();
 
   return (
     <AcademyShell>
       <main>
-        <AboutHero en={en} />
+        <AboutHero />
 
         <AboutSlogan />
 
-        <AboutStory en={en} text={text} section={section} />
+        <AboutStory />
 
-        <AboutPurpose en={en} text={text} section={section} />
+        <AboutPurpose />
 
         <AboutValues en={en} text={text} values={values} />
 

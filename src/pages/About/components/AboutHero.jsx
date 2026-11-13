@@ -1,30 +1,36 @@
 import { ArrowLeft, Users } from "lucide-react";
+import useLanguageStore from "../../../store/languageStore";
+import enTranslation from "../../../locales/en/translation";
+import faTranslation from "../../../locales/fa/translation";
 
-export default function AboutHero({ en }) {
+export default function AboutHero() {
+  const language = useLanguageStore((state) => state.language);
+
+  const t =
+    language === "en"
+      ? enTranslation.aboutPage.hero
+      : faTranslation.aboutPage.hero;
+
   return (
     <section className="gb-hero section-padding">
       <div className="container-custom gb-two-column">
         <div className="gb-hero-copy">
           <span className="gb-kicker">
             <i />
-            {en ? "OUR STORY. OUR VISION." : "داستان ما، چشم‌انداز ما"}
+            {t.kicker}
           </span>
 
           <h1 className="heading-1">
-            {en ? "Education is the beginning" : "آموزش، آغازِ"}
+            {t.title}
             <br />
-            <span>{en ? "of a brighter tomorrow." : "ساختن فرداست."}</span>
+            <span>{t.titleHighlight}</span>
           </h1>
 
-          <p className="body-large">
-            {en
-              ? "GEO is an education and development organization working to expand learning opportunities, nurture talent, and empower girls."
-              : "سازمان آموزش دختران نهادی آموزشی و توسعه‌محور است که برای گسترش فرصت‌های یادگیری، رشد استعدادها و توانمندسازی دختران فعالیت می‌کند."}
-          </p>
+          <p className="body-large">{t.description}</p>
 
           <div className="geo-actions">
             <a className="btn-primary" href="#our-story">
-              {en ? "Discover our story" : "دیدن قصه‌های ما"}
+              {t.button}
               <ArrowLeft size={18} aria-hidden="true" />
             </a>
           </div>
@@ -32,8 +38,8 @@ export default function AboutHero({ en }) {
 
         <div className="gb-hero-photo">
           <img
-            src="/images/academy/school.jpg"
-            alt="صنف آموزشی دختران"
+            src="/images/academy/school.webp"
+            alt={t.imageAlt}
             width="600"
             height="560"
           />
@@ -44,8 +50,8 @@ export default function AboutHero({ en }) {
             </span>
 
             <div>
-              <strong>{en ? "Hundreds" : "صدها"}</strong>
-              <small>{en ? "Online learners" : "دانش‌آموز آنلاین"}</small>
+              <strong>{t.badgeTitle}</strong>
+              <small>{t.badgeText}</small>
             </div>
           </div>
         </div>
