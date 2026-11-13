@@ -1647,7 +1647,7 @@
       "fa": "درس‌ها به من کمک کرد منظم تمرین کنم و اعتمادبه‌نفس بیشتری داشته باشم."
     },
     "rating": 5,
-    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_1",
     "role": {
       "en": "English Language Student",
       "fa": "دانش‌آموز زبان انگلیسی"
@@ -1668,7 +1668,7 @@
       "fa": "توضیح‌های مرحله‌به‌مرحله فهم موضوعات دشوار را آسان‌تر کرد."
     },
     "rating": 5,
-    "photo": "https://plus.unsplash.com/premium_photo-1763734758145-5febca8035c9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_2",
     "role": {
       "en": "Mathematics Student",
       "fa": "دانش‌آموز ریاضیات"
@@ -1689,7 +1689,7 @@
       "fa": "مهارت‌های عملی دیجیتال آموختم که می‌توانم در درس‌هایم استفاده کنم."
     },
     "rating": 4,
-    "photo": "https://plus.unsplash.com/premium_photo-1670884441862-ddb29ed1f25e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_3",
     "role": {
       "en": "Computer Skills Student",
       "fa": "دانش‌آموز مهارت‌های کمپیوتر"
@@ -2508,7 +2508,7 @@
     "visualImages": [
   {
     "id": "learning-together",
-    "src": "https://images.openai.com/static-rsc-4/wqXPoBhv-fq_hVkzRGtvsVfkA4GQPfyo_FF6YGtd5O-TqMVqnYEGLRsYeTyDmZYN-RuS2pIiNQUIiJ2ohr6DZZstfWKb8pabbH6XABojPjcZyPZE5zWMFX1mwLuegAKVBHmj81onZq9ol-K6zjMDS0XnexV6zw8jLCLQvgaeaA3lduTViPFH9LaEsbnV6pmn?purpose=fullsize",
+    "assetId": "groupWork_1",
     "alt": {
       "en": "Students studying together in a modern library",
       "fa": "دانش‌آموزان در حال مطالعه در کتابخانه مدرن"
@@ -2516,7 +2516,7 @@
   },
   {
     "id": "guided-learning",
-    "src": "https://images.pexels.com/photos/6550403/pexels-photo-6550403.jpeg?auto=compress&dpr=1&h=750&w=1260",
+    "assetId": "groupWork_2",
     "alt": {
       "en": "Students learning together with books and notes",
       "fa": "دانش‌آموزان در حال یادگیری با کتاب و یادداشت‌ها"
@@ -2563,24 +2563,69 @@
   },
 
   "announcementsSection": {
-    "eyebrow": {
-      "en": "LATEST UPDATES",
-      "fa": "تازه‌ترین خبرها"
+  "eyebrow": {
+    "en": "LATEST UPDATES",
+    "fa": "تازه‌ترین خبرها"
+  },
+  "title": {
+    "en": "News and Announcements",
+    "fa": "خبرها و اطلاعیه‌ها"
+  },
+  "description": {
+    "en": "Stay informed about academy news, programs, and important updates.",
+    "fa": "از خبرها، برنامه‌ها و اطلاعیه‌های مهم آکادمی باخبر بمانید."
+  },
+  "actionLabel": {
+    "en": "All Announcements",
+    "fa": "تمام اطلاعیه‌ها"
+  },
+  "actionPath": "/announcements",
+
+  "pinnedLabel": {
+    "en": "IMPORTANT UPDATE",
+    "fa": "اطلاعیه مهم"
+  },
+  "typeLabels": {
+    "admissions": {
+      "en": "Admissions",
+      "fa": "ثبت‌نام"
     },
-    "title": {
-      "en": "News and Announcements",
-      "fa": "خبرها و اطلاعیه‌ها"
+    "webinar": {
+      "en": "Webinar",
+      "fa": "ویبینار"
     },
-    "description": {
-      "en": "Stay informed about academy news, programs, and important updates.",
-      "fa": "از خبرها، برنامه‌ها و اطلاعیه‌های مهم آکادمی باخبر بمانید."
-    },
-    "actionLabel": {
-      "en": "All Announcements",
-      "fa": "تمام اطلاعیه‌ها"
-    },
-    "limit": 3
-  }
+    "schedule": {
+      "en": "Schedule Update",
+      "fa": "تغییر برنامه"
+    }
+  },
+
+  "loadingLabel": {
+    "en": "Loading announcements...",
+    "fa": "در حال بارگذاری اطلاعیه‌ها..."
+  },
+  "errorTitle": {
+    "en": "Unable to Load Announcements",
+    "fa": "بارگذاری اطلاعیه‌ها ممکن نشد"
+  },
+  "errorDescription": {
+    "en": "Something went wrong while loading announcements. Please try again.",
+    "fa": "هنگام بارگذاری اطلاعیه‌ها مشکلی رخ داد. لطفاً دوباره تلاش کنید."
+  },
+  "retryLabel": {
+    "en": "Try Again",
+    "fa": "تلاش دوباره"
+  },
+  "emptyTitle": {
+    "en": "No Announcements Yet",
+    "fa": "هنوز اطلاعیه‌ای منتشر نشده است"
+  },
+  "emptyDescription": {
+    "en": "There are no published announcements at the moment. Please check back soon.",
+    "fa": "در حال حاضر اطلاعیه منتشرشده‌ای وجود ندارد. لطفاً بعداً دوباره مراجعه کنید."
+  },
+  "limit": 3
+}
 },
 "footerContent": {
   "description": {
@@ -2596,8 +2641,8 @@
     "fa": "ارتباط با ما"
   },
   "copyright": {
-    "en": "© 2026 Gam-e-Buland Online Academy. All rights reserved.",
-    "fa": "© ۲۰۲۶ آکادمی آنلاین گام بُلند. تمامی حقوق محفوظ است."
+    "en": "© 2026 Girls Education Organization. All rights reserved.",
+    "fa": "© ۲۰۲۶ سازمان آموزش دختران. تمامی حقوق محفوظ است."
   },
   "email": "info@example.com",
   "phone": "+93 000 000 000",
@@ -2609,15 +2654,15 @@
     "facebook": "https://www.facebook.com/",
     "instagram": "https://www.instagram.com/",
     "linkedin": "https://www.linkedin.com/",
-    "whatsapp": "https://wa.me/?text=Hello%20Gam-e-Buland%20Online%20Academy",
-    "telegram": "https://t.me/share/url?url=https%3A%2F%2Fexample.com&text=Hello%20Gam-e-Buland%20Online%20Academy",
+    "whatsapp": "https://wa.me/?text=Hello%20Girls%20Education%20Organization",
+    "telegram": "https://t.me/share/url?url=https%3A%2F%2Fexample.com&text=Hello%20Girls%20Education%20Organization",
     "googleMeet": "https://meet.google.com/"
   }
  },
  "siteSettings": {
   "academyName": {
-    "en": "Gam-e-Buland Online Academy",
-    "fa": "آکادمی آنلاین گام بُلند"
+    "en": "Girls Education Organization",
+    "fa": "سازمان آموزش دختران"
   },
   "tagline": {
     "en": "Learn Today, Lead Tomorrow",
