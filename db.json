@@ -1262,7 +1262,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-01.webp",
       "courseIds": [
         "course-math-001",
         "course-exam-001",
@@ -1301,7 +1301,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-02.webp",
       "courseIds": [
         "course-exam-001",
         "course-ged-001",
@@ -1341,7 +1341,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-03.webp",
       "courseIds": [
         "course-ged-001",
         "course-sat-001",
@@ -1381,7 +1381,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-04.webp",
       "courseIds": [
         "course-computer-001",
         "course-robotics-001"
@@ -1418,7 +1418,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-05.webp",
       "courseIds": [
         "course-robotics-001",
         "course-scholarship-001"
@@ -1428,6 +1428,100 @@
     }
   ],
   "classSchedules": [
+        {
+      "id": "schedule-current-001",
+      "scheduleGroup": "current-year",
+      "programLevel": {
+        "en": "Middle School",
+        "fa": "دورهٔ متوسطه"
+      },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "08:00",
+      "endTime": "09:30",
+      "timeZone": null,
+      "deliveryMode": "in-person",
+      "status": null
+    },
+        {
+      "id": "schedule-current-002",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "High School", "fa": "دورهٔ لیسه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "09:30",
+      "endTime": "11:30",
+      "timeZone": null,
+      "deliveryMode": "in-person",
+      "status": null
+    },
+    {
+      "id": "schedule-current-003",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "15:00",
+      "endTime": "16:30",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-004",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-005",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-006",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-007",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "High School", "fa": "دورهٔ لیسه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "21:00",
+      "endTime": "23:30",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
     {
       "id": "schedule-001",
       "courseId": "course-math-001",
