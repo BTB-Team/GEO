@@ -24,6 +24,24 @@ const en = {
     noData: "No information available.",
   },
 
+  gallery: {
+    title: "Photo gallery",
+    all: "All photos",
+    classes: "Classes",
+    activities: "Activities",
+    events: "Events",
+    achievements: "Achievements",
+    empty: "No photos in this category",
+    moreStories: "More stories are on their way",
+    close: "Close photo",
+    previous: "Previous photo",
+    next: "Next photo",
+    broken: "Image unavailable",
+    open: "View photo",
+    count: "photos",
+    loadMore: "Load more",
+  },
+
   home: {
     hero: {
       academyName: "Gam-e-Buland Online Academy",

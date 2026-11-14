@@ -1,6 +1,7 @@
 //
 import { useState } from "react";
-import { PAGE_SIZE } from "./galleryLabels";
+// import { PAGE_SIZE } from "./galleryLabels";
+import { PAGE_SIZE } from "./galleryConfig";
 
 const galleryItems = [
   {

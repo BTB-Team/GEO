@@ -1,17 +1,21 @@
 ﻿import { Images } from "lucide-react";
 import useLanguageStore from "../../store/languageStore";
 import AcademyShell from "../../components/academy/AcademyShell";
-import { categories, labels } from "./galleryLabels";
+// import { categories, labels } from "./galleryLabels";
+import { categories } from "./galleryConfig";
 import useGallery from "./useGallery";
+import fa from "../../locales/fa";
+import en from "../../locales/en";
 
 import GalleryCard from "./components/GalleryCard";
 import Lightbox from "./components/Lightbox";
 
-
 export default function Gallery() {
   const language = useLanguageStore((state) => state.language);
   const en = language === "en";
-  const t = labels[en ? "en" : "fa"];
+  const t = language === "fa" ? fa.gallery : en.gallery;
+  console.log("Current language:", language);
+  console.log("Gallery translations:", t);
 
   const {
     category,
@@ -92,7 +96,7 @@ export default function Gallery() {
                     : "bg-white text-gray-700 border-gray-200"
                 }`}
               >
-                {t[item]}
+                {t?.[item.toLowerCase()] || item}
               </button>
             ))}
           </div>
@@ -134,7 +138,7 @@ export default function Gallery() {
                     onClick={loadMore}
                     className="px-7 py-3 rounded-full bg-blue-700 text-white hover:bg-blue-800 transition"
                   >
-                    {t.loadMore}
+                    {t?.loadMore || "Load more"}
                   </button>
                 </div>
               )}

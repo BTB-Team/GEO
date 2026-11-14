@@ -1,7 +1,7 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
 
-const useLanguageStore = create(
+export const useLanguageStore = create(
   persist(
     (set) => ({
       language: "en",
