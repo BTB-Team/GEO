@@ -220,7 +220,7 @@ export default function CoursesPage() {
 
               <article
                 key={course.id}
-                className="group card-custom overflow-hidden bg-white transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+                className="group card-custom flex flex-col overflow-hidden bg-white transition duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
 
                 {/* Course Image */}
@@ -269,14 +269,14 @@ export default function CoursesPage() {
 
                 {/* Course Information */}
 
-                <div className="flex flex-col p-6">
+                <div className="flex flex-1 flex-col p-6">
 
                   <h3 className="heading-4 mb-3 text-slate-900 transition group-hover:text-brand-blue">
                     {labels[course.titleKey]}
                   </h3>
 
-                  <p className="mb-6 min-h-12 text-sm leading-7 text-slate-500">
-                    {labels[course.descriptionKey]}
+                  <p className="mb-6 h-[84px] overflow-hidden text-sm leading-7 text-slate-500">
+                   {labels[course.descriptionKey]}
                   </p>
 
                   {/* Duration */}
@@ -317,7 +317,7 @@ export default function CoursesPage() {
                   <button
                     type="button"
                     onClick={() => navigate(`/courses/${course.id}`)}
-                    className="btn-primary w-full"
+                    className="btn-primary mt-auto w-full"
                   >
                     {labels.details}
 

@@ -78,7 +78,7 @@ advanced: "پیشرفته",
 // =================================
 
 // Mathematics
-mathTitle: "ریاضیات",
+mathTitle: "برنامه پیش‌مکتب",
 mathDuration: "۳ ماه",
 mathInstructor: "سارا احمد",
 mathDeadline: "۱۵ دسامبر ۲۰۲۶",
@@ -94,7 +94,7 @@ mathCurriculum3: "هندسه و مفاهیم ریاضی",
 mathCurriculum4: "تمرین‌های عملی و ارزیابی نهایی",
 
 // GED Preparation
-gedTitle: "آمادگی GED",
+gedTitle: "برنامه لیسه",
 gedDuration: "۶ ماه",
 gedInstructor: "احمد رحیمی",
 gedDeadline: "۲۰ دسامبر ۲۰۲۶",
@@ -110,7 +110,7 @@ gedCurriculum3: "علوم و مطالعات اجتماعی",
 gedCurriculum4: "امتحان‌های تمرینی و آمادگی GED",
 
 // SAT Preparation
-satTitle: "آمادگی SAT",
+satTitle: "برنامه سطح دوم",
 satDuration: "۴ ماه",
 satInstructor: "مریم خان",
 satDeadline: "۲۵ دسامبر ۲۰۲۶",
@@ -126,7 +126,7 @@ satCurriculum3: "مهارت‌های نوشتن و زبان",
 satCurriculum4: "امتحان‌های تمرینی و راهکارهای آزمون",
 
 // English Language
-englishTitle: "زبان انگلیسی",
+englishTitle: "برنامه زبان انگلیسی",
 englishDuration: "۶ ماه",
 englishInstructor: "به‌زودی اعلام می‌شود",
 englishDeadline: "به‌زودی اعلام می‌شود",
@@ -142,7 +142,7 @@ englishCurriculum3: "تمرین مکالمه و شنیداری",
 englishCurriculum4: "مهارت‌های خواندن و نوشتن",
 
 // Computer Skills
-computerTitle: "مهارت‌های کمپیوتر",
+computerTitle: "برنامه آمادگی TOEFL",
 computerDuration: "۳ ماه",
 computerInstructor: "به‌زودی اعلام می‌شود",
 computerDeadline: "به‌زودی اعلام می‌شود",
@@ -158,7 +158,7 @@ computerCurriculum3: "صفحه‌گسترده و ارائه مطالب",
 computerCurriculum4: "مهارت‌های اینترنت و مصونیت دیجیتال",
 
 // Robotics
-roboticsTitle: "رباتیک",
+roboticsTitle: "برنامه آمادگی Duolingo",
 roboticsDuration: "۳ ماه",
 roboticsInstructor: "به‌زودی اعلام می‌شود",
 roboticsDeadline: "به‌زودی اعلام می‌شود",
@@ -174,7 +174,7 @@ roboticsCurriculum3: "طراحی و برنامه‌نویسی ربات",
 roboticsCurriculum4: "پروژه عملی رباتیک",
 
 // Scholarship Preparation
-scholarshipTitle: "آمادگی بورسیه",
+scholarshipTitle: "برنامه منتورینگ و بورسیه",
 scholarshipDuration: "۲ ماه",
 scholarshipInstructor: "به‌زودی اعلام می‌شود",
 scholarshipDeadline: "به‌زودی اعلام می‌شود",
@@ -256,6 +256,20 @@ savedCoursesNoResults: "هیچ دوره‌ای پیدا نشد.",
 savedCoursesBeginner: "مبتدی",
 savedCoursesIntermediate: "متوسط",
 savedCoursesAdvanced: "پیشرفته",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 export default translation

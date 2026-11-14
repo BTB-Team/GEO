@@ -78,7 +78,7 @@ advanced: "Advanced",
 // =================================
 
 // Mathematics
-mathTitle: "Mathematics",
+mathTitle: "Pre-school Program",
 mathDuration: "3 Months",
 mathInstructor: "Sarah Ahmed",
 mathDeadline: "December 15, 2026",
@@ -94,7 +94,7 @@ mathCurriculum3: "Geometry and Mathematical Concepts",
 mathCurriculum4: "Practical Exercises and Final Assessment",
 
 // GED Preparation
-gedTitle: "GED Preparation",
+gedTitle: "High School Program",
 gedDuration: "6 Months",
 gedInstructor: "Ahmad Rahimi",
 gedDeadline: "December 20, 2026",
@@ -110,7 +110,7 @@ gedCurriculum3: "Science and Social Studies",
 gedCurriculum4: "GED Practice Tests and Exam Preparation",
 
 // SAT Preparation
-satTitle: "SAT Preparation",
+satTitle: "Level 2 Program",
 satDuration: "4 Months",
 satInstructor: "Maryam Khan",
 satDeadline: "December 25, 2026",
@@ -126,7 +126,7 @@ satCurriculum3: "Writing and Language Skills",
 satCurriculum4: "Practice Tests and Exam Strategies",
 
 // English Language
-englishTitle: "English Language",
+englishTitle: "English Language Program",
 englishDuration: "6 Months",
 englishInstructor: "To Be Announced",
 englishDeadline: "To Be Announced",
@@ -142,7 +142,7 @@ englishCurriculum3: "Speaking and Listening Practice",
 englishCurriculum4: "Reading and Writing Skills",
 
 // Computer Skills
-computerTitle: "Computer Skills",
+computerTitle: "TOEFL Preparation Program",
 computerDuration: "3 Months",
 computerInstructor: "To Be Announced",
 computerDeadline: "To Be Announced",
@@ -158,7 +158,7 @@ computerCurriculum3: "Spreadsheets and Presentations",
 computerCurriculum4: "Internet Skills and Digital Safety",
 
 // Robotics
-roboticsTitle: "Robotics",
+roboticsTitle: "Duolingo Preparation Program",
 roboticsDuration: "3 Months",
 roboticsInstructor: "To Be Announced",
 roboticsDeadline: "To Be Announced",
@@ -174,7 +174,7 @@ roboticsCurriculum3: "Robotics Design and Programming",
 roboticsCurriculum4: "Practical Robotics Project",
 
 // Scholarship Preparation
-scholarshipTitle: "Scholarship Preparation",
+scholarshipTitle: "Mentorship and Scholarship Program",
 scholarshipDuration: "2 Months",
 scholarshipInstructor: "To Be Announced",
 scholarshipDeadline: "To Be Announced",
@@ -263,6 +263,8 @@ savedCoursesNoResults: "No courses found.",
 savedCoursesBeginner: "Beginner",
 savedCoursesIntermediate: "Intermediate",
 savedCoursesAdvanced: "Advanced",
+
+
 }
 
 export default translation
