@@ -11,7 +11,7 @@ function TeacherCard({ teacher, language, t, courses }) {
       <div className="mx-auto mb-4 grid size-36 place-items-center overflow-hidden rounded-full bg-surface-secondary">
         {teacher.photo ? (
           <img
-            src={teacher.photo}
+            src={`${import.meta.env.BASE_URL}${teacher.photo.replace(/^\/+/, "")}`}
             alt=""
             className="size-full object-contain"
           />
