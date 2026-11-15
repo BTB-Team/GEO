@@ -50,6 +50,32 @@ const translation = {
   blog: "Blog",
   resources: "Resources",
 
+  // Courses Page & Filters
+  coursesSubtitle: "Explore Our Educational Programs",
+  coursesDescription: "Find the right learning path for your future.",
+  searchCourses: "Search courses...",
+  allCourses: "All Courses",
+  academic: "Academic",
+  examPreparation: "Exam Preparation",
+  languages: "Languages",
+  technology: "Technology",
+  course: "Course",
+  coursesFound: "courses found",
+  viewDetails: "View Details",
+  online: "Online",
+  inPerson: "In person",
+  noCoursesFound: "No courses found.",
+  academy: "Gam-e Boland Online Academy",
+  coursesTitle: "Our Educational Courses",
+  search: "Search courses...",
+  all: "All Courses",
+  details: "View Details",
+  empty: "No courses found.",
+  sortPopular: "Most Popular",
+  sortAZ: "Name: A to Z",
+  sortZA: "Name: Z to A",
+
+  // Course Details General
   levels: {
     Beginner: "Beginner",
     Intermediate: "Intermediate",
