@@ -115,7 +115,7 @@ const Header = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState({})
-  const [logoError, setLogoError] = useState(false)
+  const [failedLogo, setFailedLogo] = useState(null)
 
   const menuPanelRef = useRef(null)
   const menuToggleRef = useRef(null)
@@ -207,15 +207,18 @@ const Header = () => {
 
   const logo = normalizeAssetPath(settings?.logo)
 
-  // Reset the image error when the logo path changes.
-  useEffect(() => {
-    setLogoError(false)
-  }, [logo])
-
-  // Close menu after route navigation.
-  useEffect(() => {
+// Close menu on browser history navigation.
+useEffect(() => {
+  const handlePopState = () => {
     setIsMenuOpen(false)
-  }, [pathname])
+  }
+
+  window.addEventListener("popstate", handlePopState)
+
+  return () => {
+    window.removeEventListener("popstate", handlePopState)
+  }
+}, [])
 
   // Lock background scrolling and support Escape.
   useEffect(() => {
@@ -502,7 +505,7 @@ const Header = () => {
               className="flex min-w-0 flex-1 items-center gap-2.5 justify-self-start sm:gap-3 xl:flex-none"
             >
               <span className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-surface-secondary p-1 transition-transform duration-300 hover:scale-105 sm:h-12 sm:w-12">
-                {logo && !logoError ? (
+                {logo && failedLogo !== logo ? (
                   <img
                     key={logo}
                     src={logo}
@@ -514,7 +517,7 @@ const Header = () => {
                         "Academy logo could not be loaded:",
                         logo
                       )
-                      setLogoError(true)
+                      setFailedLogo(logo)
                     }}
                   />
                 ) : (
