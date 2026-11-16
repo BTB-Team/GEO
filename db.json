@@ -2358,7 +2358,7 @@
   {
     "id": "nav-home",
     "type": "link",
-    "placement": "header",
+    "placement": "menu",
     "icon": "home",
     "label": {
       "en": "Home",
@@ -2371,7 +2371,7 @@
   {
     "id": "nav-courses",
     "type": "link",
-    "placement": "header",
+    "placement": "menu",
     "icon": "book-open",
     "label": {
       "en": "Courses",
@@ -2384,7 +2384,7 @@
   {
     "id": "nav-teachers",
     "type": "link",
-    "placement": "header",
+    "placement": "menu",
     "icon": "users",
     "label": {
       "en": "Teachers",
@@ -2397,7 +2397,7 @@
   {
     "id": "nav-about",
     "type": "link",
-    "placement": "header",
+    "placement": "menu",
     "icon": "info",
     "label": {
       "en": "About Us",
@@ -2513,7 +2513,7 @@
   {
     "id": "nav-contact",
     "type": "link",
-    "placement": "header",
+    "placement": "menu",
     "icon": "phone",
     "label": {
       "en": "Contact Us",
