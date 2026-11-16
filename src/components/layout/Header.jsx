@@ -23,6 +23,7 @@ import {
   ChevronDown,
   ArrowUpRight,
   GraduationCap,
+  Heart,
 } from "lucide-react"
 
 import useLanguageStore from "../../store/languageStore"
@@ -44,6 +45,7 @@ const navigationIcons = {
   phone: Phone,
   "user-plus": UserPlus,
   megaphone: Megaphone,
+  heart: Heart,
 }
 
 const getNavigationIcon = (iconName) =>

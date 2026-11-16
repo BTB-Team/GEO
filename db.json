@@ -2535,7 +2535,20 @@
     "path": "/registration",
     "sortOrder": 12,
     "isVisible": true
-  }
+  },
+  {
+  "id": "nav-saved",
+  "type": "link",
+  "placement": "menu",
+  "icon": "heart",
+  "label": {
+    "en": "Saved",
+    "fa": "ذخیره‌شده‌ها"
+  },
+  "path": "/saved",
+  "sortOrder": 10,
+  "isVisible": true
+}
 ],
 
 
