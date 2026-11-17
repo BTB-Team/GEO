@@ -1793,105 +1793,361 @@
     "status": "published"
   }
 ],
-"announcements": [
-  {
-    "id": "announcement-001",
-    "slug": "sample-registration-announcement",
-    "title": {
-      "en": "Sample: New Course Registration",
-      "fa": "نمونه: ثبت‌نام دوره‌های جدید"
-    },
-    "summary": {
-      "en": "A demo announcement showing how new course registration updates may appear.",
-      "fa": "اطلاعیه آزمایشی برای نمایش نحوه نشر خبر آغاز ثبت‌نام دوره‌های جدید."
-    },
-    "content": {
-      "en": "This is sample content only. Replace it with an announcement approved by the academy.",
-      "fa": "این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."
-    },
-    "type": "admissions",
-    "image": null,
-    "publishedAt": "2026-11-01T08:00:00.000Z",
-    "updatedAt": null,
-    "expiresAt": null,
-    "isPinned": true,
-    "sortOrder": 1,
-    "status": "published"
-  },
-  {
-    "id": "announcement-002",
-    "slug": "sample-information-session",
-    "title": {
-      "en": "Sample: Online Information Session",
-      "fa": "نمونه: نشست آنلاین معرفی برنامه‌ها"
-    },
-    "summary": {
-      "en": "A placeholder for an upcoming information session.",
-      "fa": "نمونه‌ای برای معرفی یک نشست آگاهی‌دهی پیش‌رو."
-    },
-    "content": {
-      "en": "Date, time, and joining details will be added after confirmation.",
-      "fa": "تاریخ، زمان و جزئیات اشتراک پس از تأیید اضافه خواهد شد."
-    },
-    "type": "webinar",
-    "image": null,
-    "publishedAt": "2026-10-29T08:00:00.000Z",
-    "updatedAt": null,
-    "expiresAt": null,
-    "isPinned": false,
-    "sortOrder": 2,
-    "status": "published"
-  },
-  {
-    "id": "announcement-003",
-    "slug": "sample-schedule-update",
-    "title": {
-      "en": "Sample: Class Schedule Update",
-      "fa": "نمونه: تغییر در برنامه کلاس‌ها"
-    },
-    "summary": {
-      "en": "A demo notice for schedule changes and class reminders.",
-      "fa": "اطلاعیه آزمایشی برای تغییر برنامه و یادآوری کلاس‌ها."
-    },
-    "content": {
-      "en": "Please check the class calendar for the latest confirmed schedule.",
-      "fa": "برای مشاهده برنامه تأییدشده، تقویم کلاس‌ها را بررسی کنید."
-    },
-    "type": "schedule",
-    "image": null,
-    "publishedAt": "2026-10-25T08:00:00.000Z",
-    "updatedAt": null,
-    "expiresAt": null,
-    "isPinned": false,
-    "sortOrder": 3,
-    "status": "published"
-  }
-],
 
+  "announcementsPage": {
+    "title": {"en": "Announcements", "fa": "اطلاعیه‌ها"},
+    "description": {"en": "Official notices, schedule changes, results, and reminders from the academy.", "fa": "اطلاعیه‌های رسمی، تغییر برنامه‌ها، نتایج و یادآوری‌های آکادمی."},
+    "searchLabel": {"en": "Search announcements", "fa": "جست‌وجوی اطلاعیه‌ها"},
+    "searchPlaceholder": {"en": "Search by title or keyword", "fa": "جست‌وجو بر اساس عنوان یا کلیدواژه"},
+    "clearSearchLabel": {"en": "Clear search", "fa": "پاک کردن جست‌وجو"},
+    "tabsLabel": {"en": "Show announcements", "fa": "نمایش اطلاعیه‌ها"},
+    "tabs": {
+      "current": {"en": "Current", "fa": "جاری"},
+      "archive": {"en": "Archive", "fa": "آرشیو"}
+    },
+    "filterLabel": {"en": "Filter announcements by category", "fa": "فیلتر اطلاعیه‌ها بر اساس دسته"},
+    "allLabel": {"en": "All categories", "fa": "همه دسته‌ها"},
+    "resultsLabel": {"en": "announcements shown", "fa": "اطلاعیه نمایش داده شد"},
+    "pinnedTitle": {"en": "Pinned and urgent", "fa": "اطلاعیه‌های سنجاق‌شده و فوری"},
+    "latestTitle": {"en": "Latest announcements", "fa": "تازه‌ترین اطلاعیه‌ها"},
+    "pinnedLabel": {"en": "Pinned", "fa": "سنجاق‌شده"},
+    "readLabel": {"en": "Read announcement", "fa": "خواندن اطلاعیه"},
+    "closeLabel": {"en": "Close", "fa": "بستن"},
+    "publishedLabel": {"en": "Published", "fa": "تاریخ انتشار"},
+    "updatedLabel": {"en": "Updated", "fa": "به‌روزرسانی"},
+    "attachmentLabel": {"en": "Open attachment", "fa": "باز کردن پیوست"},
+    "relatedLabel": {"en": "Related link", "fa": "پیوند مرتبط"},
+    "priority": {
+      "normal": {"en": "Normal", "fa": "عادی"},
+      "important": {"en": "Important", "fa": "مهم"},
+      "urgent": {"en": "Urgent", "fa": "فوری"}
+    },
+    "categories": {
+      "important": {"en": "Important Notices", "fa": "اطلاعیه‌های مهم"},
+      "cancellations": {"en": "Class Cancellations", "fa": "تعطیلی کلاس‌ها"},
+      "schedule": {"en": "Schedule Changes", "fa": "تغییر برنامه کلاس‌ها"},
+      "exams": {"en": "Examination Notices", "fa": "اطلاعیه‌های امتحانات"},
+      "registration": {"en": "Registration Updates", "fa": "اطلاعیه‌های ثبت‌نام"},
+      "results": {"en": "Academic Results", "fa": "اعلام نتایج"},
+      "holidays": {"en": "Holidays", "fa": "تعطیلات"},
+      "deadlines": {"en": "Assignment Deadlines", "fa": "مهلت تکالیف و پروژه‌ها"},
+      "parents": {"en": "Parent Notices", "fa": "اطلاعیه‌های ویژه والدین"}
+    },
+    "noResultsTitle": {"en": "No announcements found", "fa": "اطلاعیه‌ای پیدا نشد"},
+    "noResultsDescription": {"en": "Try a different search or category.", "fa": "جست‌وجو یا دسته دیگری را امتحان کنید."},
+    "archiveEmptyTitle": {"en": "The archive is empty", "fa": "آرشیو خالی است"},
+    "archiveEmptyDescription": {"en": "Expired announcements will be kept here.", "fa": "اطلاعیه‌های منقضی‌شده در اینجا نگهداری می‌شوند."},
+    "clearFilters": {"en": "Clear filters", "fa": "پاک کردن فیلترها"},
+    "emptyTitle": {"en": "No Announcements Yet", "fa": "هنوز اطلاعیه‌ای منتشر نشده است"},
+    "emptyDescription": {"en": "Published announcements will appear here.", "fa": "اطلاعیه‌های منتشرشده در اینجا نمایش داده می‌شوند."}
+  },
+  "announcements": [
+    {
+      "id": "announcement-001",
+      "slug": "sample-registration-announcement",
+      "title": {"en": "Sample: New Course Registration", "fa": "نمونه: ثبت‌نام دوره‌های جدید"},
+      "summary": {"en": "A demo announcement showing how new course registration updates may appear.", "fa": "اطلاعیه آزمایشی برای نمایش نحوه نشر خبر آغاز ثبت‌نام دوره‌های جدید."},
+      "content": {"en": "This is sample content only. Replace it with an announcement approved by the academy.", "fa": "این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "type": "admissions",
+      "category": "registration",
+      "priority": "important",
+      "image": null,
+      "publishedAt": "2026-11-01T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": true,
+      "sortOrder": 1,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": {
+        "label": {"en": "Go to registration", "fa": "رفتن به ثبت‌نام"},
+        "url": "/registration"
+      }
+    },
+    {
+      "id": "announcement-002",
+      "slug": "sample-information-session",
+      "title": {"en": "Sample: Online Information Session", "fa": "نمونه: نشست آنلاین معرفی برنامه‌ها"},
+      "summary": {"en": "A placeholder for an upcoming information session.", "fa": "نمونه‌ای برای معرفی یک نشست آگاهی‌دهی پیش‌رو."},
+      "content": {"en": "Date, time, and joining details will be added after confirmation.", "fa": "تاریخ، زمان و جزئیات اشتراک پس از تأیید اضافه خواهد شد."},
+      "type": "webinar",
+      "category": "important",
+      "priority": "normal",
+      "image": null,
+      "publishedAt": "2026-10-29T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 2,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": {
+        "label": {"en": "See events", "fa": "مشاهده رویدادها"},
+        "url": "/events"
+      }
+    },
+    {
+      "id": "announcement-003",
+      "slug": "sample-schedule-update",
+      "title": {"en": "Sample: Class Schedule Update", "fa": "نمونه: تغییر در برنامه کلاس‌ها"},
+      "summary": {"en": "A demo notice for schedule changes and class reminders.", "fa": "اطلاعیه آزمایشی برای تغییر برنامه و یادآوری کلاس‌ها."},
+      "content": {"en": "Please check the class calendar for the latest confirmed schedule.", "fa": "برای مشاهده برنامه تأییدشده، تقویم کلاس‌ها را بررسی کنید."},
+      "type": "schedule",
+      "category": "schedule",
+      "priority": "normal",
+      "image": null,
+      "publishedAt": "2026-10-25T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 3,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": {
+        "label": {"en": "View class schedule", "fa": "مشاهده برنامه کلاس‌ها"},
+        "url": "/schedule"
+      }
+    },
+    {
+      "id": "announcement-004",
+      "slug": "sample-announcement-004",
+      "title": {"en": "Sample: Classes Cancelled Tomorrow", "fa": "نمونه: لغو کلاس‌ها برای فردا"},
+      "summary": {"en": "A placeholder urgent notice about cancelled classes.", "fa": "اطلاعیه فوری نمونه درباره لغو کلاس‌ها."},
+      "content": {"en": "A placeholder urgent notice about cancelled classes. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "اطلاعیه فوری نمونه درباره لغو کلاس‌ها. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "cancellations",
+      "priority": "urgent",
+      "image": null,
+      "publishedAt": "2026-11-14T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 14,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-005",
+      "slug": "sample-announcement-005",
+      "title": {"en": "Sample: Evening Class Time Change", "fa": "نمونه: تغییر زمان کلاس‌های شامگاهی"},
+      "summary": {"en": "A placeholder notice about a change in evening class times.", "fa": "اطلاعیه نمونه درباره تغییر زمان کلاس‌های شامگاهی."},
+      "content": {"en": "A placeholder notice about a change in evening class times. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "اطلاعیه نمونه درباره تغییر زمان کلاس‌های شامگاهی. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "schedule",
+      "priority": "important",
+      "image": null,
+      "publishedAt": "2026-11-12T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 15,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-006",
+      "slug": "sample-announcement-006",
+      "title": {"en": "Sample: Midterm Exam Guidelines", "fa": "نمونه: رهنمود امتحانات میان‌ترم"},
+      "summary": {"en": "A placeholder notice with exam-day instructions.", "fa": "اطلاعیه نمونه با رهنمودهای روز امتحان."},
+      "content": {"en": "A placeholder notice with exam-day instructions. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "اطلاعیه نمونه با رهنمودهای روز امتحان. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "exams",
+      "priority": "normal",
+      "image": null,
+      "publishedAt": "2026-11-10T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 16,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-007",
+      "slug": "sample-announcement-007",
+      "title": {"en": "Sample: Registration Deadline Reminder", "fa": "نمونه: یادآوری مهلت ثبت‌نام"},
+      "summary": {"en": "A placeholder reminder about the registration deadline.", "fa": "یادآوری نمونه درباره مهلت ثبت‌نام."},
+      "content": {"en": "A placeholder reminder about the registration deadline. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "یادآوری نمونه درباره مهلت ثبت‌نام. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "registration",
+      "priority": "important",
+      "image": null,
+      "publishedAt": "2026-11-08T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 17,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": {
+        "label": {"en": "Register now", "fa": "ثبت‌نام"},
+        "url": "/registration"
+      }
+    },
+    {
+      "id": "announcement-008",
+      "slug": "sample-announcement-008",
+      "title": {"en": "Sample: Term Results Published", "fa": "نمونه: اعلام نتایج سمستر"},
+      "summary": {"en": "A placeholder notice that results are available.", "fa": "اطلاعیه نمونه درباره آماده‌شدن نتایج."},
+      "content": {"en": "A placeholder notice that results are available. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "اطلاعیه نمونه درباره آماده‌شدن نتایج. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "results",
+      "priority": "normal",
+      "image": null,
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 18,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-009",
+      "slug": "sample-announcement-009",
+      "title": {"en": "Sample: Holiday Schedule", "fa": "نمونه: برنامه تعطیلات"},
+      "summary": {"en": "A placeholder notice about upcoming holidays.", "fa": "اطلاعیه نمونه درباره تعطیلات پیش‌رو."},
+      "content": {"en": "A placeholder notice about upcoming holidays. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "اطلاعیه نمونه درباره تعطیلات پیش‌رو. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "holidays",
+      "priority": "normal",
+      "image": null,
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 19,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-010",
+      "slug": "sample-announcement-010",
+      "title": {"en": "Sample: Project Submission Deadline", "fa": "نمونه: مهلت تسلیم پروژه"},
+      "summary": {"en": "A placeholder reminder about a project deadline.", "fa": "یادآوری نمونه درباره مهلت تسلیم پروژه."},
+      "content": {"en": "A placeholder reminder about a project deadline. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "یادآوری نمونه درباره مهلت تسلیم پروژه. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "deadlines",
+      "priority": "important",
+      "image": null,
+      "publishedAt": "2026-11-02T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 20,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-011",
+      "slug": "sample-announcement-011",
+      "title": {"en": "Sample: Notice for Parents", "fa": "نمونه: اطلاعیه ویژه والدین"},
+      "summary": {"en": "A placeholder message addressed to parents.", "fa": "پیام نمونه خطاب به والدین."},
+      "content": {"en": "A placeholder message addressed to parents. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "پیام نمونه خطاب به والدین. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "parents",
+      "priority": "normal",
+      "image": null,
+      "publishedAt": "2026-10-30T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": null,
+      "isPinned": false,
+      "sortOrder": 21,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-012",
+      "slug": "sample-announcement-012",
+      "title": {"en": "Sample: Archived Notice", "fa": "نمونه: اطلاعیه آرشیوشده"},
+      "summary": {"en": "An expired notice kept in the archive.", "fa": "اطلاعیه منقضی‌شده که در آرشیو نگهداری می‌شود."},
+      "content": {"en": "An expired notice kept in the archive. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "اطلاعیه منقضی‌شده که در آرشیو نگهداری می‌شود. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "important",
+      "priority": "normal",
+      "image": null,
+      "publishedAt": "2026-10-10T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": "2026-10-31T00:00:00.000Z",
+      "isPinned": false,
+      "sortOrder": 22,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    },
+    {
+      "id": "announcement-013",
+      "slug": "sample-announcement-013",
+      "title": {"en": "Sample: Earlier Schedule Change", "fa": "نمونه: تغییر برنامه پیشین"},
+      "summary": {"en": "An older schedule change kept in the archive.", "fa": "تغییر برنامه قدیمی که در آرشیو نگهداری می‌شود."},
+      "content": {"en": "An older schedule change kept in the archive. This is sample content only. Replace it with an announcement approved by the academy.", "fa": "تغییر برنامه قدیمی که در آرشیو نگهداری می‌شود. این محتوا صرفاً نمونه است. آن را با اطلاعیه تأییدشده آکادمی جایگزین کنید."},
+      "category": "schedule",
+      "priority": "important",
+      "image": null,
+      "publishedAt": "2026-10-05T08:00:00.000Z",
+      "updatedAt": null,
+      "expiresAt": "2026-10-20T00:00:00.000Z",
+      "isPinned": false,
+      "sortOrder": 23,
+      "status": "published",
+      "attachment": null,
+      "relatedLink": null
+    }
+  ],
+  "eventsPage": {
+    "title": {"en": "Events", "fa": "رویدادها"},
+    "description": {"en": "Find upcoming webinars, exams, workshops, and school activities, and look back at past events.", "fa": "وبینارها، امتحانات، کارگاه‌ها و فعالیت‌های پیش‌رو را پیدا کنید و رویدادهای گذشته را مرور کنید."},
+    "searchLabel": {"en": "Search events", "fa": "جست‌وجوی رویدادها"},
+    "searchPlaceholder": {"en": "Search by title, place, or topic", "fa": "جست‌وجو بر اساس عنوان، مکان یا موضوع"},
+    "clearSearchLabel": {"en": "Clear search", "fa": "پاک کردن جست‌وجو"},
+    "tabsLabel": {"en": "Show events", "fa": "نمایش رویدادها"},
+    "tabs": {
+      "upcoming": {"en": "Upcoming", "fa": "پیش‌رو"},
+      "past": {"en": "Past", "fa": "گذشته"},
+      "all": {"en": "All", "fa": "همه"}
+    },
+    "filterLabel": {"en": "Filter events by category", "fa": "فیلتر رویدادها بر اساس دسته"},
+    "allLabel": {"en": "All categories", "fa": "همه دسته‌ها"},
+    "resultsLabel": {"en": "events shown", "fa": "رویداد نمایش داده شد"},
+    "registerLabel": {"en": "Register", "fa": "ثبت‌نام"},
+    "closeLabel": {"en": "Close", "fa": "بستن"},
+    "dateLabel": {"en": "Date", "fa": "تاریخ"},
+    "timeLabel": {"en": "Time", "fa": "زمان"},
+    "locationLabel": {"en": "Location", "fa": "مکان"},
+    "statusLabel": {"en": "Status", "fa": "وضعیت"},
+    "statuses": {
+      "upcoming": {"en": "Upcoming", "fa": "پیش‌رو"},
+      "ongoing": {"en": "Happening now", "fa": "در حال برگزاری"},
+      "completed": {"en": "Completed", "fa": "برگزار شد"},
+      "cancelled": {"en": "Cancelled", "fa": "لغو شد"}
+    },
+    "categories": {
+      "registration": {"en": "Registration and Enrollment", "fa": "آغاز ثبت‌نام"},
+      "webinars": {"en": "Webinars", "fa": "ویبینارها"},
+      "exams": {"en": "Examinations", "fa": "امتحانات"},
+      "competitions": {"en": "Competitions", "fa": "مسابقات"},
+      "workshops": {"en": "Workshops", "fa": "کارگاه‌ها"},
+      "activities": {"en": "School Activities", "fa": "فعالیت‌های مدرسه"},
+      "parents": {"en": "Parent-Teacher Meetings", "fa": "جلسات اولیا و مربیان"},
+      "trips": {"en": "Educational Trips", "fa": "اردوها و بازدیدهای علمی"},
+      "calendar": {"en": "Academic Calendar", "fa": "تقویم آموزشی"}
+    },
+    "noResultsTitle": {"en": "No events found", "fa": "رویدادی پیدا نشد"},
+    "noResultsDescription": {"en": "Try a different search, category, or switch to All events.", "fa": "جست‌وجو یا دسته دیگری را امتحان کنید، یا همه رویدادها را ببینید."},
+    "clearFilters": {"en": "Clear filters", "fa": "پاک کردن فیلترها"},
+    "emptyTitle": {"en": "Events Are Coming Soon", "fa": "رویدادها به‌زودی اعلام می‌شوند"},
+    "emptyDescription": {"en": "Published events will appear here.", "fa": "رویدادهای منتشرشده در اینجا نمایش داده می‌شوند."}
+  },
   "events": [
     {
       "id": "event-001",
       "slug": "sample-study-skills-webinar",
-      "title": {
-        "en": "Sample Study Skills Webinar",
-        "fa": "نمونه وبینار مهارت‌های مطالعه"
-      },
-      "summary": {
-        "en": "A demo online event about planning and effective study habits.",
-        "fa": "رویداد آنلاین آزمایشی درباره برنامه‌ریزی و عادت‌های مؤثر مطالعه."
-      },
-      "description": {
-        "en": "This is placeholder event information. Confirm the speaker, date, and joining link before publishing.",
-        "fa": "این اطلاعات نمونه است. پیش از انتشار، سخنران، تاریخ و پیوند اشتراک را تأیید کنید."
-      },
-      "eventType": "webinar",
+      "title": {"en": "Sample Study Skills Webinar", "fa": "نمونه وبینار مهارت‌های مطالعه"},
+      "summary": {"en": "A demo online event about planning and effective study habits.", "fa": "رویداد آنلاین آزمایشی درباره برنامه‌ریزی و عادت‌های مؤثر مطالعه."},
+      "description": {"en": "This is placeholder event information. Confirm the speaker, date, and joining link before publishing.", "fa": "این اطلاعات نمونه است. پیش از انتشار، سخنران، تاریخ و پیوند اشتراک را تأیید کنید."},
+      "category": "webinars",
       "startAt": "2026-11-10T14:00:00+04:30",
       "endAt": "2026-11-10T15:00:00+04:30",
       "timeZone": "Asia/Kabul",
-      "location": {
-        "en": "Online",
-        "fa": "آنلاین"
-      },
+      "location": {"en": "Online", "fa": "آنلاین"},
       "registrationUrl": null,
       "image": null,
       "status": "scheduled"
@@ -1899,26 +2155,14 @@
     {
       "id": "event-002",
       "slug": "sample-robotics-showcase",
-      "title": {
-        "en": "Sample Student Robotics Showcase",
-        "fa": "نمونه نمایش پروژه‌های رباتیک دانش‌آموزان"
-      },
-      "summary": {
-        "en": "A placeholder event for presenting student STEM projects.",
-        "fa": "رویدادی نمونه برای ارائه پروژه‌های STEM دانش‌آموزان."
-      },
-      "description": {
-        "en": "Project details and participation information are subject to academy confirmation.",
-        "fa": "جزئیات پروژه و اطلاعات اشتراک باید از سوی آکادمی تأیید شود."
-      },
-      "eventType": "competition",
+      "title": {"en": "Sample Student Robotics Showcase", "fa": "نمونه نمایش پروژه‌های رباتیک دانش‌آموزان"},
+      "summary": {"en": "A placeholder event for presenting student STEM projects.", "fa": "رویدادی نمونه برای ارائه پروژه‌های STEM دانش‌آموزان."},
+      "description": {"en": "Project details and participation information are subject to academy confirmation.", "fa": "جزئیات پروژه و اطلاعات اشتراک باید از سوی آکادمی تأیید شود."},
+      "category": "competitions",
       "startAt": "2026-11-20T10:00:00+04:30",
       "endAt": "2026-11-20T12:00:00+04:30",
       "timeZone": "Asia/Kabul",
-      "location": {
-        "en": "To be announced",
-        "fa": "بعداً اعلام می‌شود"
-      },
+      "location": {"en": "To be announced", "fa": "بعداً اعلام می‌شود"},
       "registrationUrl": null,
       "image": null,
       "status": "draft"
@@ -1926,31 +2170,278 @@
     {
       "id": "event-003",
       "slug": "sample-academic-orientation",
-      "title": {
-        "en": "Sample Academic Orientation",
-        "fa": "نمونه جلسه آشنایی با برنامه‌های آموزشی"
-      },
-      "summary": {
-        "en": "An example orientation session for prospective learners and families.",
-        "fa": "جلسه نمونه آشنایی برای دانش‌آموزان علاقه‌مند و خانواده‌ها."
-      },
-      "description": {
-        "en": "The actual session will be announced after the academy confirms the details.",
-        "fa": "جلسه واقعی پس از تأیید جزئیات از سوی آکادمی اعلام خواهد شد."
-      },
-      "eventType": "orientation",
+      "title": {"en": "Sample Academic Orientation", "fa": "نمونه جلسه آشنایی با برنامه‌های آموزشی"},
+      "summary": {"en": "An example orientation session for prospective learners and families.", "fa": "جلسه نمونه آشنایی برای دانش‌آموزان علاقه‌مند و خانواده‌ها."},
+      "description": {"en": "The actual session will be announced after the academy confirms the details.", "fa": "جلسه واقعی پس از تأیید جزئیات از سوی آکادمی اعلام خواهد شد."},
+      "category": "registration",
       "startAt": "2026-11-24T15:00:00+04:30",
       "endAt": "2026-11-24T16:00:00+04:30",
       "timeZone": "Asia/Kabul",
-      "location": {
-        "en": "Online",
-        "fa": "آنلاین"
-      },
+      "location": {"en": "Online", "fa": "آنلاین"},
+      "registrationUrl": "/registration",
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-004",
+      "slug": "sample-registration-period",
+      "title": {"en": "Sample: Registration Period", "fa": "نمونه: دوره ثبت‌نام"},
+      "summary": {"en": "An example of a multi-week registration window that is open now.", "fa": "نمونه‌ای از دوره چندهفته‌ای ثبت‌نام که اکنون باز است."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "registration",
+      "startAt": "2026-11-01T08:00:00+04:30",
+      "endAt": "2026-12-15T17:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Online", "fa": "آنلاین"},
+      "registrationUrl": "/registration",
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-005",
+      "slug": "sample-writing-workshop",
+      "title": {"en": "Sample: Academic Writing Workshop", "fa": "نمونه: کارگاه نگارش علمی"},
+      "summary": {"en": "A hands-on workshop on structuring essays and personal statements.", "fa": "کارگاه عملی برای ساختار مقاله و انگیزه‌نامه."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "workshops",
+      "startAt": "2026-11-28T10:00:00+04:30",
+      "endAt": "2026-11-28T12:30:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Academy campus (sample)", "fa": "محل آکادمی (نمونه)"},
       "registrationUrl": null,
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-006",
+      "slug": "sample-midterm-exams",
+      "title": {"en": "Sample: Midterm Exam Week", "fa": "نمونه: هفته امتحانات میان‌ترم"},
+      "summary": {"en": "Placeholder dates for the midterm examination period.", "fa": "تاریخ‌های نمونه برای دوره امتحانات میان‌ترم."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "exams",
+      "startAt": "2026-12-05T08:30:00+04:30",
+      "endAt": "2026-12-10T12:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Academy campus (sample)", "fa": "محل آکادمی (نمونه)"},
+      "registrationUrl": null,
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-007",
+      "slug": "sample-science-quiz",
+      "title": {"en": "Sample: Inter-class Science Quiz", "fa": "نمونه: مسابقه علمی بین صنف‌ها"},
+      "summary": {"en": "A friendly quiz competition between classes.", "fa": "مسابقه دوستانه علمی میان صنف‌ها."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "competitions",
+      "startAt": "2026-12-12T14:00:00+04:30",
+      "endAt": "2026-12-12T16:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Academy campus (sample)", "fa": "محل آکادمی (نمونه)"},
+      "registrationUrl": null,
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-008",
+      "slug": "sample-parent-meeting",
+      "title": {"en": "Sample: Parent-Teacher Meeting", "fa": "نمونه: جلسه اولیا و مربیان"},
+      "summary": {"en": "A placeholder meeting to discuss student progress.", "fa": "جلسه نمونه برای گفت‌وگو درباره پیشرفت دانش‌آموزان."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "parents",
+      "startAt": "2026-11-29T16:00:00+04:30",
+      "endAt": "2026-11-29T18:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Academy campus (sample)", "fa": "محل آکادمی (نمونه)"},
+      "registrationUrl": null,
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-009",
+      "slug": "sample-science-museum-trip",
+      "title": {"en": "Sample: Science Museum Visit", "fa": "نمونه: بازدید از موزیم علوم"},
+      "summary": {"en": "An example of an educational trip with a guided tour.", "fa": "نمونه‌ای از اردوی علمی همراه با راهنما."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "trips",
+      "startAt": "2026-12-19T09:00:00+04:30",
+      "endAt": "2026-12-19T14:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "To be announced", "fa": "بعداً اعلام می‌شود"},
+      "registrationUrl": null,
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-010",
+      "slug": "sample-cultural-day",
+      "title": {"en": "Sample: Cultural Day", "fa": "نمونه: روز فرهنگی"},
+      "summary": {"en": "A past school activity shown as a completed event.", "fa": "فعالیت مکتبی گذشته که به‌عنوان رویداد برگزارشده نمایش داده می‌شود."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "activities",
+      "startAt": "2026-11-03T10:00:00+04:30",
+      "endAt": "2026-11-03T13:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Academy campus (sample)", "fa": "محل آکادمی (نمونه)"},
+      "registrationUrl": null,
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-011",
+      "slug": "sample-winter-term-start",
+      "title": {"en": "Sample: Winter Term Begins", "fa": "نمونه: آغاز سمستر زمستانی"},
+      "summary": {"en": "A placeholder academic calendar date.", "fa": "تاریخ نمونه از تقویم آموزشی."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "calendar",
+      "startAt": "2027-01-04T08:00:00+04:30",
+      "endAt": "2027-01-04T17:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Academy campus (sample)", "fa": "محل آکادمی (نمونه)"},
+      "registrationUrl": null,
+      "image": null,
+      "status": "scheduled"
+    },
+    {
+      "id": "event-012",
+      "slug": "sample-cancelled-workshop",
+      "title": {"en": "Sample: Digital Skills Workshop", "fa": "نمونه: کارگاه مهارت‌های دیجیتال"},
+      "summary": {"en": "An example of a cancelled event.", "fa": "نمونه‌ای از رویداد لغوشده."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "workshops",
+      "startAt": "2026-11-20T15:00:00+04:30",
+      "endAt": "2026-11-20T17:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Online", "fa": "آنلاین"},
+      "registrationUrl": null,
+      "image": null,
+      "status": "cancelled"
+    },
+    {
+      "id": "event-013",
+      "slug": "sample-exam-tips-webinar",
+      "title": {"en": "Sample: Exam Tips Webinar", "fa": "نمونه: وبینار نکته‌های امتحان"},
+      "summary": {"en": "A short online session on preparing for exams.", "fa": "نشست آنلاین کوتاه برای آمادگی امتحانات."},
+      "description": {"en": "Sample content only. Confirm the details with the academy before publishing.", "fa": "این محتوا صرفاً نمونه است. پیش از انتشار، جزئیات را با آکادمی تأیید کنید."},
+      "category": "webinars",
+      "startAt": "2026-12-02T17:00:00+04:30",
+      "endAt": "2026-12-02T18:00:00+04:30",
+      "timeZone": "Asia/Kabul",
+      "location": {"en": "Online", "fa": "آنلاین"},
+      "registrationUrl": "https://example.com/register",
       "image": null,
       "status": "scheduled"
     }
   ],
+ 
+ "achievementsPage": {
+    "eyebrow": {
+      "en": "STUDENT SUCCESS",
+      "fa": "موفقیت دانش‌آموزان"
+    },
+    "title": {
+      "en": "Celebrating Our Students' Achievements",
+      "fa": "جشن موفقیت‌های دانش‌آموزان ما"
+    },
+    "description": {
+      "en": "Honors, competitions, projects, and milestones that show what our students can accomplish.",
+      "fa": "افتخارها، رقابت‌ها، پروژه‌ها و گام‌هایی که توانایی دانش‌آموزان ما را نشان می‌دهد."
+    },
+    "featuredLabel": {
+      "en": "Featured Achievement",
+      "fa": "دستاورد برجسته"
+    },
+    "filterLabel": {
+      "en": "Filter achievements by category",
+      "fa": "فیلتر دستاوردها بر اساس دسته"
+    },
+    "allLabel": {
+      "en": "All",
+      "fa": "همه"
+    },
+    "resultsLabel": {
+      "en": "achievements shown",
+      "fa": "دستاورد نمایش داده شد"
+    },
+    "viewDetails": {
+      "en": "View details",
+      "fa": "مشاهده جزئیات"
+    },
+    "closeLabel": {
+      "en": "Close",
+      "fa": "بستن"
+    },
+    "organizationLabel": {
+      "en": "Awarded by",
+      "fa": "مرجع"
+    },
+    "dateLabel": {
+      "en": "Date",
+      "fa": "تاریخ"
+    },
+    "courseLabel": {
+      "en": "Related course",
+      "fa": "دوره مرتبط"
+    },
+    "errorTitle": {
+      "en": "Unable to Load Achievements",
+      "fa": "بارگذاری دستاوردها ممکن نشد"
+    },
+    "errorDescription": {
+      "en": "Something went wrong while loading achievements. Please try again.",
+      "fa": "هنگام بارگذاری دستاوردها مشکلی رخ داد. لطفاً دوباره تلاش کنید."
+    },
+    "retryLabel": {
+      "en": "Try Again",
+      "fa": "تلاش دوباره"
+    },
+    "emptyTitle": {
+      "en": "Achievements Are Coming Soon",
+      "fa": "دستاوردها به‌زودی منتشر می‌شوند"
+    },
+    "emptyDescription": {
+      "en": "Student achievements will appear here once they are published.",
+      "fa": "دستاوردهای دانش‌آموزان پس از انتشار در اینجا نمایش داده می‌شوند."
+    },
+    "categories": {
+      "honors": {
+        "en": "Honors and Awards",
+        "fa": "افتخارها و جوایز"
+      },
+      "grades": {
+        "en": "Top Grades",
+        "fa": "نمرات برتر"
+      },
+      "admissions": {
+        "en": "University Admissions",
+        "fa": "پذیرش دانشگاه"
+      },
+      "scholarships": {
+        "en": "Scholarships",
+        "fa": "بورسیه‌ها"
+      },
+      "competitions": {
+        "en": "Competitions",
+        "fa": "رقابت‌ها"
+      },
+      "scientific": {
+        "en": "Scientific Projects",
+        "fa": "پروژه‌های علمی"
+      },
+      "robotics": {
+        "en": "Robotics",
+        "fa": "رباتیک"
+      },
+      "publications": {
+        "en": "Publications",
+        "fa": "نشریات"
+      },
+      "certificates": {
+        "en": "Certificates",
+        "fa": "گواهی‌نامه‌ها"
+      }
+    }
+  },
   "achievements": [
     {
       "id": "achievement-001",
@@ -1962,16 +2453,21 @@
         "en": "Demo Student 04",
         "fa": "دانش‌آموز نمونه ۴"
       },
-      "category": "academic",
+      "category": "grades",
       "description": {
         "en": "A fictional example of a learner's academic progress.",
         "fa": "نمونه ساختگی از پیشرفت تحصیلی یک دانش‌آموز."
       },
+      "organization": {
+        "en": "Sample: Gam Boland Academy",
+        "fa": "نمونه: آکادمی گام بلند"
+      },
       "achievementDate": "2026-09-15",
       "courseId": "course-math-001",
       "eventId": null,
+      "studentPhoto": null,
       "image": null,
-      "isFeatured": true,
+      "isFeatured": false,
       "status": "published"
     },
     {
@@ -1984,14 +2480,19 @@
         "en": "Demo Student 05",
         "fa": "دانش‌آموز نمونه ۵"
       },
-      "category": "project",
+      "category": "robotics",
       "description": {
         "en": "A placeholder record for a student STEM project.",
         "fa": "رکورد نمونه برای یک پروژه STEM دانش‌آموزی."
       },
+      "organization": {
+        "en": "Sample: Student Robotics Showcase",
+        "fa": "نمونه: نمایش رباتیک دانش‌آموزان"
+      },
       "achievementDate": "2026-09-25",
       "courseId": "course-robotics-001",
       "eventId": "event-002",
+      "studentPhoto": null,
       "image": null,
       "isFeatured": true,
       "status": "published"
@@ -2006,14 +2507,19 @@
         "en": "Demo Student 06",
         "fa": "دانش‌آموز نمونه ۶"
       },
-      "category": "scholarship",
+      "category": "scholarships",
       "description": {
         "en": "A fictional example. It does not represent a real scholarship award.",
         "fa": "نمونه ساختگی است و نشان‌دهنده دریافت واقعی بورسیه نیست."
       },
+      "organization": {
+        "en": "Sample: Scholarship Program",
+        "fa": "نمونه: برنامه بورسیه"
+      },
       "achievementDate": "2026-10-01",
       "courseId": "course-scholarship-001",
       "eventId": null,
+      "studentPhoto": null,
       "image": null,
       "isFeatured": false,
       "status": "draft"
@@ -2028,14 +2534,181 @@
         "en": "Demo Student 07",
         "fa": "دانش‌آموز نمونه ۷"
       },
-      "category": "academic",
+      "category": "grades",
       "description": {
         "en": "A placeholder example of language-learning progress.",
         "fa": "نمونه آزمایشی از پیشرفت در یادگیری زبان."
       },
+      "organization": {
+        "en": "Sample: Gam Boland Academy",
+        "fa": "نمونه: آکادمی گام بلند"
+      },
       "achievementDate": "2026-10-10",
       "courseId": "course-english-001",
       "eventId": null,
+      "studentPhoto": null,
+      "image": null,
+      "isFeatured": false,
+      "status": "published"
+    },
+    {
+      "id": "achievement-005",
+      "title": {
+        "en": "Sample Student Honor",
+        "fa": "نمونه افتخار دانش‌آموزی"
+      },
+      "studentName": {
+        "en": "Demo Student 08",
+        "fa": "دانش‌آموز نمونه ۸"
+      },
+      "category": "honors",
+      "description": {
+        "en": "A placeholder record for an outstanding-student recognition.",
+        "fa": "رکورد نمونه برای تقدیر از یک دانش‌آموز برجسته."
+      },
+      "organization": {
+        "en": "Sample: Academy Honor Roll",
+        "fa": "نمونه: تالار افتخار آکادمی"
+      },
+      "achievementDate": "2026-10-12",
+      "courseId": null,
+      "eventId": null,
+      "studentPhoto": null,
+      "image": null,
+      "isFeatured": false,
+      "status": "published"
+    },
+    {
+      "id": "achievement-006",
+      "title": {
+        "en": "Sample University Admission",
+        "fa": "نمونه پذیرش در دانشگاه"
+      },
+      "studentName": {
+        "en": "Demo Student 09",
+        "fa": "دانش‌آموز نمونه ۹"
+      },
+      "category": "admissions",
+      "description": {
+        "en": "A fictional example. It does not represent a real admission.",
+        "fa": "نمونه ساختگی است و نشان‌دهنده پذیرش واقعی نیست."
+      },
+      "organization": {
+        "en": "Sample University",
+        "fa": "نمونه: دانشگاه"
+      },
+      "achievementDate": "2026-10-05",
+      "courseId": null,
+      "eventId": null,
+      "studentPhoto": null,
+      "image": null,
+      "isFeatured": false,
+      "status": "published"
+    },
+    {
+      "id": "achievement-007",
+      "title": {
+        "en": "Sample Competition Result",
+        "fa": "نمونه نتیجه رقابت"
+      },
+      "studentName": {
+        "en": "Demo Student 10",
+        "fa": "دانش‌آموز نمونه ۱۰"
+      },
+      "category": "competitions",
+      "description": {
+        "en": "A placeholder record for a national or international competition.",
+        "fa": "رکورد نمونه برای یک رقابت ملی یا بین‌المللی."
+      },
+      "organization": {
+        "en": "Sample: Academic Competition",
+        "fa": "نمونه: رقابت علمی"
+      },
+      "achievementDate": "2026-09-30",
+      "courseId": null,
+      "eventId": null,
+      "studentPhoto": null,
+      "image": null,
+      "isFeatured": false,
+      "status": "published"
+    },
+    {
+      "id": "achievement-008",
+      "title": {
+        "en": "Sample Science Project",
+        "fa": "نمونه پروژه علمی"
+      },
+      "studentName": {
+        "en": "Demo Student 11",
+        "fa": "دانش‌آموز نمونه ۱۱"
+      },
+      "category": "scientific",
+      "description": {
+        "en": "A placeholder record for a student research project.",
+        "fa": "رکورد نمونه برای یک پروژه تحقیقاتی دانش‌آموزی."
+      },
+      "organization": {
+        "en": "Sample: Science Fair",
+        "fa": "نمونه: نمایشگاه علمی"
+      },
+      "achievementDate": "2026-09-20",
+      "courseId": null,
+      "eventId": null,
+      "studentPhoto": null,
+      "image": null,
+      "isFeatured": false,
+      "status": "published"
+    },
+    {
+      "id": "achievement-009",
+      "title": {
+        "en": "Sample Student Article",
+        "fa": "نمونه مقاله دانش‌آموزی"
+      },
+      "studentName": {
+        "en": "Demo Student 12",
+        "fa": "دانش‌آموز نمونه ۱۲"
+      },
+      "category": "publications",
+      "description": {
+        "en": "A placeholder record for a student-written article.",
+        "fa": "رکورد نمونه برای مقاله‌ای نوشته‌شده توسط یک دانش‌آموز."
+      },
+      "organization": {
+        "en": "Sample: Student Journal",
+        "fa": "نمونه: مجله دانش‌آموزی"
+      },
+      "achievementDate": "2026-09-10",
+      "courseId": null,
+      "eventId": null,
+      "studentPhoto": null,
+      "image": null,
+      "isFeatured": false,
+      "status": "published"
+    },
+    {
+      "id": "achievement-010",
+      "title": {
+        "en": "Sample Certificate Earned",
+        "fa": "نمونه دریافت گواهی‌نامه"
+      },
+      "studentName": {
+        "en": "Demo Student 13",
+        "fa": "دانش‌آموز نمونه ۱۳"
+      },
+      "category": "certificates",
+      "description": {
+        "en": "DEMO ONLY. Not a valid certificate.",
+        "fa": "فقط نمونه. گواهی‌نامه معتبر نیست."
+      },
+      "organization": {
+        "en": "Sample: Certification Body",
+        "fa": "نمونه: نهاد صدور گواهی"
+      },
+      "achievementDate": "2026-09-05",
+      "courseId": "course-computer-001",
+      "eventId": null,
+      "studentPhoto": null,
       "image": null,
       "isFeatured": false,
       "status": "published"
