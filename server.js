@@ -64,7 +64,8 @@ app.post(
   }
 )
 
-app.use((error, req, res, next) => {
+// تغییر next به _next برای رفع خطای ESLint
+app.use((error, req, res, _next) => {
   res.status(400).json({
     message: error.message,
   })
