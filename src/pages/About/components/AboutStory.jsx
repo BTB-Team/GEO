@@ -9,8 +9,6 @@ export default function AboutStory() {
   const t =
     language === "en" ? enTranslation.aboutPage : faTranslation.aboutPage;
 
-  const paragraphs = t.introduction.body.split("\n\n");
-
   return (
     <section
       className="container-custom section-padding gb-story"
