@@ -15,6 +15,7 @@ import Events from "../pages/Events/Events"
 import Blog from "../pages/Blog/Blog"
 import Resources from "../pages/Resources/Resources"
 import Saved from "../pages/Saved/Saved"
+import VerifyCertificate from "../pages/VerifyCertificate/VerifyCertificate"
 
 const AppRoutes = () => {
   return (
@@ -35,6 +36,7 @@ const AppRoutes = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/saved" element={<Saved />} />
+        <Route path="/verify-certificate" element={<VerifyCertificate />} />
       </Route>
     </Routes>
   )

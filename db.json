@@ -2351,78 +2351,208 @@
       "status": "draft"
     }
   ],
-  "navigation": [
-    {
-      "id": "nav-home",
-      "label": {
-        "en": "Home",
-        "fa": "صفحه اصلی"
-      },
-      "path": "/",
-      "sortOrder": 1,
-      "isVisible": true
+
+
+
+"navigation": [
+  {
+    "id": "nav-home",
+    "type": "link",
+    "placement": "menu",
+    "icon": "home",
+    "label": {
+      "en": "Home",
+      "fa": "خانه"
     },
-    {
-      "id": "nav-about",
-      "label": {
-        "en": "About Us",
-        "fa": "درباره ما"
-      },
-      "path": "/about",
-      "sortOrder": 2,
-      "isVisible": true
+    "path": "/",
+    "sortOrder": 1,
+    "isVisible": true
+  },
+  {
+    "id": "nav-courses",
+    "type": "link",
+    "placement": "menu",
+    "icon": "book-open",
+    "label": {
+      "en": "Courses",
+      "fa": "دوره‌ها"
     },
-    {
-      "id": "nav-courses",
-      "label": {
-        "en": "Courses",
-        "fa": "دوره‌ها"
-      },
-      "path": "/courses",
-      "sortOrder": 3,
-      "isVisible": true
+    "path": "/courses",
+    "sortOrder": 2,
+    "isVisible": true
+  },
+  {
+    "id": "nav-teachers",
+    "type": "link",
+    "placement": "menu",
+    "icon": "users",
+    "label": {
+      "en": "Teachers",
+      "fa": "استادان"
     },
-    {
-      "id": "nav-teachers",
-      "label": {
-        "en": "Teachers",
-        "fa": "استادان"
-      },
-      "path": "/teachers",
-      "sortOrder": 4,
-      "isVisible": true
+    "path": "/teachers",
+    "sortOrder": 3,
+    "isVisible": true
+  },
+  {
+    "id": "nav-about",
+    "type": "link",
+    "placement": "menu",
+    "icon": "info",
+    "label": {
+      "en": "About Us",
+      "fa": "درباره ما"
     },
-    {
-      "id": "nav-schedule",
-      "label": {
-        "en": "Class Schedule",
-        "fa": "برنامه درسی"
-      },
-      "path": "/schedule",
-      "sortOrder": 5,
-      "isVisible": true
+    "path": "/about",
+    "sortOrder": 4,
+    "isVisible": true
+  },
+  {
+    "id": "nav-achievements",
+    "type": "link",
+    "placement": "menu",
+    "icon": "award",
+    "label": {
+      "en": "Achievements",
+      "fa": "دستاوردها"
     },
-    {
-      "id": "nav-announcements",
-      "label": {
-        "en": "Announcements",
-        "fa": "اطلاعیه‌ها"
-      },
-      "path": "/announcements",
-      "sortOrder": 6,
-      "isVisible": true
+    "path": "/achievements",
+    "sortOrder": 5,
+    "isVisible": true
+  },
+  {
+    "id": "nav-blog",
+    "type": "link",
+    "placement": "menu",
+    "icon": "newspaper",
+    "label": {
+      "en": "Blog & Articles",
+      "fa": "وبلاگ و مقالات"
     },
-    {
-      "id": "nav-contact",
-      "label": {
-        "en": "Contact",
-        "fa": "تماس با ما"
+    "path": "/blog",
+    "sortOrder": 6,
+    "isVisible": true
+  },
+  {
+    "id": "nav-updates",
+    "type": "group",
+    "placement": "menu",
+    "icon": "bell",
+    "label": {
+      "en": "News & Events",
+      "fa": "اطلاعیه‌ها و رویدادها"
+    },
+    "sortOrder": 7,
+    "isVisible": true,
+    "children": [
+      {
+        "id": "nav-announcements",
+        "type": "link",
+        "icon": "megaphone",
+        "label": {
+          "en": "Announcements",
+          "fa": "اطلاعیه‌ها"
+        },
+        "path": "/announcements",
+        "sortOrder": 1,
+        "isVisible": true
       },
-      "path": "/contact",
-      "sortOrder": 7,
-      "isVisible": true
-    }
-  ],
+      {
+        "id": "nav-events",
+        "type": "link",
+        "icon": "calendar-days",
+        "label": {
+          "en": "Events",
+          "fa": "رویدادها"
+        },
+        "path": "/events",
+        "sortOrder": 2,
+        "isVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-schedule",
+    "type": "link",
+    "placement": "menu",
+    "icon": "calendar-days",
+    "label": {
+      "en": "Class Calendar",
+      "fa": "تقویم کلاس‌ها"
+    },
+    "path": "/schedule",
+    "sortOrder": 8,
+    "isVisible": true
+  },
+  {
+    "id": "nav-resources",
+    "type": "link",
+    "placement": "menu",
+    "icon": "library",
+    "label": {
+      "en": "Learning Resources",
+      "fa": "منابع درسی"
+    },
+    "path": "/resources",
+    "sortOrder": 9,
+    "isVisible": true
+  },
+  {
+    "id": "nav-certificates",
+    "type": "link",
+    "placement": "menu",
+    "icon": "badge-check",
+    "label": {
+      "en": "Verify Certificate",
+      "fa": "اعتبارسنجی گواهی‌نامه"
+    },
+    "path": "/verify-certificate",
+    "sortOrder": 10,
+    "isVisible": true
+  },
+  {
+    "id": "nav-contact",
+    "type": "link",
+    "placement": "menu",
+    "icon": "phone",
+    "label": {
+      "en": "Contact Us",
+      "fa": "تماس با ما"
+    },
+    "path": "/contact",
+    "sortOrder": 11,
+    "isVisible": true
+  },
+  {
+    "id": "nav-registration",
+    "type": "link",
+    "placement": "action",
+    "icon": "user-plus",
+    "label": {
+      "en": "Registration",
+      "fa": "ثبت‌نام"
+    },
+    "path": "/registration",
+    "sortOrder": 12,
+    "isVisible": true
+  },
+  {
+  "id": "nav-saved",
+  "type": "link",
+  "placement": "menu",
+  "icon": "heart",
+  "label": {
+    "en": "Saved",
+    "fa": "ذخیره‌شده‌ها"
+  },
+  "path": "/saved",
+  "sortOrder": 10,
+  "isVisible": true
+}
+],
+
+
+
 "homepageContent": {
   "hero": {
     "eyebrow": {
@@ -2753,7 +2883,8 @@
     "googleMeet": "https://meet.google.com/"
   }
  },
- "siteSettings": {
+
+"siteSettings": {
   "academyName": {
     "en": "Girls Education Organization",
     "fa": "سازمان آموزش دختران"
@@ -2762,10 +2893,27 @@
     "en": "Learn Today, Lead Tomorrow",
     "fa": "امروز بیاموز، فردا پیشگام باش"
   },
-  "logo": null,
+
+  "logo": "/images/logo/logo_header.webp",
   "registrationButton": {
-    "en": "Register Now",
-    "fa": "ثبت‌ نام"
+  "en": "Register Now",
+  "fa": "ثبت‌نام"
+},
+
+  "headerLabels": {
+    "menu": {
+      "en": "Menu",
+      "fa": "منو"
+    },
+    "closeMenu": {
+      "en": "Close Menu",
+      "fa": "بستن منو"
+    },
+    "languageButton": {
+      "en": "فارسی",
+      "fa": "English"
+    }
   }
 }
+
 }
