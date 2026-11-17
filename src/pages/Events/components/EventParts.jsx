@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { ACCENTS, formatTime } from "../../../utils/contentHelpers"
 import { getEventCategory, statusStyles } from "./eventConfig"
 
