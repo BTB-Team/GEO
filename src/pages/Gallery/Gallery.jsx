@@ -1,11 +1,11 @@
-﻿import { Images } from "lucide-react";
+
 import useLanguageStore from "../../store/languageStore";
 import AcademyShell from "../../components/academy/AcademyShell";
 // import { categories, labels } from "./galleryLabels";
 import { categories } from "./galleryConfig";
 import useGallery from "./useGallery";
-import fa from "../../locales/fa";
-import en from "../../locales/en";
+import faLocale from "../../locales/fa";
+import enLocale from "../../locales/en";
 
 import GalleryCard from "./components/GalleryCard";
 import Lightbox from "./components/Lightbox";
@@ -13,7 +13,7 @@ import Lightbox from "./components/Lightbox";
 export default function Gallery() {
   const language = useLanguageStore((state) => state.language);
   const en = language === "en";
-  const t = language === "fa" ? fa.gallery : en.gallery;
+  const t = language === "fa" ? faLocale.gallery : enLocale.gallery;
   console.log("Current language:", language);
   console.log("Gallery translations:", t);
 
