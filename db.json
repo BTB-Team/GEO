@@ -1262,7 +1262,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-01.webp",
       "courseIds": [
         "course-math-001",
         "course-exam-001",
@@ -1301,7 +1301,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-02.webp",
       "courseIds": [
         "course-exam-001",
         "course-ged-001",
@@ -1341,7 +1341,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-03.webp",
       "courseIds": [
         "course-ged-001",
         "course-sat-001",
@@ -1381,7 +1381,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-04.webp",
       "courseIds": [
         "course-computer-001",
         "course-robotics-001"
@@ -1418,7 +1418,7 @@
         "en": "This is fictional demo profile content. Replace it with verified teacher information before publication.",
         "fa": "این معرفی ساختگی و آزمایشی است. پیش از انتشار با اطلاعات تأییدشده استاد جایگزین شود."
       },
-      "photo": null,
+      "photo": "/images/teachers/demo-teacher-05.webp",
       "courseIds": [
         "course-robotics-001",
         "course-scholarship-001"
@@ -1428,6 +1428,100 @@
     }
   ],
   "classSchedules": [
+        {
+      "id": "schedule-current-001",
+      "scheduleGroup": "current-year",
+      "programLevel": {
+        "en": "Middle School",
+        "fa": "دورهٔ متوسطه"
+      },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "08:00",
+      "endTime": "09:30",
+      "timeZone": null,
+      "deliveryMode": "in-person",
+      "status": null
+    },
+        {
+      "id": "schedule-current-002",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "High School", "fa": "دورهٔ لیسه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "09:30",
+      "endTime": "11:30",
+      "timeZone": null,
+      "deliveryMode": "in-person",
+      "status": null
+    },
+    {
+      "id": "schedule-current-003",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "15:00",
+      "endTime": "16:30",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-004",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-005",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-006",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "Middle School", "fa": "دورهٔ متوسطه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
+    {
+      "id": "schedule-current-007",
+      "scheduleGroup": "current-year",
+      "programLevel": { "en": "High School", "fa": "دورهٔ لیسه" },
+      "courseId": null,
+      "teacherId": null,
+      "dayOfWeek": null,
+      "startTime": "21:00",
+      "endTime": "23:30",
+      "timeZone": null,
+      "deliveryMode": "online",
+      "status": null
+    },
     {
       "id": "schedule-001",
       "courseId": "course-math-001",
@@ -1647,7 +1741,7 @@
       "fa": "درس‌ها به من کمک کرد منظم تمرین کنم و اعتمادبه‌نفس بیشتری داشته باشم."
     },
     "rating": 5,
-    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_1",
     "role": {
       "en": "English Language Student",
       "fa": "دانش‌آموز زبان انگلیسی"
@@ -1668,7 +1762,7 @@
       "fa": "توضیح‌های مرحله‌به‌مرحله فهم موضوعات دشوار را آسان‌تر کرد."
     },
     "rating": 5,
-    "photo": "https://plus.unsplash.com/premium_photo-1763734758145-5febca8035c9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_2",
     "role": {
       "en": "Mathematics Student",
       "fa": "دانش‌آموز ریاضیات"
@@ -1689,7 +1783,7 @@
       "fa": "مهارت‌های عملی دیجیتال آموختم که می‌توانم در درس‌هایم استفاده کنم."
     },
     "rating": 4,
-    "photo": "https://plus.unsplash.com/premium_photo-1670884441862-ddb29ed1f25e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "photo": "student_3",
     "role": {
       "en": "Computer Skills Student",
       "fa": "دانش‌آموز مهارت‌های کمپیوتر"
@@ -2385,78 +2479,208 @@
       }
     }
   ],
-  "navigation": [
-    {
-      "id": "nav-home",
-      "label": {
-        "en": "Home",
-        "fa": "صفحه اصلی"
-      },
-      "path": "/",
-      "sortOrder": 1,
-      "isVisible": true
+
+
+
+"navigation": [
+  {
+    "id": "nav-home",
+    "type": "link",
+    "placement": "menu",
+    "icon": "home",
+    "label": {
+      "en": "Home",
+      "fa": "خانه"
     },
-    {
-      "id": "nav-about",
-      "label": {
-        "en": "About Us",
-        "fa": "درباره ما"
-      },
-      "path": "/about",
-      "sortOrder": 2,
-      "isVisible": true
+    "path": "/",
+    "sortOrder": 1,
+    "isVisible": true
+  },
+  {
+    "id": "nav-courses",
+    "type": "link",
+    "placement": "menu",
+    "icon": "book-open",
+    "label": {
+      "en": "Courses",
+      "fa": "دوره‌ها"
     },
-    {
-      "id": "nav-courses",
-      "label": {
-        "en": "Courses",
-        "fa": "دوره‌ها"
-      },
-      "path": "/courses",
-      "sortOrder": 3,
-      "isVisible": true
+    "path": "/courses",
+    "sortOrder": 2,
+    "isVisible": true
+  },
+  {
+    "id": "nav-teachers",
+    "type": "link",
+    "placement": "menu",
+    "icon": "users",
+    "label": {
+      "en": "Teachers",
+      "fa": "استادان"
     },
-    {
-      "id": "nav-teachers",
-      "label": {
-        "en": "Teachers",
-        "fa": "استادان"
-      },
-      "path": "/teachers",
-      "sortOrder": 4,
-      "isVisible": true
+    "path": "/teachers",
+    "sortOrder": 3,
+    "isVisible": true
+  },
+  {
+    "id": "nav-about",
+    "type": "link",
+    "placement": "menu",
+    "icon": "info",
+    "label": {
+      "en": "About Us",
+      "fa": "درباره ما"
     },
-    {
-      "id": "nav-schedule",
-      "label": {
-        "en": "Class Schedule",
-        "fa": "برنامه درسی"
-      },
-      "path": "/schedule",
-      "sortOrder": 5,
-      "isVisible": true
+    "path": "/about",
+    "sortOrder": 4,
+    "isVisible": true
+  },
+  {
+    "id": "nav-achievements",
+    "type": "link",
+    "placement": "menu",
+    "icon": "award",
+    "label": {
+      "en": "Achievements",
+      "fa": "دستاوردها"
     },
-    {
-      "id": "nav-announcements",
-      "label": {
-        "en": "Announcements",
-        "fa": "اطلاعیه‌ها"
-      },
-      "path": "/announcements",
-      "sortOrder": 6,
-      "isVisible": true
+    "path": "/achievements",
+    "sortOrder": 5,
+    "isVisible": true
+  },
+  {
+    "id": "nav-blog",
+    "type": "link",
+    "placement": "menu",
+    "icon": "newspaper",
+    "label": {
+      "en": "Blog & Articles",
+      "fa": "وبلاگ و مقالات"
     },
-    {
-      "id": "nav-contact",
-      "label": {
-        "en": "Contact",
-        "fa": "تماس با ما"
+    "path": "/blog",
+    "sortOrder": 6,
+    "isVisible": true
+  },
+  {
+    "id": "nav-updates",
+    "type": "group",
+    "placement": "menu",
+    "icon": "bell",
+    "label": {
+      "en": "News & Events",
+      "fa": "اطلاعیه‌ها و رویدادها"
+    },
+    "sortOrder": 7,
+    "isVisible": true,
+    "children": [
+      {
+        "id": "nav-announcements",
+        "type": "link",
+        "icon": "megaphone",
+        "label": {
+          "en": "Announcements",
+          "fa": "اطلاعیه‌ها"
+        },
+        "path": "/announcements",
+        "sortOrder": 1,
+        "isVisible": true
       },
-      "path": "/contact",
-      "sortOrder": 7,
-      "isVisible": true
-    }
-  ],
+      {
+        "id": "nav-events",
+        "type": "link",
+        "icon": "calendar-days",
+        "label": {
+          "en": "Events",
+          "fa": "رویدادها"
+        },
+        "path": "/events",
+        "sortOrder": 2,
+        "isVisible": true
+      }
+    ]
+  },
+  {
+    "id": "nav-schedule",
+    "type": "link",
+    "placement": "menu",
+    "icon": "calendar-days",
+    "label": {
+      "en": "Class Calendar",
+      "fa": "تقویم کلاس‌ها"
+    },
+    "path": "/schedule",
+    "sortOrder": 8,
+    "isVisible": true
+  },
+  {
+    "id": "nav-resources",
+    "type": "link",
+    "placement": "menu",
+    "icon": "library",
+    "label": {
+      "en": "Learning Resources",
+      "fa": "منابع درسی"
+    },
+    "path": "/resources",
+    "sortOrder": 9,
+    "isVisible": true
+  },
+  {
+    "id": "nav-certificates",
+    "type": "link",
+    "placement": "menu",
+    "icon": "badge-check",
+    "label": {
+      "en": "Verify Certificate",
+      "fa": "اعتبارسنجی گواهی‌نامه"
+    },
+    "path": "/verify-certificate",
+    "sortOrder": 10,
+    "isVisible": true
+  },
+  {
+    "id": "nav-contact",
+    "type": "link",
+    "placement": "menu",
+    "icon": "phone",
+    "label": {
+      "en": "Contact Us",
+      "fa": "تماس با ما"
+    },
+    "path": "/contact",
+    "sortOrder": 11,
+    "isVisible": true
+  },
+  {
+    "id": "nav-registration",
+    "type": "link",
+    "placement": "action",
+    "icon": "user-plus",
+    "label": {
+      "en": "Registration",
+      "fa": "ثبت‌نام"
+    },
+    "path": "/registration",
+    "sortOrder": 12,
+    "isVisible": true
+  },
+  {
+  "id": "nav-saved",
+  "type": "link",
+  "placement": "menu",
+  "icon": "heart",
+  "label": {
+    "en": "Saved",
+    "fa": "ذخیره‌شده‌ها"
+  },
+  "path": "/saved",
+  "sortOrder": 10,
+  "isVisible": true
+}
+],
+
+
+
 "homepageContent": {
   "hero": {
     "eyebrow": {
@@ -2636,7 +2860,7 @@
     "visualImages": [
   {
     "id": "learning-together",
-    "src": "https://images.openai.com/static-rsc-4/wqXPoBhv-fq_hVkzRGtvsVfkA4GQPfyo_FF6YGtd5O-TqMVqnYEGLRsYeTyDmZYN-RuS2pIiNQUIiJ2ohr6DZZstfWKb8pabbH6XABojPjcZyPZE5zWMFX1mwLuegAKVBHmj81onZq9ol-K6zjMDS0XnexV6zw8jLCLQvgaeaA3lduTViPFH9LaEsbnV6pmn?purpose=fullsize",
+    "assetId": "groupWork_1",
     "alt": {
       "en": "Students studying together in a modern library",
       "fa": "دانش‌آموزان در حال مطالعه در کتابخانه مدرن"
@@ -2644,7 +2868,7 @@
   },
   {
     "id": "guided-learning",
-    "src": "https://images.pexels.com/photos/6550403/pexels-photo-6550403.jpeg?auto=compress&dpr=1&h=750&w=1260",
+    "assetId": "groupWork_2",
     "alt": {
       "en": "Students learning together with books and notes",
       "fa": "دانش‌آموزان در حال یادگیری با کتاب و یادداشت‌ها"
@@ -2691,24 +2915,69 @@
   },
 
   "announcementsSection": {
-    "eyebrow": {
-      "en": "LATEST UPDATES",
-      "fa": "تازه‌ترین خبرها"
+  "eyebrow": {
+    "en": "LATEST UPDATES",
+    "fa": "تازه‌ترین خبرها"
+  },
+  "title": {
+    "en": "News and Announcements",
+    "fa": "خبرها و اطلاعیه‌ها"
+  },
+  "description": {
+    "en": "Stay informed about academy news, programs, and important updates.",
+    "fa": "از خبرها، برنامه‌ها و اطلاعیه‌های مهم آکادمی باخبر بمانید."
+  },
+  "actionLabel": {
+    "en": "All Announcements",
+    "fa": "تمام اطلاعیه‌ها"
+  },
+  "actionPath": "/announcements",
+
+  "pinnedLabel": {
+    "en": "IMPORTANT UPDATE",
+    "fa": "اطلاعیه مهم"
+  },
+  "typeLabels": {
+    "admissions": {
+      "en": "Admissions",
+      "fa": "ثبت‌نام"
     },
-    "title": {
-      "en": "News and Announcements",
-      "fa": "خبرها و اطلاعیه‌ها"
+    "webinar": {
+      "en": "Webinar",
+      "fa": "ویبینار"
     },
-    "description": {
-      "en": "Stay informed about academy news, programs, and important updates.",
-      "fa": "از خبرها، برنامه‌ها و اطلاعیه‌های مهم آکادمی باخبر بمانید."
-    },
-    "actionLabel": {
-      "en": "All Announcements",
-      "fa": "تمام اطلاعیه‌ها"
-    },
-    "limit": 3
-  }
+    "schedule": {
+      "en": "Schedule Update",
+      "fa": "تغییر برنامه"
+    }
+  },
+
+  "loadingLabel": {
+    "en": "Loading announcements...",
+    "fa": "در حال بارگذاری اطلاعیه‌ها..."
+  },
+  "errorTitle": {
+    "en": "Unable to Load Announcements",
+    "fa": "بارگذاری اطلاعیه‌ها ممکن نشد"
+  },
+  "errorDescription": {
+    "en": "Something went wrong while loading announcements. Please try again.",
+    "fa": "هنگام بارگذاری اطلاعیه‌ها مشکلی رخ داد. لطفاً دوباره تلاش کنید."
+  },
+  "retryLabel": {
+    "en": "Try Again",
+    "fa": "تلاش دوباره"
+  },
+  "emptyTitle": {
+    "en": "No Announcements Yet",
+    "fa": "هنوز اطلاعیه‌ای منتشر نشده است"
+  },
+  "emptyDescription": {
+    "en": "There are no published announcements at the moment. Please check back soon.",
+    "fa": "در حال حاضر اطلاعیه منتشرشده‌ای وجود ندارد. لطفاً بعداً دوباره مراجعه کنید."
+  },
+  "limit": 3
+}
 },
 "footerContent": {
   "description": {
@@ -2724,8 +2993,8 @@
     "fa": "ارتباط با ما"
   },
   "copyright": {
-    "en": "© 2026 Gam-e-Buland Online Academy. All rights reserved.",
-    "fa": "© ۲۰۲۶ آکادمی آنلاین گام بُلند. تمامی حقوق محفوظ است."
+    "en": "© 2026 Girls Education Organization. All rights reserved.",
+    "fa": "© ۲۰۲۶ سازمان آموزش دختران. تمامی حقوق محفوظ است."
   },
   "email": "info@example.com",
   "phone": "+93 000 000 000",
@@ -2737,25 +3006,43 @@
     "facebook": "https://www.facebook.com/",
     "instagram": "https://www.instagram.com/",
     "linkedin": "https://www.linkedin.com/",
-    "whatsapp": "https://wa.me/?text=Hello%20Gam-e-Buland%20Online%20Academy",
-    "telegram": "https://t.me/share/url?url=https%3A%2F%2Fexample.com&text=Hello%20Gam-e-Buland%20Online%20Academy",
+    "whatsapp": "https://wa.me/?text=Hello%20Girls%20Education%20Organization",
+    "telegram": "https://t.me/share/url?url=https%3A%2F%2Fexample.com&text=Hello%20Girls%20Education%20Organization",
     "googleMeet": "https://meet.google.com/"
   }
  },
- "siteSettings": {
+
+"siteSettings": {
   "academyName": {
-    "en": "Gam-e-Buland Online Academy",
-    "fa": "آکادمی آنلاین گام بُلند"
+    "en": "Girls Education Organization",
+    "fa": "سازمان آموزش دختران"
   },
   "tagline": {
     "en": "Learn Today, Lead Tomorrow",
     "fa": "امروز بیاموز، فردا پیشگام باش"
   },
-  "logo": null,
+
+  "logo": "/images/logo/logo_header.webp",
   "registrationButton": {
-    "en": "Register Now",
-    "fa": "ثبت‌ نام"
+  "en": "Register Now",
+  "fa": "ثبت‌نام"
+},
+
+  "headerLabels": {
+    "menu": {
+      "en": "Menu",
+      "fa": "منو"
+    },
+    "closeMenu": {
+      "en": "Close Menu",
+      "fa": "بستن منو"
+    },
+    "languageButton": {
+      "en": "فارسی",
+      "fa": "English"
+    }
   }
 }
+
 }
 

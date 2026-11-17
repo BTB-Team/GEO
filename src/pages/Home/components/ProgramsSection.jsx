@@ -19,96 +19,36 @@ import useLanguageStore from "../../../store/languageStore"
 // CATEGORY VISUAL IDENTITY
 // ============================================
 
+// ============================================
+// CATEGORY VISUAL IDENTITY
+// ============================================
+
 const categoryVisuals = {
   "academic-support": {
     icon: BookOpen,
-    iconColor: "text-brand-blue",
-    iconBackground: "bg-brand-blue/10",
-    artwork:
-      "bg-gradient-to-br from-brand-blue/10 via-surface to-brand-blue/5",
-    decoration: "bg-brand-blue/15",
+    theme: "academic",
   },
   "test-preparation": {
     icon: Target,
-    iconColor: "text-brand-green",
-    iconBackground: "bg-brand-green/10",
-    artwork:
-      "bg-gradient-to-br from-brand-green/10 via-surface to-brand-green/5",
-    decoration: "bg-brand-green/15",
+    theme: "exam",
   },
   languages: {
     icon: Languages,
-    iconColor: "text-brand-orange",
-    iconBackground: "bg-brand-orange/10",
-    artwork:
-      "bg-gradient-to-br from-brand-orange/10 via-surface to-brand-orange/5",
-    decoration: "bg-brand-orange/15",
+    theme: "language",
   },
   technology: {
     icon: Code2,
-    iconColor: "text-brand-blue",
-    iconBackground: "bg-brand-blue/10",
-    artwork:
-      "bg-gradient-to-br from-brand-blue/10 via-surface to-brand-green/10",
-    decoration: "bg-brand-blue/15",
+    theme: "technology",
   },
   "scholarship-guidance": {
     icon: Award,
-    iconColor: "text-brand-green",
-    iconBackground: "bg-brand-green/10",
-    artwork:
-      "bg-gradient-to-br from-brand-green/10 via-surface to-brand-orange/10",
-    decoration: "bg-brand-green/15",
+    theme: "scholarship",
   },
 }
 
 const defaultVisual = {
   icon: GraduationCap,
-  iconColor: "text-brand-blue",
-  iconBackground: "bg-brand-blue/10",
-  artwork: "bg-gradient-to-br from-brand-blue/10 via-surface to-surface",
-  decoration: "bg-brand-blue/15",
-}
-
-// ============================================
-// SECTION COPY
-// ============================================
-
-const sectionCopy = {
-  en: {
-    eyebrow: "LEARN WITHOUT LIMITS",
-    title: "Discover what you can become.",
-    description:
-      "Explore learning paths that build knowledge, unlock potential, and prepare you for the opportunities ahead.",
-    viewAll: "Explore all programs",
-    explore: "Explore program",
-    course: "course",
-    courses: "courses",
-    pathway: "LEARNING PATH",
-    featured: "FEATURED PROGRAM",
-    loading: "Loading educational programs...",
-    error: "We couldn't load the educational programs.",
-    retry: "Try again",
-    empty: "No educational programs are available at the moment.",
-    available: "AVAILABLE LEARNING PATHS",
-  },
-  fa: {
-    eyebrow: "یادگیری بدون محدودیت",
-    title: "استعدادت را کشف کن، آینده‌ات را بساز.",
-    description:
-      "مسیرهای آموزشی متنوع را کشف کن؛ دانش خود را گسترش بده، توانایی‌هایت را پرورش بده و برای فرصت‌های آینده آماده شو.",
-    viewAll: "مشاهده همه برنامه‌ها",
-    explore: "مشاهده برنامه",
-    course: "دوره",
-    courses: "دوره",
-    pathway: "مسیر آموزشی",
-    featured: "برنامه ویژه",
-    loading: "در حال بارگذاری برنامه‌های آموزشی...",
-    error: "بارگذاری برنامه‌های آموزشی با مشکل مواجه شد.",
-    retry: "تلاش دوباره",
-    empty: "در حال حاضر برنامه آموزشی برای نمایش موجود نیست.",
-    available: "مسیرهای آموزشی موجود",
-  },
+  theme: "default",
 }
 
 // ============================================
@@ -174,8 +114,8 @@ const ProgramArtwork = ({
 
   return (
     <div
-      className={`relative isolate overflow-hidden rounded-3xl ${
-        isFeatured ? "h-55 sm:h-62.5" : "h-36.25"
+      className={`program-artwork program-artwork--${visual.theme} relative isolate overflow-hidden rounded-3xl ${
+      isFeatured ? "h-55 sm:h-62.5" : "h-36.25"
       }`}
     >
       {/* DATABASE IMAGE */}
@@ -205,19 +145,20 @@ const ProgramArtwork = ({
 
           <div
             aria-hidden="true"
-            className={`absolute inset-0 ${visual.artwork}`}
+            className="program-artwork__background absolute inset-0"
+
           />
 
           {/* LARGE DECORATIVE CIRCLES */}
 
           <div
             aria-hidden="true"
-            className={`absolute -inset-e-12 -top-16 h-48 w-48 rounded-full ${visual.decoration} blur-2xl transition-transform duration-700 group-hover:scale-125`}
+          className="program-artwork__decoration absolute -inset-e-12 -top-16 h-48 w-48 rounded-full blur-2xl transition-transform duration-700 group-hover:scale-125"
           />
 
           <div
             aria-hidden="true"
-            className={`absolute -bottom-24 -inset-s-12 h-48 w-48 rounded-full ${visual.decoration} blur-2xl`}
+          className="program-artwork__decoration absolute -bottom-24 -inset-s-12 h-48 w-48 rounded-full blur-2xl"
           />
 
           <div
@@ -239,9 +180,9 @@ const ProgramArtwork = ({
             } flex items-center justify-center rounded-4xl border border-background/70 bg-background/70 shadow-card backdrop-blur-sm transition-all duration-500 group-hover:translate-y-[-55%] group-hover:rotate-3`}
           >
             <CategoryIcon
-              size={isFeatured ? 66 : 52}
-              strokeWidth={1.35}
-              className={visual.iconColor}
+            size={isFeatured ? 66 : 52}
+            strokeWidth={1.35}
+            className="program-artwork__icon"
             />
           </div>
 
@@ -274,15 +215,15 @@ const ProgramArtwork = ({
       {/* TOP LABEL */}
 
       <div className="absolute inset-x-4 top-4 flex items-start justify-between gap-3">
-        <span
-          className={`rounded-full px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.12em] backdrop-blur-md sm:text-[10px] ${
+       <span
+        className={`program-artwork__label ${
             isFeatured
-              ? "border border-white/20 bg-white/15 text-white"
-              : "border border-border/60 bg-background/80 text-text-secondary"
-          }`}
+            ? "program-artwork__label--featured"
+            : "program-artwork__label--pathway"
+        }`}
         >
-          {isFeatured ? copy.featured : copy.pathway}
-        </span>
+        {isFeatured ? copy.featured : copy.pathway}
+       </span>
 
         <span
           className={`text-3xl font-black tracking-tight ${
@@ -296,9 +237,12 @@ const ProgramArtwork = ({
       {/* FEATURED LABEL */}
 
       {isFeatured && (
-        <div className="absolute bottom-4 inset-s-4 flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-2 text-[10px] font-semibold text-white backdrop-blur-md">
-          <Sparkles size={13} />
-          <span>{getText(category.name, language)}</span>
+     <div className="program-artwork__category absolute bottom-4 inset-s-4 flex items-center gap-2">
+          <Sparkles size={14} className="program-artwork__category-icon shrink-0"
+           />
+        <span className="truncate">
+            {getText(category.name, language)}
+        </span>
         </div>
       )}
     </div>
@@ -339,11 +283,11 @@ const ProgramCard = ({
 
   return (
     <article
-      className={`group relative flex min-w-0 flex-col overflow-hidden rounded-4xl border p-3 transition-all duration-500 hover:-translate-y-1.5 ${
-        isFeatured
-          ? "border-brand-blue bg-brand-blue text-white shadow-xl shadow-brand-blue/15 sm:col-span-2 lg:row-span-2 lg:col-span-1"
-          : "border-border bg-background text-text-primary shadow-card hover:border-brand-blue/25 hover:shadow-xl"
-      }`}
+    className={`group relative flex min-w-0 flex-col overflow-hidden rounded-4xl border p-3 transition-all duration-500 hover:-translate-y-1.5 ${
+      isFeatured
+        ? "program-card--featured border-white/20 text-white shadow-xl shadow-brand-blue/15 sm:col-span-2 lg:row-span-2 lg:col-span-1"
+        : "border-border bg-background text-text-primary shadow-card hover:border-brand-blue/25 hover:shadow-xl"
+    }`}
     >
       {/* ARTWORK */}
 
@@ -392,14 +336,14 @@ const ProgramCard = ({
               .slice(0, isFeatured ? 4 : 2)
               .map((course) => (
                 <span
-                  key={course.id}
-                  className={`max-w-full truncate rounded-lg px-3 py-2 text-[11px] font-medium ${
+                    key={course.id}
+                    className={`program-course-tag ${
                     isFeatured
-                      ? "border border-white/15 bg-white/10 text-white/90"
-                      : "border border-border bg-surface text-text-secondary"
-                  }`}
+                    ? "program-course-tag--featured"
+                    : "program-course-tag--default"
+                }`}
                 >
-                  {getText(course.title, language)}
+                {getText(course.title, language)}
                 </span>
               ))}
 
@@ -460,9 +404,10 @@ const ProgramCard = ({
 // PROGRAMS SECTION
 // ============================================
 
-const ProgramsSection = () => {
+    const ProgramsSection = () => {
   const [categories, setCategories] = useState([])
   const [courses, setCourses] = useState([])
+  const [sectionContent, setSectionContent] = useState(null)
 
   const [isLoading, setIsLoading] = useState(true)
   const [hasError, setHasError] = useState(false)
@@ -471,7 +416,24 @@ const ProgramsSection = () => {
   const language = useLanguageStore((state) => state.language)
   const direction = useLanguageStore((state) => state.direction)
 
-  const copy = sectionCopy[language] || sectionCopy.en
+  const copy = sectionContent
+    ? {
+        eyebrow: getText(sectionContent.eyebrow, language),
+        title: getText(sectionContent.title, language),
+        description: getText(sectionContent.description, language),
+        viewAll: getText(sectionContent.actionLabel, language),
+        explore: getText(sectionContent.cardAction, language),
+        course: getText(sectionContent.courseLabel, language),
+        courses: getText(sectionContent.coursesLabel, language),
+        pathway: getText(sectionContent.pathwayLabel, language),
+        featured: getText(sectionContent.featuredLabel, language),
+        loading: getText(sectionContent.loadingLabel, language),
+        error: getText(sectionContent.errorDescription, language),
+        retry: getText(sectionContent.retryLabel, language),
+        empty: getText(sectionContent.emptyDescription, language),
+        available: getText(sectionContent.availablePathsLabel, language),
+      }
+    : null
 
   // ==========================================
   // FETCH PROGRAM DATA
@@ -485,23 +447,41 @@ const ProgramsSection = () => {
       setHasError(false)
 
       try {
-        const [categoriesResponse, coursesResponse] =
-          await Promise.all([
+        const [categoriesResponse, coursesResponse, homepageResponse] =
+        await Promise.all([
             fetch("http://localhost:5000/courseCategories", {
-              signal: controller.signal,
+            signal: controller.signal,
             }),
             fetch("http://localhost:5000/courses", {
-              signal: controller.signal,
+            signal: controller.signal,
             }),
-          ])
+            fetch("http://localhost:5000/homepageContent", {
+            signal: controller.signal,
+            }),
+        ])
+
+        if (!homepageResponse.ok) {
+        throw new Error("Failed to fetch programs section content")
+        }
+
+        const homepageData = await homepageResponse.json()
+
+        if (
+        !homepageData?.coursesSection ||
+        typeof homepageData.coursesSection !== "object"
+        ) {
+        throw new Error("Invalid programs section content")
+        }
+
+        setSectionContent(homepageData.coursesSection)
 
         if (!categoriesResponse.ok || !coursesResponse.ok) {
-          throw new Error("Failed to fetch educational programs")
+        throw new Error("Failed to fetch educational programs")
         }
 
         const [categoriesData, coursesData] = await Promise.all([
-          categoriesResponse.json(),
-          coursesResponse.json(),
+        categoriesResponse.json(),
+        coursesResponse.json(),
         ])
 
         if (
@@ -571,7 +551,7 @@ const ProgramsSection = () => {
             </div>
 
             <p className="mt-5 text-sm leading-7 text-text-secondary">
-              {copy.error}
+              {copy?.error}
             </p>
 
             <button
@@ -581,7 +561,7 @@ const ProgramsSection = () => {
               }
               className="btn-primary mt-5"
             >
-              {copy.retry}
+              {copy?.retry}
             </button>
           </div>
         </div>
@@ -601,7 +581,7 @@ const ProgramsSection = () => {
       >
         <div className="container-custom">
           <p className="rounded-3xl border border-border bg-background p-8 text-center text-sm text-text-secondary">
-            {copy.empty}
+            {copy?.empty}
           </p>
         </div>
       </section>

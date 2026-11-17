@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import academyLogo from "../../assets/image/logo/logo_header.png"
+import academyLogo from "../../assets/image/logo/logo_header.webp"
 import {
   Mail,
   Phone,

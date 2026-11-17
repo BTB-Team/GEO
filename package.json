@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
+    "scripts": {
+    "dev": "concurrently \"pnpm dev:client\" \"pnpm dev:api\"",
+    "dev:client": "vite",
     "dev:api": "json-server --watch db.json --port 5000",
-    "dev:all": "concurrently \"pnpm dev\" \"pnpm dev:api\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

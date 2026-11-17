@@ -1804,6 +1804,167 @@ background-repeat: no-repeat;
   animation-delay: -8s;
 }
 
+
+/* =====================================
+   PROGRAMS — CATEGORY VISUAL SYSTEM
+===================================== */
+
+/* BASE */
+
+.program-artwork__background {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-blue) 10%, transparent),
+    var(--color-surface),
+    color-mix(in srgb, var(--color-brand-blue) 5%, transparent)
+  );
+}
+
+.program-artwork__decoration {
+  background-color: color-mix(
+    in srgb,
+    var(--color-brand-blue) 15%,
+    transparent
+  );
+}
+
+.program-artwork__icon {
+  color: var(--color-brand-blue);
+}
+
+
+/* ACADEMIC SUPPORT */
+
+.program-artwork--academic .program-artwork__background {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-blue) 10%, transparent),
+    var(--color-surface),
+    color-mix(in srgb, var(--color-brand-blue) 5%, transparent)
+  );
+}
+
+.program-artwork--academic .program-artwork__decoration {
+  background-color: color-mix(
+    in srgb,
+    var(--color-brand-blue) 15%,
+    transparent
+  );
+}
+
+.program-artwork--academic .program-artwork__icon {
+  color: var(--color-brand-blue);
+}
+
+
+/* TEST PREPARATION */
+
+.program-artwork--exam .program-artwork__background {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-green) 10%, transparent),
+    var(--color-surface),
+    color-mix(in srgb, var(--color-brand-green) 5%, transparent)
+  );
+}
+
+.program-artwork--exam .program-artwork__decoration {
+  background-color: color-mix(
+    in srgb,
+    var(--color-brand-green) 15%,
+    transparent
+  );
+}
+
+.program-artwork--exam .program-artwork__icon {
+  color: var(--color-brand-green);
+}
+
+
+/* LANGUAGES */
+
+.program-artwork--language .program-artwork__background {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-orange) 10%, transparent),
+    var(--color-surface),
+    color-mix(in srgb, var(--color-brand-orange) 5%, transparent)
+  );
+}
+
+.program-artwork--language .program-artwork__decoration {
+  background-color: color-mix(
+    in srgb,
+    var(--color-brand-orange) 15%,
+    transparent
+  );
+}
+
+.program-artwork--language .program-artwork__icon {
+  color: var(--color-brand-orange);
+}
+
+
+/* TECHNOLOGY */
+
+.program-artwork--technology .program-artwork__background {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-blue) 10%, transparent),
+    var(--color-surface),
+    color-mix(in srgb, var(--color-brand-green) 10%, transparent)
+  );
+}
+
+.program-artwork--technology .program-artwork__decoration {
+  background-color: color-mix(
+    in srgb,
+    var(--color-brand-blue) 15%,
+    transparent
+  );
+}
+
+.program-artwork--technology .program-artwork__icon {
+  color: var(--color-brand-blue);
+}
+
+
+/* SCHOLARSHIP GUIDANCE */
+
+.program-artwork--scholarship .program-artwork__background {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-green) 10%, transparent),
+    var(--color-surface),
+    color-mix(in srgb, var(--color-brand-orange) 10%, transparent)
+  );
+}
+
+.program-artwork--scholarship .program-artwork__decoration {
+  background-color: color-mix(
+    in srgb,
+    var(--color-brand-green) 15%,
+    transparent
+  );
+}
+
+.program-artwork--scholarship .program-artwork__icon {
+  color: var(--color-brand-green);
+}
+
+
+/* DEFAULT */
+
+.program-artwork--default .program-artwork__background {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-blue) 10%, transparent),
+    var(--color-surface),
+    var(--color-surface)
+  );
+}
+
+
 @keyframes testimonials-aurora-float {
   0% {
     transform: translate3d(-15px, -10px, 0) scale(0.95);

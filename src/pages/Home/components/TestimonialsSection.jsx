@@ -10,6 +10,15 @@ import {
   Star,
 } from "lucide-react"
 
+// LOCAL STUDENT PHOTOS
+import studentPhoto1 from "../../../assets/image/home/TestimonialsSection_student_1.webp"
+import studentPhoto2 from "../../../assets/image/home/TestimonialsSection_student_2.webp"
+import studentPhoto3 from "../../../assets/image/home/TestimonialsSection_student_3.webp"
+
+// LOCAL EDUCATIONAL IMAGES
+import groupWorkImage1 from "../../../assets/image/home/TestimonialsSection_hero_groupWork_1.webp"
+import groupWorkImage2 from "../../../assets/image/home/TestimonialsSection_hero_groupWork_2.webp"
+
 import useLanguageStore from "../../../store/languageStore"
 
 // ============================================
@@ -17,6 +26,22 @@ import useLanguageStore from "../../../store/languageStore"
 // ============================================
 
 const API_BASE_URL = "http://localhost:5000"
+
+
+// ============================================
+// LOCAL IMAGE ASSETS
+// ============================================
+
+const studentPhotoAssets = {
+  student_1: studentPhoto1,
+  student_2: studentPhoto2,
+  student_3: studentPhoto3,
+}
+
+const learningVisualAssets = {
+  groupWork_1: groupWorkImage1,
+  groupWork_2: groupWorkImage2,
+}
 
 // ============================================
 // LOCALIZED TEXT
@@ -55,32 +80,34 @@ const getInitials = (name) => {
 // ============================================
 
 const StudentAvatar = ({ testimonial, language, size = "normal" }) => {
-  const [imageFailed, setImageFailed] = useState(false)
+  const [failedPhoto, setFailedPhoto] = useState(null)
 
   const name = getLocalizedText(
     testimonial.studentName,
     language
   )
 
-  const photo =
-    typeof testimonial.photo === "string" &&
-    testimonial.photo.trim()
-      ? testimonial.photo
-      : null
+  const photoValue =
+    typeof testimonial.photo === "string"
+      ? testimonial.photo.trim()
+      : ""
+
+  const photo = studentPhotoAssets[photoValue] || null
+
 
   const dimensions =
     size === "large"
       ? "h-14 w-14 text-base"
       : "h-11 w-11 text-sm"
 
-  if (photo && !imageFailed) {
+  if (photo && failedPhoto !== photo) {
     return (
       <img
         src={photo}
         alt={name}
         loading="lazy"
         decoding="async"
-        onError={() => setImageFailed(true)}
+        onError={() => setFailedPhoto(photo)}
         className={`${dimensions} shrink-0 rounded-full border-2 border-white/80 object-cover shadow-md`}
       />
     )
@@ -772,22 +799,20 @@ const TestimonialsSection = () => {
     .filter(({ index }) => index !== safeIndex)
     .slice(0, 2)
 
-  // ==========================================
-  // VISUAL IMAGES
-  // ==========================================
+    // ==========================================
+    // VISUAL IMAGES
+    // ==========================================
 
-  const visualImages = (
+    const visualImages = (
     Array.isArray(sectionContent?.visualImages)
-      ? sectionContent.visualImages
-      : []
-  )
-    .filter(
-      (image) =>
-        image?.id &&
-        typeof image.src === "string" &&
-        (image.src.startsWith("https://") ||
-          image.src.startsWith("/"))
+        ? sectionContent.visualImages
+        : []
     )
+    .map((image) => ({
+        ...image,
+        src: learningVisualAssets[image.assetId],
+    }))
+    .filter((image) => image.id && image.src)
     .slice(0, 2)
 
   // ==========================================
