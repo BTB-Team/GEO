@@ -64,7 +64,7 @@ app.post(
   }
 )
 
-// تغییر next به _next برای رفع خطای ESLint
+// eslint-disable-next-line no-unused-vars
 app.use((error, req, res, _next) => {
   res.status(400).json({
     message: error.message,

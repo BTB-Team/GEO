@@ -41,7 +41,7 @@ const translation = {
     "in-person": "In person",
   },
   registration: "Registration",
-  contact: "Contact",
+  contact: "Contact Us",
   achievements: "Achievements",
   announcements: "Announcements",
   about: "About Us",
@@ -50,9 +50,8 @@ const translation = {
   blog: "Blog",
   resources: "Resources",
 
-  // Courses Page & Filters
-  coursesSubtitle: "Explore Our Educational Programs",
-  coursesDescription: "Find the right learning path for your future.",
+  coursesSubtitle: "Explore Our Learning Programs",
+  coursesDescription: "Discover the right learning path for your future.",
   searchCourses: "Search courses...",
   allCourses: "All Courses",
   academic: "Academic",
@@ -114,7 +113,7 @@ const translation = {
   // =================================
 
   // Mathematics
-  mathTitle: "Pre-school Program",
+  mathTitle: "Mathematics", // در بخش تکراری دوم: "Pre-school Program"
   mathDuration: "3 Months",
   mathInstructor: "Sarah Ahmed",
   mathDeadline: "December 15, 2026",
@@ -132,7 +131,7 @@ const translation = {
   mathCurriculum4: "Practical Exercises and Final Assessment",
 
   // GED Preparation
-  gedTitle: "High School Program",
+  gedTitle: "GED Preparation", // در بخش تکراری دوم: "High School Program"
   gedDuration: "6 Months",
   gedInstructor: "Ahmad Rahimi",
   gedDeadline: "December 20, 2026",
@@ -150,7 +149,7 @@ const translation = {
   gedCurriculum4: "GED Practice Tests and Exam Preparation",
 
   // SAT Preparation
-  satTitle: "Level 2 Program",
+  satTitle: "SAT Preparation", // در بخش تکراری دوم: "Level 2 Program"
   satDuration: "4 Months",
   satInstructor: "Maryam Khan",
   satDeadline: "December 25, 2026",
@@ -168,7 +167,7 @@ const translation = {
   satCurriculum4: "Practice Tests and Exam Strategies",
 
   // English Language
-  englishTitle: "English Language Program",
+  englishTitle: "English Language", // در بخش تکراری دوم: "English Language Program"
   englishDuration: "6 Months",
   englishInstructor: "To Be Announced",
   englishDeadline: "To Be Announced",
@@ -186,7 +185,7 @@ const translation = {
   englishCurriculum4: "Reading and Writing Skills",
 
   // Computer Skills
-  computerTitle: "TOEFL Preparation Program",
+  computerTitle: "Computer Skills", // در بخش تکراری دوم: "TOEFL Preparation Program"
   computerDuration: "3 Months",
   computerInstructor: "To Be Announced",
   computerDeadline: "To Be Announced",
@@ -204,7 +203,7 @@ const translation = {
   computerCurriculum4: "Internet Skills and Digital Safety",
 
   // Robotics
-  roboticsTitle: "Duolingo Preparation Program",
+  roboticsTitle: "Robotics", // در بخش تکراری دوم: "Duolingo Preparation Program"
   roboticsDuration: "3 Months",
   roboticsInstructor: "To Be Announced",
   roboticsDeadline: "To Be Announced",
@@ -222,7 +221,7 @@ const translation = {
   roboticsCurriculum4: "Practical Robotics Project",
 
   // Scholarship Preparation
-  scholarshipTitle: "Mentorship and Scholarship Program",
+  scholarshipTitle: "Scholarship Preparation", // در بخش تکراری دوم: "Mentorship and Scholarship Program"
   scholarshipDuration: "2 Months",
   scholarshipInstructor: "To Be Announced",
   scholarshipDeadline: "To Be Announced",
@@ -319,6 +318,55 @@ const translation = {
   savedCoursesBeginner: "Beginner",
   savedCoursesIntermediate: "Intermediate",
   savedCoursesAdvanced: "Advanced",
+
+  // About Page Translations
+  aboutPage: {
+    title: "About Gam Boland Academy",
+    subtitle: "Building a Brighter Future Through Education",
+
+    introduction: {
+      title: "About the Organization and Academy",
+      body: "Your existing English introduction text.",
+      purpose: {
+        title: "Our vision and mission",
+        description: "Working for an equal, bright future full of opportunity.",
+
+        vision: {
+          title: "Our Vision",
+          heading: "A society where every girl has opportunity",
+          body: "A future where every girl can access quality education and reach her full potential.",
+        },
+
+        mission: {
+          title: "Our Mission",
+          heading: "Inclusive learning that responds to real needs",
+          body: "Providing inclusive learning opportunities that develop skills, build confidence, and empower girls.",
+        },
+      },
+    },
+    activities: "فعالیت‌ها",
+    events: "رویدادها",
+    achievements: "دستاوردها",
+
+    // Hero Section
+    hero: {
+      kicker: "OUR STORY. OUR VISION.",
+      title: "Education is the beginning",
+      titleHighlight: "of a brighter tomorrow.",
+      description:
+        "GEO is an education and development organization working to expand learning opportunities, nurture talent, and empower girls.",
+      button: "Discover our story",
+      imageAlt: "Girls in an educational classroom",
+      badgeTitle: "Hundreds",
+      badgeText: "Online learners",
+    },
+
+    story: {
+      year: "2026",
+      historyTitle: "One Belief, One Beginning",
+      historyNoteTitle: "A Beginning of Empowerment",
+    },
+  },
 };
 
 export default translation;
