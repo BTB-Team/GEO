@@ -1,0 +1,339 @@
+{
+  "title": {
+    "fa": "درباره آکادمی گام بُلند",
+    "en": "About Gam-e-Buland Academy"
+  },
+  "subtitle": {
+    "fa": "با آموزش، راهی به‌سوی آینده‌ای روشن‌تر",
+    "en": "Opening pathways to a brighter future through education"
+  },
+  "sections": [
+    {
+      "id": "introduction",
+      "title": {
+        "fa": "معرفی سازمان و آکادمی",
+        "en": "Our organization and academy"
+      },
+      "body": {
+        "fa": "سازمان آموزش دختران (GEO) نهادی آموزشی و توسعه‌محور است که در سال ۲۰۲۶ توسط داکتر علیپور میرتمان تأسیس شده است. این سازمان برای گسترش فرصت‌های یادگیری، رشد استعدادها و توانمندسازی دختران فعالیت می‌کند. آکادمی گام بُلند از نهادهای زیرمجموعه GEO است و منحیث مرکز همکار با مؤسسه پل آموزش برای افغانستان (EBA)، به‌صورت آنلاین به صدها دانش‌آموز خدمات آموزشی ارائه می‌کند.\n\nGEO آموزش را مسیری برای پرورش تفکر انتقادی، تقویت اعتمادبه‌نفس، توسعه مهارت‌های زندگی و مشارکت مؤثر در جامعه می‌داند. این سازمان از طریق آموزش باکیفیت، زبان‌های خارجی، سواد دیجیتال، رهبری، ارتباطات و فعالیت‌های علمی و فرهنگی، زمینه رشد فردی و اجتماعی دختران را فراهم می‌سازد. هدف، ایجاد فضایی است که هر دختر استعدادهایش را کشف کند و به فردی آگاه، مستقل و تأثیرگذار تبدیل شود.",
+        "en": "Girls Education Organization (GEO) is an education and development organization founded in 2026 by داکتر علیپور میرتمان. It expands learning opportunities, nurtures talent, and empowers girls. Gam-e-Buland Academy operates under GEO and, as a collaborating center with Education Bridge for Afghanistan (EBA), provides online education to hundreds of students.\n\nGEO sees education as a path to critical thinking, confidence, life skills, and meaningful participation in society. Through quality education, foreign languages, digital literacy, leadership, communication, and scientific and cultural activities, it supports girls’ personal and social growth. It aims to help every girl discover her abilities and become informed, independent, and influential."
+      },
+      "items": []
+    },
+    {
+      "id": "slogan",
+      "title": {
+        "fa": "شعار سازمان GEO",
+        "en": "GEO’s slogan"
+      },
+      "body": {
+        "fa": "آموزش بده، توانمند بساز و الهام ببخش.",
+        "en": "Educate • Empower • Inspire"
+      },
+      "items": [
+        {
+          "fa": "آموزش: فراهم‌سازی فرصت‌های یادگیری و دسترسی به دانش.",
+          "en": "Educate: Provide learning opportunities and access to knowledge."
+        },
+        {
+          "fa": "توانمندسازی: تقویت توانایی‌ها، مهارت‌ها و اعتمادبه‌نفس دختران.",
+          "en": "Empower: Strengthen girls’ abilities, skills, and confidence."
+        },
+        {
+          "fa": "الهام‌بخشی: پرورش امید، خلاقیت، انگیزه و روحیه رهبری.",
+          "en": "Inspire: Nurture hope, creativity, motivation, and leadership."
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "title": {
+        "fa": "چشم‌انداز",
+        "en": "Our vision"
+      },
+      "body": {
+        "fa": "جامعه‌ای که در آن هر دختر، بدون توجه به شرایط اقتصادی، اجتماعی و جغرافیایی، به آموزش باکیفیت دسترسی داشته باشد و با دانش، مهارت، خلاقیت و اعتمادبه‌نفس در ساختن آینده خود و جامعه نقش بگیرد. GEO در پی پرورش نسلی آگاه، دانش‌محور، مستقل، خلاق و رهبر است.",
+        "en": "A society where every girl, regardless of economic, social, or geographical circumstances, can access quality education and shape her future and community with knowledge, skills, creativity, and confidence. GEO envisions an informed, independent, creative generation of learners and leaders."
+      },
+      "items": []
+    },
+    {
+      "id": "mission",
+      "title": {
+        "fa": "مأموریت",
+        "en": "Our mission"
+      },
+      "body": {
+        "fa": "گسترش فرصت‌های آموزش و یادگیری برای دختران از طریق برنامه‌های فراگیر، باکیفیت و متناسب با نیازهای آنان.",
+        "en": "Expand education and learning opportunities for girls through inclusive, high-quality programs that respond to their needs."
+      },
+      "items": [
+        {
+          "fa": "فراهم‌سازی آموزش رسمی و غیررسمی.",
+          "en": "Provide formal and non-formal education."
+        },
+        {
+          "fa": "توسعه زبان انگلیسی و سایر زبان‌های خارجی.",
+          "en": "Develop English and other foreign language skills."
+        },
+        {
+          "fa": "گسترش سواد دیجیتال و مهارت‌های فناوری.",
+          "en": "Expand digital literacy and technology skills."
+        },
+        {
+          "fa": "تقویت مهارت‌های علمی، پژوهشی و تفکر انتقادی.",
+          "en": "Strengthen scientific, research, and critical thinking skills."
+        },
+        {
+          "fa": "آموزش ارتباطات، سخنرانی و نگارش.",
+          "en": "Teach communication, public speaking, and writing."
+        },
+        {
+          "fa": "پرورش رهبری، کارآفرینی و مشارکت اجتماعی.",
+          "en": "Develop leadership, entrepreneurship, and social participation."
+        },
+        {
+          "fa": "حمایت از استعدادها و رشد تحصیلی و حرفه‌ای.",
+          "en": "Support talent and academic and professional growth."
+        },
+        {
+          "fa": "آگاهی‌دهی درباره فرصت‌های تحصیلی، بورسیه‌ها و ادامه تحصیل.",
+          "en": "Raise awareness of education opportunities, scholarships, and further study."
+        }
+      ]
+    },
+    {
+      "id": "values",
+      "title": {
+        "fa": "ارزش‌های بنیادین",
+        "en": "Our core values"
+      },
+      "body": {
+        "fa": "",
+        "en": ""
+      },
+      "items": [
+        {
+          "fa": "برابری آموزشی: حق برابر دختران برای دسترسی به آموزش باکیفیت.",
+          "en": "Educational equity: Girls’ equal right to quality education."
+        },
+        {
+          "fa": "کیفیت و تعالی: یادگیری مؤثر، معیارهای آموزشی و بهبود مستمر.",
+          "en": "Quality and excellence: Effective learning, educational standards, and continuous improvement."
+        },
+        {
+          "fa": "توانمندسازی: شناخت ظرفیت‌ها، تقویت مهارت‌ها و رسیدن به استقلال.",
+          "en": "Empowerment: Recognizing abilities, strengthening skills, and building independence."
+        },
+        {
+          "fa": "احترام و کرامت انسانی: احترام به شخصیت، استعداد و تفاوت‌های فردی.",
+          "en": "Respect and dignity: Respect for personality, talent, and individual differences."
+        },
+        {
+          "fa": "صداقت و شفافیت: مسئولیت‌پذیری و شفافیت در فعالیت‌ها.",
+          "en": "Integrity and transparency: Honesty, accountability, and openness."
+        },
+        {
+          "fa": "نوآوری و خلاقیت: استفاده از روش‌ها و فناوری‌های نوین آموزشی.",
+          "en": "Innovation and creativity: Modern teaching methods and technology."
+        },
+        {
+          "fa": "مشارکت و همکاری: همفکری، کار مشترک و مسئولیت اجتماعی.",
+          "en": "Collaboration: Cooperation, shared thinking, and social responsibility."
+        },
+        {
+          "fa": "یادگیری مادام‌العمر: یادگیری مستمر و توسعه فردی در تمام مراحل زندگی.",
+          "en": "Lifelong learning: Continuous learning and personal development at every stage of life."
+        }
+      ]
+    },
+    {
+      "id": "goals",
+      "title": {
+        "fa": "اهداف سازمان",
+        "en": "Our goals"
+      },
+      "body": {
+        "fa": "",
+        "en": ""
+      },
+      "items": [
+        {
+          "fa": "افزایش دسترسی دختران به آموزش باکیفیت.",
+          "en": "Increase girls’ access to quality education."
+        },
+        {
+          "fa": "حمایت از دختران محروم از فرصت‌های تحصیلی.",
+          "en": "Support girls excluded from educational opportunities."
+        },
+        {
+          "fa": "تقویت مهارت‌های علمی، زبانی و دیجیتال.",
+          "en": "Strengthen scientific, language, and digital skills."
+        },
+        {
+          "fa": "آماده‌سازی برای ورود به دانشگاه‌ها و مؤسسات تحصیلات عالی.",
+          "en": "Prepare learners for universities and higher education."
+        },
+        {
+          "fa": "آمادگی آزمون‌ها و برنامه‌های تحصیلی بین‌المللی.",
+          "en": "Provide preparation for international examinations and study programs."
+        },
+        {
+          "fa": "توسعه رهبری، سخنرانی و ارتباطات مؤثر.",
+          "en": "Develop leadership, public speaking, and communication."
+        },
+        {
+          "fa": "ترویج مطالعه، پژوهش، نوآوری و تفکر انتقادی.",
+          "en": "Promote reading, research, innovation, and critical thinking."
+        },
+        {
+          "fa": "معرفی بورسیه‌ها و مسیرهای ادامه تحصیل.",
+          "en": "Introduce scholarships and pathways to further study."
+        },
+        {
+          "fa": "حمایت از ایده‌ها، خلاقیت‌ها و ابتکارات دختران.",
+          "en": "Support girls’ ideas, creativity, and initiatives."
+        },
+        {
+          "fa": "پرورش زنان آگاه، متخصص و مسئولیت‌پذیر.",
+          "en": "Nurture informed, skilled, and responsible women."
+        }
+      ]
+    },
+    {
+      "id": "approach",
+      "title": {
+        "fa": "روش آموزشی",
+        "en": "Our educational approach"
+      },
+      "body": {
+        "fa": "رویکرد GEO یادگیرنده‌محور، مهارت‌محور و مشارکتی است؛ دانش‌آموز در فرایند یادگیری نقش فعال دارد. روش‌های پیشنهادی شامل موارد زیر است:",
+        "en": "GEO follows a learner-centered, skills-based, participatory approach. Students take an active role in learning. Proposed methods include:"
+      },
+      "items": [
+        {
+          "fa": "آموزش تعاملی: بحث گروهی، پرسش و پاسخ و فعالیت مشارکتی.",
+          "en": "Interactive learning: Group discussion, questions, and shared activities."
+        },
+        {
+          "fa": "یادگیری مبتنی بر پروژه: پروژه‌های علمی، پژوهشی و خلاقانه.",
+          "en": "Project-based learning: Scientific, research, and creative projects."
+        },
+        {
+          "fa": "تفکر انتقادی: تحلیل، ارزیابی اطلاعات و حل مسئله.",
+          "en": "Critical thinking: Analysis, information evaluation, and problem solving."
+        },
+        {
+          "fa": "آموزش مهارت‌محور: مهارت‌های عملی زندگی، تحصیل و کار.",
+          "en": "Skills-based learning: Practical skills for life, study, and work."
+        },
+        {
+          "fa": "یادگیری دیجیتال: استفاده از فناوری و بسترهای آنلاین.",
+          "en": "Digital learning: Technology and online learning platforms."
+        },
+        {
+          "fa": "یادگیری فردی و گروهی: توجه به تفاوت‌های فردی و تقویت کار تیمی.",
+          "en": "Individual and collaborative learning: Individual needs alongside teamwork."
+        },
+        {
+          "fa": "ارزیابی مستمر: تمرین، پروژه، آزمون و بازخورد آموزشی.",
+          "en": "Continuous assessment: Exercises, projects, tests, and educational feedback."
+        }
+      ]
+    },
+    {
+      "id": "audience",
+      "title": {
+        "fa": "مخاطبان GEO",
+        "en": "Who we serve"
+      },
+      "body": {
+        "fa": "برنامه‌های GEO بر نیازهای آموزشی و توسعه‌ای دختران و زنان جوان تمرکز دارد. سازمان تلاش می‌کند با استفاده از ظرفیت آموزش حضوری و آنلاین، دسترسی به برنامه‌ها را گسترش دهد.",
+        "en": "GEO focuses on the learning and development needs of girls and young women, working to expand access through online and in-person education."
+      },
+      "items": [
+        {
+          "fa": "دختران دانش‌آموز در مقاطع مختلف تحصیلی.",
+          "en": "Schoolgirls at different educational levels."
+        },
+        {
+          "fa": "دختران محروم از آموزش رسمی.",
+          "en": "Girls excluded from formal education."
+        },
+        {
+          "fa": "علاقه‌مندان یادگیری زبان‌های خارجی.",
+          "en": "Girls interested in foreign languages."
+        },
+        {
+          "fa": "متقاضیان ادامه تحصیل در دانشگاه‌ها و مؤسسات بین‌المللی.",
+          "en": "Applicants to universities and international institutions."
+        },
+        {
+          "fa": "علاقه‌مندان فناوری، علوم، پژوهش و نوآوری.",
+          "en": "Girls interested in technology, science, research, and innovation."
+        },
+        {
+          "fa": "دختران نیازمند توسعه مهارت‌های فردی و اجتماعی.",
+          "en": "Girls developing personal and social skills."
+        },
+        {
+          "fa": "زنان جوان علاقه‌مند به رهبری، کارآفرینی و توسعه حرفه‌ای.",
+          "en": "Young women interested in leadership, entrepreneurship, and professional growth."
+        }
+      ]
+    },
+    {
+      "id": "difference",
+      "title": {
+        "fa": "چه چیزی GEO را متمایز می‌سازد؟",
+        "en": "What makes GEO different?"
+      },
+      "body": {
+        "fa": "هدف GEO رشد تحصیلی در کنار پرورش شخصیت علمی، اجتماعی و حرفه‌ای دختران است.",
+        "en": "GEO supports academic progress alongside girls’ scientific, social, and professional development."
+      },
+      "items": [
+        {
+          "fa": "نگاه جامع به دانش، مهارت‌های فردی، رشد اجتماعی و توانایی‌های حرفه‌ای.",
+          "en": "A comprehensive approach to knowledge, personal skills, and social and professional growth."
+        },
+        {
+          "fa": "تمرکز بر نیازها، استعدادها و رشد همه‌جانبه دختران.",
+          "en": "Attention to girls’ needs, talents, and all-round development."
+        },
+        {
+          "fa": "پیوند آموزش با ادامه تحصیل، بورسیه‌ها و فرصت‌های حرفه‌ای.",
+          "en": "Connecting learning with further study, scholarships, and professional opportunities."
+        },
+        {
+          "fa": "ترکیب دانش و مهارت و کاربرد آموخته‌ها در زندگی و جامعه.",
+          "en": "Combining knowledge and skills for real-life application."
+        },
+        {
+          "fa": "استفاده از آموزش دیجیتال برای گسترش دسترسی.",
+          "en": "Using digital learning to expand access."
+        },
+        {
+          "fa": "پرورش رهبری، بیان دیدگاه، تصمیم‌گیری و مسئولیت‌پذیری.",
+          "en": "Developing leadership, self-expression, decision making, and responsibility."
+        },
+        {
+          "fa": "تقویت انگیزه یادگیری فراتر از مکتب و دانشگاه.",
+          "en": "Encouraging learning beyond school and university."
+        }
+      ]
+    },
+    {
+      "id": "commitment",
+      "title": {
+        "fa": "تعهد ما",
+        "en": "Our commitment"
+      },
+      "body": {
+        "fa": "ما در GEO باور داریم که هر دختر دارای استعداد، ظرفیت و حق ساختن آینده‌ای بهتر است. تعهد ما ایجاد مسیری است که دختران در آن دانش کسب کنند، توانایی‌های خود را بشناسند، اعتمادبه‌نفس پیدا کنند و برای تحقق اهداف خود گام بردارند.\n\nما به آینده‌ای باور داریم که در آن هیچ دختری به دلیل محرومیت از فرصت‌های آموزشی، از شکوفایی استعدادهای خود بازنماند.",
+        "en": "At GEO, we believe every girl has talent, potential, and the right to build a better future. We are committed to a path where girls gain knowledge, recognize their abilities, build confidence, and pursue their goals.\n\nWe believe in a future where no girl is prevented from realizing her potential because she lacks educational opportunities."
+      },
+      "items": []
+    }
+  ]
+}

@@ -79,7 +79,7 @@ app.post(
 )
 
 // Contact form
-app.post("/messages", async (req, res) => {
+app.post("/messages", (req, res) => {
   try {
     const { name, email, subject, message } = req.body || {}
 
@@ -117,12 +117,18 @@ app.post("/messages", async (req, res) => {
     }
 
     // Reject HTML tags and control characters
-    const values = [cleanName, cleanEmail, cleanSubject, cleanMessage]
+    const values = [
+      cleanName,
+      cleanEmail,
+      cleanSubject,
+      cleanMessage,
+    ]
 
     if (
       values.some(
         (value) =>
-          /[<>]/.test(value) || /[\u0000-\u0008\u000B\u000C\u000E-\u001F]/.test(value)
+          /[<>]/.test(value) ||
+          /[\u0000-\u0008\u000B\u000C\u000E-\u001F]/.test(value)
       )
     ) {
       return res.status(400).json({
@@ -164,14 +170,14 @@ app.post("/messages", async (req, res) => {
 })
 
 // Error handler
-app.use((error, req, res, next) => {
+// eslint-disable-next-line no-unused-vars
+app.use((error, req, res, _next) => {
   console.error(error)
 
   res.status(400).json({
     message: error.message || "Request failed.",
   })
 })
-
 // Start server
 app.listen(PORT, () => {
   console.log(`Upload server running at http://localhost:${PORT}`)
