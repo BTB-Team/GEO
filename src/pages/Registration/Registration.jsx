@@ -139,7 +139,8 @@ const uploadFiles = async (form) => {
   const data = await response.json()
 
   if (!response.ok) {
-    throw new Error(data.message || "File upload failed")
+    throw new Error(data.message 
+      || "File upload failed")
   }
 
   return data.files
@@ -169,11 +170,10 @@ const uploadedFiles = await uploadFiles(form)
 const registrationData = {
   ...formData,
 
-  studentName: `${formData.firstName} ${formData.lastName}`,
+  studentName:` ${formData.firstName} ${formData.lastName}`,
   age: Number(formData.age),
   courseTitle,
-
-  idDocumentName: uploadedFiles.idDocument?.[0]?.filename || "",
+idDocumentName: uploadedFiles.idDocument?.[0]?.filename || "",
   educationCertificateName:
     uploadedFiles.educationCertificate?.[0]?.filename || "",
   photoName: uploadedFiles.photo?.[0]?.filename || "",
@@ -312,8 +312,7 @@ await Swal.fire({
                 className={inputClass}
                 required
               />
-
-              <input
+<input
                 type="number"
                 name="age"
                 value={formData.age}
@@ -429,8 +428,7 @@ await Swal.fire({
               })}
             </select>
           </section>
-
-          {/* Required Documents */}
+{/* Required Documents */}
           <section>
             <h2 className="mb-5 border-b pb-3 text-xl font-semibold text-slate-800">
              {language === "fa" ? "اسناد مورد نیاز" : "Required Documents"}

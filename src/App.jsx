@@ -13,5 +13,6 @@ const App = () => {
 
   return <AppRoutes />
 }
+//GEO project update
 
 export default App

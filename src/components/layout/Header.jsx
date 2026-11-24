@@ -13,7 +13,7 @@ import {
   Bell,
   CalendarDays,
   Library,
-  BadgeCheck,
+  Images, // <--- اینجا BadgeCheck را به Images تغییر دهید
   Phone,
   UserPlus,
   Megaphone,
@@ -41,7 +41,7 @@ const navigationIcons = {
   bell: Bell,
   "calendar-days": CalendarDays,
   library: Library,
-  "badge-check": BadgeCheck,
+  images: Images, // جایگزین "badge-check": BadgeCheck شد
   phone: Phone,
   "user-plus": UserPlus,
   megaphone: Megaphone,
