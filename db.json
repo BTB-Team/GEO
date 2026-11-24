@@ -3336,8 +3336,6 @@
     }
   ],
 
-
-
 "navigation": [
   {
     "id": "nav-home",
@@ -3482,15 +3480,15 @@
     "isVisible": true
   },
   {
-    "id": "nav-certificates",
+    "id": "nav-gallery",
     "type": "link",
     "placement": "menu",
-    "icon": "badge-check",
+    "icon": "images",
     "label": {
-      "en": "Verify Certificate",
-      "fa": "اعتبارسنجی گواهی‌نامه"
+      "en": "Gallery",
+      "fa": "گالری"
     },
-    "path": "/verify-certificate",
+    "path": "/gallery",
     "sortOrder": 10,
     "isVisible": true
   },
@@ -3521,18 +3519,18 @@
     "isVisible": true
   },
   {
-  "id": "nav-saved",
-  "type": "link",
-  "placement": "menu",
-  "icon": "heart",
-  "label": {
-    "en": "Saved",
-    "fa": "ذخیره‌شده‌ها"
-  },
-  "path": "/saved",
-  "sortOrder": 10,
-  "isVisible": true
-}
+    "id": "nav-saved",
+    "type": "link",
+    "placement": "menu",
+    "icon": "heart",
+    "label": {
+      "en": "Saved",
+      "fa": "ذخیره‌شده‌ها"
+    },
+    "path": "/saved",
+    "sortOrder": 10,
+    "isVisible": true
+  }
 ],
 
 
